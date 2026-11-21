@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-
-const API_BASE = (process.env.API_BASE_URL || "http://127.0.0.1:8000").replace(/\/$/, "");
+import { getBackendBaseUrl } from "@/lib/api-base";
 
 export async function proxyTrainGet(req: NextRequest, backendPath: string) {
+  const API_BASE = getBackendBaseUrl();
   const qs = req.nextUrl.search || "";
   const headers = new Headers();
   const cookie = req.cookies.get("ne_mate_session")?.value;

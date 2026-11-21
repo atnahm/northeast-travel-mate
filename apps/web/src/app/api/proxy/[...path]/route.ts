@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getBackendBaseUrl } from "@/lib/api-base";
 
-const API_BASE = (process.env.API_BASE_URL || "http://127.0.0.1:8000").replace(/\/$/, "");
 const COOKIE_NAME = "ne_mate_session";
 
 async function forward(req: NextRequest, { params }: { params: Promise<{ path: string[] }> }) {
+  const API_BASE = getBackendBaseUrl();
   const { path } = await params;
   const subPath = path.join("/");
   const search = req.nextUrl.search || "";

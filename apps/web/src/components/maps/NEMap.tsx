@@ -62,7 +62,8 @@ export function NEMap({
   heightClass = "h-[360px] md:h-[460px]",
 }: NEMapProps) {
   const isOnline = useAppStore((s) => s.isOnline);
-  const browserKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_BROWSER_KEY || "";
+  const browserKey =
+    process.env.NEXT_PUBLIC_GOOGLE_MAPS_BROWSER_KEY || "AIzaSyBBkX8qR16kWKwKXt3mALjEQ_ofy-J7svc";
   const useGoogle = Boolean(isOnline && browserKey);
 
   const mapContainerRef = useRef<HTMLDivElement | null>(null);

@@ -27,9 +27,11 @@ class FirebaseConfigurationError(RuntimeError):
 
 def _parse_service_account_json(raw: str) -> Dict[str, Any]:
     text = raw.strip()
+    if (text.startswith('"') and text.endswith('"')) or (text.startswith("'") and text.endswith("'")):
+        text = text[1:-1].strip()
     if not text.startswith("{"):
         text = base64.b64decode(text).decode("utf-8")
-    data = json.loads(text)
+    data = json.loads(text, strict=False)
     if "private_key" in data and isinstance(data["private_key"], str):
         data["private_key"] = data["private_key"].replace("\\n", "\n")
     return data

@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getBackendBaseUrl } from "@/lib/api-base";
 
-const API_BASE = (process.env.API_BASE_URL || "http://127.0.0.1:8000").replace(/\/$/, "");
 const COOKIE_NAME = "ne_mate_session";
 
 export async function POST(req: NextRequest) {
   try {
+    const API_BASE = getBackendBaseUrl();
     const body = await req.json();
     const idToken = String(body?.idToken || "").trim();
     if (!idToken) {
