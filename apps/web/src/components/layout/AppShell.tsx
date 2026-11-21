@@ -90,6 +90,14 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row bg-canvas text-ink">
+      {/* WCAG 2.2 AA Skip to Main Content Link */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:rounded-xl focus:bg-forest focus:px-4 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
+
       {/* Desktop Left Rail */}
       <aside
         className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0 bg-surface border-r border-borderSubtle z-30"
@@ -111,6 +119,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               <Link
                 key={item.href}
                 href={item.href}
+                aria-current={active ? "page" : undefined}
                 className={`flex items-center gap-3 px-3.5 py-2.5 min-h-[46px] rounded-xl text-sm font-medium transition-colors ${
                   active ? "bg-forest text-onPrimary font-semibold" : "text-ink hover:bg-mutedSurface"
                 }`}
@@ -223,7 +232,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           )}
         </header>
 
-        <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-5 pb-28 md:pb-10">
+        <main id="main-content" tabIndex={-1} className="flex-1 max-w-6xl w-full mx-auto px-4 py-5 pb-28 md:pb-10 focus:outline-none">
           {children}
         </main>
       </div>
@@ -252,6 +261,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <Link
               key={item.href}
               href={item.href}
+              aria-current={active ? "page" : undefined}
               className={`flex flex-col items-center justify-center gap-0.5 py-1.5 min-h-[52px] rounded-xl text-[11px] font-semibold ${
                 active ? "text-forest bg-forest/10" : "text-inkMuted"
               }`}

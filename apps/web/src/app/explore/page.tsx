@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
-import { Bookmark, Compass, LocateFixed, Search, Utensils } from "lucide-react";
+import { Bookmark, Calendar, Compass, ExternalLink, LocateFixed, Search, Utensils } from "lucide-react";
 import { AppShell } from "@/components/layout/AppShell";
 import { NEMap, type MapPinItem } from "@/components/maps/NEMap";
 import { BottomSheet, Card, Chip, EmptyState, ErrorState, Skeleton } from "@/components/ui/Primitives";
@@ -80,6 +80,25 @@ export default function ExplorePage() {
     queryFn: () => {
       const qs = selectedState !== "ALL" ? `state=${selectedState}&lang=${lang}` : `lang=${lang}`;
       return apiFetch<{ items: Speciality[] }>(`/api/v1/specialities?${qs}`);
+    },
+  });
+
+  const festivalsQ = useQuery({
+    queryKey: ["festivals", selectedState, lang],
+    queryFn: () => {
+      const qs = selectedState !== "ALL" ? `state=${selectedState}&lang=${lang}` : `lang=${lang}`;
+      return apiFetch<{
+        items: Array<{
+          id: string;
+          state_code: string;
+          name: string;
+          start_date: string;
+          end_date: string;
+          is_approximate?: boolean;
+          description: string;
+          source_url?: string;
+        }>;
+      }>(`/api/v1/festivals?${qs}`);
     },
   });
 
@@ -298,10 +317,10 @@ export default function ExplorePage() {
         </BottomSheet>
 
         {/* Local Specialities Horizontal Row */}
-        <section className="space-y-3 pt-2">
-          <h2 className="text-lg font-bold flex items-center gap-2">
+        <section aria-labelledby="specialities-heading" className="space-y-3 pt-2">
+          <h2 id="specialities-heading" className="font-display text-lg font-semibold flex items-center gap-2">
             <Utensils className="w-5 h-5 text-teaGold" />
-            Local Specialities (Dishes, Crafts & Products)
+            Regional Cuisine, Handloom &amp; Heritage Crafts
           </h2>
           <div className="flex gap-3 overflow-x-auto pb-2">
             {(specsQ.data?.items || []).map((sp) => (
@@ -310,11 +329,64 @@ export default function ExplorePage() {
                   <span className="text-xs font-bold uppercase px-2.5 py-0.5 rounded-full bg-teaGold text-onGold">
                     {sp.type}
                   </span>
-                  <span className="text-xs font-semibold text-inkMuted">{sp.state_code}</span>
+                  <span className="text-xs font-semibold text-inkMuted">
+                    {STATE_FULL_NAMES[sp.state_code] || sp.state_code}
+                  </span>
                 </div>
-                <h3 className="font-bold text-base">{sp.name}</h3>
+                <h3 className="font-display font-semibold text-base">{sp.name}</h3>
                 <p className="text-xs text-inkMuted line-clamp-3">{sp.description}</p>
                 <p className="text-xs font-medium text-forest">Where: {sp.where_to_find}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Cultural Festivals & Heritage Calendar (PS08 Tourism & Culture Alignment) */}
+        <section aria-labelledby="festivals-heading" className="space-y-3 pt-2">
+          <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div>
+              <h2 id="festivals-heading" className="font-display text-lg font-semibold flex items-center gap-2">
+                <Calendar className="w-5 h-5 text-forest" />
+                Cultural Festivals &amp; Indigenous Celebrations
+              </h2>
+              <p className="text-xs text-inkMuted">
+                Annual harvest, music, and heritage festivals across North-East India with official state tourism links.
+              </p>
+            </div>
+            <Link href="/trips" className="text-xs font-semibold text-river underline underline-offset-4">
+              Plan an affordable festival trip
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+            {(festivalsQ.data?.items || []).map((fest) => (
+              <Card key={fest.id} className="p-4 flex flex-col justify-between gap-3">
+                <div className="space-y-1.5">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-forest/10 text-forest">
+                      {STATE_FULL_NAMES[fest.state_code] || fest.state_code}
+                    </span>
+                    <span className="text-xs font-medium text-inkMuted">
+                      {fest.start_date} to {fest.end_date}
+                    </span>
+                  </div>
+                  <h3 className="font-display font-semibold text-base text-ink">{fest.name}</h3>
+                  <p className="text-xs text-inkMuted leading-relaxed">{fest.description}</p>
+                </div>
+                <div className="flex items-center justify-between pt-2 border-t border-borderSubtle text-xs">
+                  <Link href={`/permits?state=${fest.state_code}`} className="font-semibold text-forest hover:underline">
+                    Entry rules
+                  </Link>
+                  {fest.source_url && (
+                    <a
+                      href={fest.source_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-semibold text-river hover:underline"
+                    >
+                      Official portal <ExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
+                </div>
               </Card>
             ))}
           </div>

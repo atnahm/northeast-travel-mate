@@ -217,7 +217,9 @@ function OnboardingFlowInner() {
       } else {
         const slug =
           (email.split("@")[0] || fullName || "traveler").toLowerCase().replace(/[^a-z0-9]/g, "_") || "traveler";
-        const session = await establishCookieSession(`dev:${slug}`);
+        const encodedEmail = encodeURIComponent((email || `${slug}@nemate.in`).trim().toLowerCase());
+        const encodedName = encodeURIComponent((fullName || slug).trim());
+        const session = await establishCookieSession(`poc:${slug}:${encodedEmail}:${encodedName}`);
         handlePostAuthTransition(session, fullName.trim(), email);
       }
     } catch (e) {
@@ -231,8 +233,8 @@ function OnboardingFlowInner() {
     setErr("");
     setBusy(true);
     try {
-      const slug = role === "admin" ? "demo_admin:admin" : "demo_traveler";
-      const session = await establishCookieSession(`dev:${slug}`);
+      const slug = role === "admin" ? "demo_admin" : "demo_traveler";
+      const session = await establishCookieSession(`poc:${slug}:${slug}%40nemate.in:Demo%20Traveler`);
       handlePostAuthTransition(session, role === "admin" ? "NE Mate Admin" : "Demo Traveler");
     } catch (e) {
       setErr(e instanceof Error ? e.message : "Demo sign-in failed");
@@ -267,7 +269,7 @@ function OnboardingFlowInner() {
     setBusy(true);
     try {
       if (!signedIn) {
-        await establishCookieSession("dev:demo_traveler");
+        await establishCookieSession("poc:demo_traveler:demo_traveler%40nemate.in:Demo%20Traveler");
       }
       const res = await apiFetch<{ profile: UserProfile; onboarding_completed: boolean }>("/api/v1/me", {
         method: "PUT",

@@ -153,3 +153,24 @@ def test_admin_verify_permit_and_chat_sse_citations(isolated_repo):
     assert stream.status_code == 200
     assert "event: citation" in stream.text
     assert "AR-PAP" in stream.text
+
+
+def test_ps08_cultural_festivals_route_options_and_security_headers(isolated_repo):
+    client = TestClient(app)
+    # 1. Cultural festivals discovery endpoint
+    fest = client.get("/api/v1/festivals")
+    assert fest.status_code == 200
+    assert len(fest.json()["items"]) >= 5
+    # Verify security headers on API responses
+    assert fest.headers.get("X-Content-Type-Options") == "nosniff"
+    assert fest.headers.get("Referrer-Policy") == "strict-origin-when-cross-origin"
+    assert fest.headers.get("X-Request-Id")
+    assert fest.headers.get("X-RateLimit-Remaining") is not None
+
+    # 2. Multi-modal affordable travel options comparison (Sumo, Bus, Train, Flight, Ferry)
+    routes = client.post(
+        "/api/v1/travel/options",
+        json={"from_name": "Guwahati", "to_name": "Shillong"},
+    )
+    assert routes.status_code == 200
+    assert len(routes.json()["options"]) >= 1
