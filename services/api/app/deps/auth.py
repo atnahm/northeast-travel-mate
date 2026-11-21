@@ -50,6 +50,11 @@ def _verify_token_string(token: str) -> tuple[str, Optional[str], Optional[str],
         return uid, email, name, "cloud_poc"
 
     if token.startswith("dev:"):
+        if not settings.dev_auth_bypass or mode == "firestore":
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Development bypass tokens are disabled in live Firestore mode.",
+            )
         parts = token.split(":")
         uid = parts[1] if len(parts) > 1 and parts[1] else "demo_traveler"
         return uid, f"{uid}@nemate.in", uid.replace("_", " ").title(), "local_dev"

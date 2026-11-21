@@ -257,7 +257,7 @@ export function TrainsSection() {
       />
 
       {toastMsg && (
-        <Card className="p-3.5 border-forest bg-statusApprovedBg text-statusApprovedFg text-sm font-semibold">
+        <Card role="status" aria-live="polite" className="p-3.5 border-forest bg-statusApprovedBg text-statusApprovedFg text-sm font-semibold">
           {toastMsg}
         </Card>
       )}

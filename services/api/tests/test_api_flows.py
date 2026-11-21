@@ -163,7 +163,10 @@ def test_ps08_cultural_festivals_route_options_and_security_headers(isolated_rep
     assert len(fest.json()["items"]) >= 5
     # Verify security headers on API responses
     assert fest.headers.get("X-Content-Type-Options") == "nosniff"
+    assert fest.headers.get("X-Frame-Options") == "DENY"
     assert fest.headers.get("Referrer-Policy") == "strict-origin-when-cross-origin"
+    assert "max-age=" in (fest.headers.get("Strict-Transport-Security") or "")
+    assert "geolocation=" in (fest.headers.get("Permissions-Policy") or "")
     assert fest.headers.get("X-Request-Id")
     assert fest.headers.get("X-RateLimit-Remaining") is not None
 
@@ -174,3 +177,20 @@ def test_ps08_cultural_festivals_route_options_and_security_headers(isolated_rep
     )
     assert routes.status_code == 200
     assert len(routes.json()["options"]) >= 1
+
+    # 3. Offline packs, phrasebook, and safety helplines endpoints
+    packs = client.get("/api/v1/offline/packs")
+    assert packs.status_code == 200
+    assert len(packs.json()["items"]) == 8
+
+    phrases = client.get("/api/v1/phrasebook?language_code=as")
+    assert phrases.status_code == 200
+    assert len(phrases.json()["items"]) >= 1
+
+    helplines = client.get("/api/v1/safety/helplines")
+    assert helplines.status_code == 200
+    assert len(helplines.json()["items"]) >= 8
+
+    # 4. Unauthenticated access to protected profile endpoint must return 401
+    unauth = client.get("/api/v1/me")
+    assert unauth.status_code == 401

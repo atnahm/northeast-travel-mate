@@ -97,8 +97,11 @@ export default function TripsPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
               <div>
-                <label className="block text-xs font-semibold mb-1">Destination State</label>
+                <label htmlFor="trip-state" className="block text-xs font-semibold mb-1">
+                  Destination State
+                </label>
                 <select
+                  id="trip-state"
                   value={destState}
                   onChange={(e) => setDestState(e.target.value)}
                   className="w-full rounded-xl border border-borderSubtle bg-canvas px-3 py-2.5 min-h-[48px]"
@@ -111,16 +114,22 @@ export default function TripsPage() {
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-semibold mb-1">Origin City</label>
+                <label htmlFor="trip-origin" className="block text-xs font-semibold mb-1">
+                  Origin City
+                </label>
                 <input
+                  id="trip-origin"
                   value={origin}
                   onChange={(e) => setOrigin(e.target.value)}
                   className="w-full rounded-xl border border-borderSubtle bg-canvas px-3 py-2.5 min-h-[48px]"
                 />
               </div>
               <div>
-                <label className="block text-xs font-semibold mb-1">Start Date</label>
+                <label htmlFor="trip-start" className="block text-xs font-semibold mb-1">
+                  Start Date
+                </label>
                 <input
+                  id="trip-start"
                   type="date"
                   value={startDate}
                   onChange={(e) => setStartDate(e.target.value)}
@@ -128,8 +137,11 @@ export default function TripsPage() {
                 />
               </div>
               <div>
-                <label className="block text-xs font-semibold mb-1">Duration (days)</label>
+                <label htmlFor="trip-days" className="block text-xs font-semibold mb-1">
+                  Duration (days)
+                </label>
                 <input
+                  id="trip-days"
                   type="number"
                   min={1}
                   max={21}
@@ -139,8 +151,11 @@ export default function TripsPage() {
                 />
               </div>
               <div>
-                <label className="block text-xs font-semibold mb-1">Travelers</label>
+                <label htmlFor="trip-party" className="block text-xs font-semibold mb-1">
+                  Travelers
+                </label>
                 <input
+                  id="trip-party"
                   type="number"
                   min={1}
                   max={20}
@@ -150,8 +165,11 @@ export default function TripsPage() {
                 />
               </div>
               <div>
-                <label className="block text-xs font-semibold mb-1">Target Budget (INR)</label>
+                <label htmlFor="trip-budget" className="block text-xs font-semibold mb-1">
+                  Target Budget (INR)
+                </label>
                 <input
+                  id="trip-budget"
                   type="number"
                   min={2000}
                   step={1000}

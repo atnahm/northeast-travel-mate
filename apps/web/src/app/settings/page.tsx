@@ -63,12 +63,12 @@ export default function SettingsPage() {
         downloaded_at: manifest.downloaded_at,
         pack_size_mb: sizeMb,
         state: manifest.state,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        bundle: manifest.bundle as any,
+        bundle: manifest.bundle as never,
       });
       if (manifest.bundle.phrasebook?.length) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        await offlineDb.phrasebook.bulkPut(manifest.bundle.phrasebook as any);
+        await offlineDb.phrasebook.bulkPut(
+          manifest.bundle.phrasebook as Array<Record<string, unknown> & { id: string }>
+        );
       }
       setDownloadedStates((prev) => Array.from(new Set([...prev, stateCode])));
       setMsg(`Downloaded ${stateCode} offline pack (${sizeMb} MB) into IndexedDB.`);
@@ -116,7 +116,9 @@ export default function SettingsPage() {
         </div>
 
         {msg && (
-          <Card className="p-3.5 border-forest bg-forest/10 text-sm font-semibold text-forest">{msg}</Card>
+          <Card role="status" aria-live="polite" className="p-3.5 border-forest bg-forest/10 text-sm font-semibold text-forest">
+            {msg}
+          </Card>
         )}
 
         {/* Traveler Summary */}
@@ -145,8 +147,11 @@ export default function SettingsPage() {
           <h2 className="text-lg font-bold">Display & Data Preferences</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-xs font-semibold mb-1.5">App Language</label>
+              <label htmlFor="settings-lang" className="block text-xs font-semibold mb-1.5">
+                App Language
+              </label>
               <select
+                id="settings-lang"
                 value={lang}
                 onChange={(e) => setLang(e.target.value as LangCode)}
                 className="w-full rounded-xl border border-borderSubtle bg-canvas px-3 py-2.5 min-h-[48px]"

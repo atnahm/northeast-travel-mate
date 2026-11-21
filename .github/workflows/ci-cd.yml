@@ -66,8 +66,14 @@ jobs:
       - name: Install frontend dependencies
         run: npm --prefix apps/web ci
 
+      - name: Run ESLint code quality check
+        run: npm --prefix apps/web run lint
+
       - name: Run strict TypeScript check
         run: npm --prefix apps/web run typecheck
+
+      - name: Run frontend unit & data integrity tests
+        run: npm --prefix apps/web test
 
       - name: Build production Next.js PWA
         run: npm --prefix apps/web run build
