@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { Loader } from "@googlemaps/js-api-loader";
-import { MapPin, Navigation, ZoomIn, ZoomOut } from "lucide-react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { Compass, Layers, MapPin, Navigation, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
 import { useAppStore } from "@/lib/store/app-store";
 
 export interface MapPinItem {
@@ -26,29 +25,37 @@ export interface NEMapProps {
   heightClass?: string;
 }
 
-const NE_BOUNDS = { minLat: 21.8, maxLat: 29.5, minLng: 87.8, maxLng: 97.5 };
+const TILE_SIZE = 256;
 
-const STATE_CENTROIDS = [
-  { code: "SK", name: "Sikkim", lat: 27.53, lng: 88.51 },
-  { code: "AS", name: "Assam", lat: 26.20, lng: 92.93 },
-  { code: "ML", name: "Meghalaya", lat: 25.47, lng: 91.37 },
-  { code: "AR", name: "Arunachal", lat: 28.22, lng: 94.73 },
-  { code: "NL", name: "Nagaland", lat: 26.16, lng: 94.56 },
-  { code: "MN", name: "Manipur", lat: 24.66, lng: 93.91 },
-  { code: "MZ", name: "Mizoram", lat: 23.16, lng: 92.94 },
-  { code: "TR", name: "Tripura", lat: 23.94, lng: 91.99 },
-];
-
-function project(lat: number, lng: number, width = 800, height = 460) {
-  const x = ((lng - NE_BOUNDS.minLng) / (NE_BOUNDS.maxLng - NE_BOUNDS.minLng)) * width;
-  const y = height - ((lat - NE_BOUNDS.minLat) / (NE_BOUNDS.maxLat - NE_BOUNDS.minLat)) * height;
+/** Web Mercator projection: (lat, lng, zoom) -> global pixel coordinates */
+function latLngToWorldPx(lat: number, lng: number, zoom: number): { x: number; y: number } {
+  const scale = TILE_SIZE * Math.pow(2, zoom);
+  const clampedLat = Math.max(-85.0511, Math.min(85.0511, lat));
+  const sinLat = Math.sin((clampedLat * Math.PI) / 180);
+  const x = ((lng + 180) / 360) * scale;
+  const y = (0.5 - Math.log((1 + sinLat) / (1 - sinLat)) / (4 * Math.PI)) * scale;
   return { x, y };
 }
 
-function unproject(x: number, y: number, width = 800, height = 460) {
-  const lng = NE_BOUNDS.minLng + (x / width) * (NE_BOUNDS.maxLng - NE_BOUNDS.minLng);
-  const lat = NE_BOUNDS.minLat + ((height - y) / height) * (NE_BOUNDS.maxLat - NE_BOUNDS.minLat);
-  return { lat: Number(lat.toFixed(4)), lng: Number(lng.toFixed(4)) };
+/** Inverse Web Mercator projection: global pixel coordinates -> (lat, lng) */
+function worldPxToLatLng(px: number, py: number, zoom: number): { lat: number; lng: number } {
+  const scale = TILE_SIZE * Math.pow(2, zoom);
+  const lng = (px / scale) * 360 - 180;
+  const n = Math.PI - (2 * Math.PI * py) / scale;
+  const lat = (180 / Math.PI) * Math.atan(0.5 * (Math.exp(n) - Math.exp(-n)));
+  return {
+    lat: Number(lat.toFixed(4)),
+    lng: Number(lng.toFixed(4)),
+  };
+}
+
+function getPinColor(category?: string, isSelected?: boolean): string {
+  if (isSelected) return "#C8401C";
+  if (category === "food") return "#D9A441";
+  if (category === "culture") return "#7A4E2D";
+  if (category === "stay" || category === "transport") return "#2A6F97";
+  if (category === "hospital" || category === "police") return "#A31C24";
+  return "#1F5E4B";
 }
 
 export function NEMap({
@@ -62,234 +69,360 @@ export function NEMap({
   heightClass = "h-[360px] md:h-[460px]",
 }: NEMapProps) {
   const isOnline = useAppStore((s) => s.isOnline);
-  const browserKey =
-    process.env.NEXT_PUBLIC_GOOGLE_MAPS_BROWSER_KEY || "AIzaSyBBkX8qR16kWKwKXt3mALjEQ_ofy-J7svc";
-  const useGoogle = Boolean(isOnline && browserKey);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const mapContainerRef = useRef<HTMLDivElement | null>(null);
-  const [googleError, setGoogleError] = useState<string | null>(null);
-  const [zoom, setZoom] = useState(1);
+  const [viewportSize, setViewportSize] = useState<{ w: number; h: number }>({ w: 860, h: 400 });
+  const [zoom, setZoom] = useState<number>(8);
+  const [mapCenter, setMapCenter] = useState<{ lat: number; lng: number }>(center);
+  const [tileStyle, setTileStyle] = useState<"osm" | "topo">("osm");
+  const [dragging, setDragging] = useState(false);
 
+  const dragStartRef = useRef<{
+    clientX: number;
+    clientY: number;
+    startCenterPx: { x: number; y: number };
+    moved: boolean;
+  } | null>(null);
+
+  // Measure container width & height
   useEffect(() => {
-    if (!useGoogle || !mapContainerRef.current) return;
-    let cancelled = false;
-
-    const loader = new Loader({
-      apiKey: browserKey,
-      version: "weekly",
-    });
-
-    loader
-      .importLibrary("maps")
-      .then((mapsLib) => {
-        if (cancelled || !mapContainerRef.current) return;
-        const map = new mapsLib.Map(mapContainerRef.current, {
-          center,
-          zoom: 7,
-          mapTypeControl: false,
-          streetViewControl: false,
-        });
-
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const g = (window as unknown as { google?: any }).google;
-        if (!g?.maps) return;
-
-        for (const p of pins) {
-          const marker = new g.maps.Marker({
-            position: { lat: p.lat, lng: p.lng },
-            map,
-            title: p.label,
-          });
-          marker.addListener("click", () => onSelectPin?.(p));
-        }
-
-        if (routePath && routePath.length >= 2) {
-          new g.maps.Polyline({
-            path: routePath,
-            geodesic: true,
-            strokeColor: "#2A6F97",
-            strokeOpacity: 0.9,
-            strokeWeight: 4,
-            map,
-          });
-        }
-
-        if (pickMode && onPickCoordinate) {
-          map.addListener("click", (ev: { latLng?: { lat: () => number; lng: () => number } }) => {
-            if (ev.latLng) {
-              onPickCoordinate({ lat: Number(ev.latLng.lat().toFixed(4)), lng: Number(ev.latLng.lng().toFixed(4)) });
-            }
-          });
-        }
-      })
-      .catch((err) => {
-        if (!cancelled) setGoogleError(err instanceof Error ? err.message : "Google Maps failed to load");
-      });
-
-    return () => {
-      cancelled = true;
+    const el = containerRef.current;
+    if (!el) return;
+    const updateSize = () => {
+      const rect = el.getBoundingClientRect();
+      if (rect.width > 0 && rect.height > 0) {
+        setViewportSize({ w: Math.round(rect.width), h: Math.round(rect.height) });
+      }
     };
-  }, [useGoogle, browserKey, center.lat, center.lng, pins, routePath, pickMode]);
+    updateSize();
+    const ro = typeof ResizeObserver !== "undefined" ? new ResizeObserver(updateSize) : null;
+    ro?.observe(el);
+    window.addEventListener("resize", updateSize);
+    return () => {
+      ro?.disconnect();
+      window.removeEventListener("resize", updateSize);
+    };
+  }, []);
 
-  if (useGoogle && !googleError) {
-    return (
-      <div className={`relative w-full rounded-card overflow-hidden border border-borderSubtle ${heightClass}`}>
-        <div ref={mapContainerRef} className="w-full h-full" />
-        {pickMode && (
-          <div className="absolute top-3 left-3 bg-surface/95 text-ink px-3 py-1.5 rounded-full text-xs font-semibold shadow border border-borderSubtle flex items-center gap-1.5">
-            <Navigation className="w-3.5 h-3.5 text-forest" />
-            Tap map to pick coordinates
-          </div>
-        )}
-      </div>
-    );
-  }
+  // Re-center and choose best zoom when external center or routePath changes
+  useEffect(() => {
+    if (routePath && routePath.length >= 2) {
+      const lats = routePath.map((p) => p.lat);
+      const lngs = routePath.map((p) => p.lng);
+      const minLat = Math.min(...lats);
+      const maxLat = Math.max(...lats);
+      const minLng = Math.min(...lngs);
+      const maxLng = Math.max(...lngs);
+      setMapCenter({ lat: (minLat + maxLat) / 2, lng: (minLng + maxLng) / 2 });
+      const span = Math.max(maxLat - minLat, maxLng - minLng);
+      setZoom(span > 4 ? 6 : span > 2 ? 7 : span > 0.8 ? 8 : 10);
+      return;
+    }
+    setMapCenter(center);
+    if (pins.length > 1) {
+      const lats = pins.map((p) => p.lat);
+      const lngs = pins.map((p) => p.lng);
+      const span = Math.max(Math.max(...lats) - Math.min(...lats), Math.max(...lngs) - Math.min(...lngs));
+      setZoom(span > 4.5 ? 6 : span > 2 ? 7 : span > 0.7 ? 8 : 10);
+    } else if (pins.length === 1) {
+      setMapCenter({ lat: pins[0].lat, lng: pins[0].lng });
+      setZoom(11);
+    }
+  }, [center.lat, center.lng, routePath]);
 
-  // Offline / Local-coordinate Map (B9.4 OSM-attributed open coordinate layer)
-  const routePointsStr = (routePath || [])
-    .map((pt) => {
-      const p = project(pt.lat, pt.lng);
-      return `${p.x},${p.y}`;
-    })
-    .join(" ");
+  // Focus on selected pin when user clicks a card or marker
+  useEffect(() => {
+    if (!selectedId) return;
+    const hit = pins.find((p) => p.id === selectedId);
+    if (hit) {
+      setMapCenter({ lat: hit.lat, lng: hit.lng });
+      setZoom((z) => Math.max(z, 10));
+    }
+  }, [selectedId, pins]);
+
+  const centerWorldPx = useMemo(
+    () => latLngToWorldPx(mapCenter.lat, mapCenter.lng, zoom),
+    [mapCenter.lat, mapCenter.lng, zoom]
+  );
+
+  const topLeftWorldPx = useMemo(
+    () => ({
+      x: centerWorldPx.x - viewportSize.w / 2,
+      y: centerWorldPx.y - viewportSize.h / 2,
+    }),
+    [centerWorldPx, viewportSize]
+  );
+
+  // Compute visible 256x256 slippy tiles
+  const visibleTiles = useMemo(() => {
+    const maxTileIndex = Math.pow(2, zoom) - 1;
+    const minTileX = Math.floor(topLeftWorldPx.x / TILE_SIZE);
+    const maxTileX = Math.floor((topLeftWorldPx.x + viewportSize.w) / TILE_SIZE);
+    const minTileY = Math.max(0, Math.floor(topLeftWorldPx.y / TILE_SIZE));
+    const maxTileY = Math.min(maxTileIndex, Math.floor((topLeftWorldPx.y + viewportSize.h) / TILE_SIZE));
+
+    const tiles: Array<{ key: string; url: string; left: number; top: number }> = [];
+    for (let tx = minTileX; tx <= maxTileX; tx++) {
+      const wrappedTx = ((tx % (maxTileIndex + 1)) + (maxTileIndex + 1)) % (maxTileIndex + 1);
+      for (let ty = minTileY; ty <= maxTileY; ty++) {
+        const left = Math.round(tx * TILE_SIZE - topLeftWorldPx.x);
+        const top = Math.round(ty * TILE_SIZE - topLeftWorldPx.y);
+        const url =
+          tileStyle === "topo"
+            ? `https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/${zoom}/${ty}/${wrappedTx}`
+            : `https://tile.openstreetmap.org/${zoom}/${wrappedTx}/${ty}.png`;
+        tiles.push({
+          key: `${tileStyle}-${zoom}-${wrappedTx}-${ty}`,
+          url,
+          left,
+          top,
+        });
+      }
+    }
+    return tiles;
+  }, [zoom, topLeftWorldPx, viewportSize, tileStyle]);
+
+  const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    if ((e.target as HTMLElement).closest("button")) return;
+    e.currentTarget.setPointerCapture(e.pointerId);
+    setDragging(true);
+    dragStartRef.current = {
+      clientX: e.clientX,
+      clientY: e.clientY,
+      startCenterPx: { ...centerWorldPx },
+      moved: false,
+    };
+  };
+
+  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    const st = dragStartRef.current;
+    if (!st) return;
+    const dx = e.clientX - st.clientX;
+    const dy = e.clientY - st.clientY;
+    if (Math.abs(dx) > 4 || Math.abs(dy) > 4) {
+      st.moved = true;
+    }
+    const nextPx = st.startCenterPx.x - dx;
+    const nextPy = st.startCenterPx.y - dy;
+    setMapCenter(worldPxToLatLng(nextPx, nextPy, zoom));
+  };
+
+  const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+    const st = dragStartRef.current;
+    dragStartRef.current = null;
+    setDragging(false);
+    if (!st) return;
+
+    if (!st.moved && pickMode && onPickCoordinate && containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect();
+      const clickWorldX = topLeftWorldPx.x + (e.clientX - rect.left);
+      const clickWorldY = topLeftWorldPx.y + (e.clientY - rect.top);
+      onPickCoordinate(worldPxToLatLng(clickWorldX, clickWorldY, zoom));
+    }
+  };
+
+  const routeSvgPoints = useMemo(() => {
+    if (!routePath || routePath.length < 2) return "";
+    return routePath
+      .map((pt) => {
+        const w = latLngToWorldPx(pt.lat, pt.lng, zoom);
+        return `${Math.round(w.x - topLeftWorldPx.x)},${Math.round(w.y - topLeftWorldPx.y)}`;
+      })
+      .join(" ");
+  }, [routePath, zoom, topLeftWorldPx]);
+
+  const resetView = () => {
+    setMapCenter(center);
+    setZoom(8);
+  };
 
   return (
     <div
-      className={`relative w-full rounded-card overflow-hidden border border-borderSubtle bg-[#E7EFEA] dark:bg-[#14201C] ${heightClass}`}
-      aria-label="North-East India interactive coordinate map"
+      ref={containerRef}
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      onDoubleClick={() => setZoom((z) => Math.min(15, z + 1))}
+      className={`relative w-full rounded-card overflow-hidden border border-borderSubtle bg-[#DCE7E1] dark:bg-[#14201C] select-none ${
+        pickMode ? "cursor-crosshair" : dragging ? "cursor-grabbing" : "cursor-grab"
+      } ${heightClass}`}
+      aria-label="North-East India interactive street and terrain map"
     >
-      <svg
-        viewBox="0 0 800 460"
-        className="w-full h-full select-none"
-        style={{ transform: `scale(${zoom})`, transformOrigin: "center center", transition: "transform 150ms ease" }}
-        onClick={(e) => {
-          if (!pickMode || !onPickCoordinate) return;
-          const rect = e.currentTarget.getBoundingClientRect();
-          const x = ((e.clientX - rect.left) / rect.width) * 800;
-          const y = ((e.clientY - rect.top) / rect.height) * 460;
-          onPickCoordinate(unproject(x, y));
-        }}
-      >
-        {/* Subtle elevation grid + Brahmaputra river silhouette */}
-        <defs>
-          <pattern id="neGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeOpacity="0.07" strokeWidth="1" />
-          </pattern>
-        </defs>
-        <rect width="800" height="460" fill="url(#neGrid)" className="text-forest" />
-        <path
-          d="M 650 130 Q 520 165 400 205 T 230 225 T 140 275"
-          fill="none"
-          stroke="#2A6F97"
-          strokeOpacity="0.35"
-          strokeWidth="9"
-          strokeLinecap="round"
-        />
+      {/* Real Slippy Map Tiles Layer */}
+      {isOnline && (
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          {visibleTiles.map((t) => (
+            <img
+              key={t.key}
+              src={t.url}
+              alt=""
+              draggable={false}
+              style={{
+                position: "absolute",
+                left: `${t.left}px`,
+                top: `${t.top}px`,
+                width: `${TILE_SIZE}px`,
+                height: `${TILE_SIZE}px`,
+              }}
+              className="max-w-none select-none"
+            />
+          ))}
+        </div>
+      )}
 
-        {/* State labels */}
-        {STATE_CENTROIDS.map((st) => {
-          const p = project(st.lat, st.lng);
-          return (
-            <g key={st.code} transform={`translate(${p.x}, ${p.y})`}>
-              <circle r="26" fill="#1F5E4B" fillOpacity="0.08" />
-              <text
-                textAnchor="middle"
-                dy="4"
-                className="fill-inkMuted text-[11px] font-semibold uppercase tracking-wider"
-              >
-                {st.name}
-              </text>
-            </g>
-          );
-        })}
-
-        {/* Optional route polyline */}
-        {routePath && routePath.length >= 2 && (
+      {/* Route Polyline Layer */}
+      {routeSvgPoints && (
+        <svg className="absolute inset-0 w-full h-full pointer-events-none">
           <polyline
             fill="none"
-            stroke="#2A6F97"
-            strokeWidth="4"
-            strokeDasharray="8 6"
-            points={routePointsStr}
+            stroke="#FFFFFF"
+            strokeWidth="7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            points={routeSvgPoints}
           />
-        )}
+          <polyline
+            fill="none"
+            stroke="#1F5E4B"
+            strokeWidth="4.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            points={routeSvgPoints}
+          />
+        </svg>
+      )}
 
-        {/* Pins */}
+      {/* Interactive Pin Markers Layer */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {pins.map((pin) => {
-          const p = project(pin.lat, pin.lng);
-          const isSelected = selectedId === pin.id || pin.highlight;
-          const catColor =
-            pin.category === "food"
-              ? "#D9A441"
-              : pin.category === "culture"
-              ? "#7A4E2D"
-              : pin.category === "stay" || pin.category === "transport"
-              ? "#2A6F97"
-              : pin.category === "hospital" || pin.category === "police"
-              ? "#A31C24"
-              : "#1F5E4B";
-          const fill = isSelected ? "#C8401C" : catColor;
-          const stroke = pin.category === "food" && !isSelected ? "#22262A" : "#FFFFFF";
+          const w = latLngToWorldPx(pin.lat, pin.lng, zoom);
+          const x = Math.round(w.x - topLeftWorldPx.x);
+          const y = Math.round(w.y - topLeftWorldPx.y);
+          if (x < -80 || x > viewportSize.w + 80 || y < -80 || y > viewportSize.h + 80) {
+            return null;
+          }
+          const isSelected = selectedId === pin.id || Boolean(pin.highlight);
+          const pinColor = getPinColor(pin.category, isSelected);
+
           return (
-            <g
+            <button
               key={pin.id}
-              transform={`translate(${p.x}, ${p.y})`}
-              className="cursor-pointer"
+              type="button"
               onClick={(ev) => {
                 ev.stopPropagation();
                 onSelectPin?.(pin);
               }}
+              style={{
+                position: "absolute",
+                left: `${x}px`,
+                top: `${y}px`,
+                transform: "translate(-50%, -100%)",
+                zIndex: isSelected ? 25 : 15,
+              }}
+              className="pointer-events-auto group flex flex-col items-center focus:outline-none"
+              title={pin.label}
             >
-              <circle
-                r={isSelected ? 11 : 7.5}
-                fill={fill}
-                stroke={stroke}
-                strokeWidth="2.5"
+              <span
+                style={{
+                  backgroundColor: isSelected ? "#C8401C" : "#183D32",
+                  color: "#FFFFFF",
+                }}
+                className={`px-2 py-0.5 rounded-md text-[11px] font-semibold shadow-md whitespace-nowrap mb-1 border border-white/80 transition-transform ${
+                  isSelected ? "scale-105" : "group-hover:scale-105"
+                }`}
+              >
+                {pin.label}
+              </span>
+              <span
+                style={{ backgroundColor: pinColor }}
+                className="w-4 h-4 rounded-full border-2 border-white shadow-md"
               />
-              <title>{pin.label}</title>
-            </g>
+            </button>
           );
         })}
-      </svg>
+      </div>
 
-      {/* Controls & Attribution */}
-      <div className="absolute top-3 left-3 flex flex-wrap gap-2">
-        <span className="bg-surface/95 text-ink px-3 py-1.5 rounded-full text-xs font-medium border border-borderSubtle shadow-sm flex items-center gap-1.5">
-          <MapPin className="w-3.5 h-3.5 text-forest" />
-          {!isOnline
-            ? "Offline Coordinate Map"
-            : googleError
-            ? "Fallback Map View"
-            : "Interactive NE Map"}
+      {/* Top-Left Status & Layer Switcher */}
+      <div className="absolute top-3 left-3 z-30 flex flex-wrap items-center gap-2">
+        <span
+          style={{ backgroundColor: "rgba(255,255,255,0.94)", color: "#22262A" }}
+          className="px-3 py-1.5 rounded-full text-xs font-semibold border border-borderSubtle shadow-sm flex items-center gap-1.5"
+        >
+          <MapPin className="w-3.5 h-3.5 text-[#1F5E4B]" />
+          {!isOnline ? "Offline Coordinate View" : tileStyle === "topo" ? "Topographic Terrain Map" : "North-East Street & Highway Map"}
         </span>
+
+        {isOnline && (
+          <button
+            type="button"
+            onClick={() => setTileStyle((s) => (s === "osm" ? "topo" : "osm"))}
+            style={{ backgroundColor: "rgba(255,255,255,0.94)", color: "#183D32" }}
+            className="px-3 py-1.5 rounded-full text-xs font-semibold border border-borderSubtle shadow-sm flex items-center gap-1.5 hover:opacity-95"
+          >
+            <Layers className="w-3.5 h-3.5" />
+            {tileStyle === "osm" ? "Switch to Terrain" : "Switch to Street"}
+          </button>
+        )}
+
         {pickMode && (
-          <span className="bg-forest text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-sm">
-            Click anywhere on map to pick point
+          <span
+            style={{ backgroundColor: "#1F5E4B", color: "#FFFFFF" }}
+            className="px-3 py-1.5 rounded-full text-xs font-semibold shadow-sm flex items-center gap-1.5"
+          >
+            <Navigation className="w-3.5 h-3.5" />
+            Click anywhere on map to pick coordinates
           </span>
         )}
       </div>
 
-      <div className="absolute top-3 right-3 flex flex-col gap-1">
+      {/* Top-Right Zoom & Reset Controls */}
+      <div className="absolute top-3 right-3 z-30 flex flex-col gap-1.5">
         <button
           type="button"
-          onClick={() => setZoom((z) => Math.min(2.2, Number((z + 0.25).toFixed(2))))}
-          className="w-10 h-10 rounded-xl bg-surface/95 border border-borderSubtle flex items-center justify-center shadow-sm hover:bg-mutedSurface"
+          onClick={() => setZoom((z) => Math.min(15, z + 1))}
+          style={{ backgroundColor: "rgba(255,255,255,0.95)", color: "#22262A" }}
+          className="w-10 h-10 rounded-xl border border-borderSubtle flex items-center justify-center shadow-sm hover:opacity-90"
           aria-label="Zoom in map"
+          title="Zoom in"
         >
           <ZoomIn className="w-4 h-4" />
         </button>
         <button
           type="button"
-          onClick={() => setZoom((z) => Math.max(1, Number((z - 0.25).toFixed(2))))}
-          className="w-10 h-10 rounded-xl bg-surface/95 border border-borderSubtle flex items-center justify-center shadow-sm hover:bg-mutedSurface"
+          onClick={() => setZoom((z) => Math.max(6, z - 1))}
+          style={{ backgroundColor: "rgba(255,255,255,0.95)", color: "#22262A" }}
+          className="w-10 h-10 rounded-xl border border-borderSubtle flex items-center justify-center shadow-sm hover:opacity-90"
           aria-label="Zoom out map"
+          title="Zoom out"
         >
           <ZoomOut className="w-4 h-4" />
         </button>
+        <button
+          type="button"
+          onClick={resetView}
+          style={{ backgroundColor: "rgba(255,255,255,0.95)", color: "#22262A" }}
+          className="w-10 h-10 rounded-xl border border-borderSubtle flex items-center justify-center shadow-sm hover:opacity-90"
+          aria-label="Reset map view"
+          title="Reset map view"
+        >
+          <RotateCcw className="w-4 h-4" />
+        </button>
       </div>
 
-      <div className="absolute bottom-0 inset-x-0 h-7 bg-surface/90 border-t border-borderSubtle px-3 flex items-center justify-end text-[11px] text-inkMuted z-10">
-        Offline map data © OpenStreetMap contributors
+      {/* Bottom Attribution Strip */}
+      <div
+        style={{ backgroundColor: "rgba(255,255,255,0.9)", color: "#525B63" }}
+        className="absolute bottom-0 inset-x-0 h-7 border-t border-borderSubtle px-3 flex items-center justify-between text-[11px] z-20"
+      >
+        <span className="flex items-center gap-1 font-medium">
+          <Compass className="w-3 h-3 text-[#1F5E4B]" />
+          Drag to pan · Double-click or use +/− to zoom (Z{zoom})
+        </span>
+        <span>
+          {tileStyle === "topo"
+            ? "Tiles © Esri, USGS, NOAA · Data © OpenStreetMap"
+            : "Map data © OpenStreetMap contributors"}
+        </span>
       </div>
     </div>
   );
