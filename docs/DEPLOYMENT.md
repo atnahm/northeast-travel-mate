@@ -4,16 +4,27 @@ This repository is pre-configured with strict secret exclusions (`.gitignore`, `
 
 ---
 
-## 1. Push to GitHub
+## 1. Push to GitHub & Automated CI/CD Pipeline
 
-1. Create a new empty repository on GitHub (for example, `https://github.com/<your-username>/northeast-travel-mate.git`).
-2. Link your local Git repository and push the `main` branch:
-   ```powershell
-   git remote add origin https://github.com/<your-username>/northeast-travel-mate.git
-   git branch -M main
-   git push -u origin main
-   ```
-   > **Security check**: `.env`, `apps/web/.env.local`, and `service-account.json` are excluded by `.gitignore` and will never be pushed to GitHub.
+This repository includes an automated GitHub Actions CI/CD pipeline at `.github/workflows/ci-cd.yml` that runs on every push and pull request to `main`:
+1. **`backend-test`**: Sets up Python 3.12, seeds the 8-state baseline data, and runs all 29 FastAPI/Permit/Train pytest tests.
+2. **`frontend-build`**: Sets up Node.js 22, runs `tsc --noEmit` strict typechecking, and verifies the production Next.js PWA build (`next build`).
+3. **`docker-publish-and-deploy`** (on `main` pushes):
+   - Builds and publishes ready-to-run Docker container images to **GitHub Container Registry (GHCR)** using the built-in `GITHUB_TOKEN`:
+     - `ghcr.io/atnahm/northeast-travel-mate/api:latest`
+     - `ghcr.io/atnahm/northeast-travel-mate/web:latest`
+   - Automatically triggers cloud deployment webhooks if added under **GitHub Repo Settings -> Secrets and variables -> Actions**:
+     - `RENDER_API_DEPLOY_HOOK_URL`
+     - `RENDER_WEB_DEPLOY_HOOK_URL`
+     - `VERCEL_DEPLOY_HOOK_URL`
+
+### Commands to Push
+```powershell
+git remote add origin https://github.com/atnahm/northeast-travel-mate.git
+git branch -M main
+git push -u origin main
+```
+> **Security check**: `.env`, `apps/web/.env.local`, and `service-account.json` are excluded by `.gitignore` and will never be pushed to GitHub.
 
 ---
 
