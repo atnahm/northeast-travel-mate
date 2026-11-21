@@ -19,6 +19,7 @@ import {
 import { Button, Card } from "@/components/ui/Primitives";
 import { useAppStore } from "@/lib/store/app-store";
 import {
+  ensureFirebaseRuntimeConfig,
   isFirebaseWebConfigured,
   loginWithEmailFirebase,
   registerWithEmailFirebase,
@@ -109,7 +110,15 @@ function OnboardingFlowInner() {
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
 
-  const firebaseReady = isFirebaseWebConfigured();
+  const [firebaseReady, setFirebaseReady] = useState<boolean>(isFirebaseWebConfigured());
+
+  useEffect(() => {
+    if (!firebaseReady) {
+      ensureFirebaseRuntimeConfig().then((ready) => {
+        if (ready) setFirebaseReady(true);
+      });
+    }
+  }, [firebaseReady]);
 
   // Pre-populate fields if editing existing profile from Settings
   useEffect(() => {

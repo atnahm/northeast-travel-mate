@@ -12,18 +12,46 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY || "AIzaSyAtJBZC61djDk1chv-P_wt3r2LUgviDfzQ",
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || "ne-travel-mate.firebaseapp.com",
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || "ne-travel-mate",
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || "ne-travel-mate.firebasestorage.app",
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || "946815738635",
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID || "1:946815738635:web:0212935b918a3a5f13b80e",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY || "",
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || "",
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || "",
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || "",
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || "",
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID || "",
 };
 
 let emulatorConnected = false;
+let runtimeConfigLoaded = false;
 
 export function isFirebaseWebConfigured(): boolean {
   return Boolean(firebaseConfig.apiKey && firebaseConfig.projectId);
+}
+
+/**
+ * Loads public Firebase Web SDK configuration from the server's runtime environment
+ * (/api/auth/config) when the Docker image was built without build-time NEXT_PUBLIC_* args.
+ */
+export async function ensureFirebaseRuntimeConfig(): Promise<boolean> {
+  if (isFirebaseWebConfigured()) return true;
+  if (runtimeConfigLoaded || typeof window === "undefined") return isFirebaseWebConfigured();
+  runtimeConfigLoaded = true;
+  try {
+    const resp = await fetch("/api/auth/config", { cache: "no-store" });
+    if (!resp.ok) return false;
+    const data = await resp.json();
+    if (data?.apiKey && data?.projectId) {
+      firebaseConfig.apiKey = String(data.apiKey);
+      firebaseConfig.authDomain = String(data.authDomain || "");
+      firebaseConfig.projectId = String(data.projectId);
+      firebaseConfig.storageBucket = String(data.storageBucket || "");
+      firebaseConfig.messagingSenderId = String(data.messagingSenderId || "");
+      firebaseConfig.appId = String(data.appId || "");
+      return true;
+    }
+  } catch {
+    // ignore network failure and fall back to local/PoC session mode
+  }
+  return isFirebaseWebConfigured();
 }
 
 export function getFirebaseWebApp(): FirebaseApp | null {

@@ -24,6 +24,7 @@ apps/web/out/
 dist/
 build/
 .turbo/
+*.tsbuildinfo
 
 # Local fallback NoSQL storage & uploads
 data/.local_db/

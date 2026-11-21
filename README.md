@@ -1,5 +1,9 @@
 # NorthEast TravelMate (NE Mate) — PS08: North East Tourism Explorer
 
+<p align="center">
+  <img src="docs/assets/logo.png" alt="NorthEast TravelMate Logo" width="120" />
+</p>
+
 **Problem Statement**: `PS08 — TravelMateNE: North East Tourism Explorer`  
 **Domain**: `Tourism & Culture`
 
@@ -71,3 +75,15 @@
    Open [http://localhost:3000](http://localhost:3000).
 
 For cloud deployment instructions (Render, Vercel, Docker Compose, and GitHub Actions CI/CD), see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
+---
+
+## 4. Documentation Index
+
+| Document | Contents |
+| :--- | :--- |
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | System architecture diagram, monorepo directory structure, and full `/api/v1/*` REST API reference. |
+| [docs/SECURITY.md](docs/SECURITY.md) | Zero secret leakage policy, HttpOnly session cookie flow, server-side RBAC, and DPDP Act 2023 compliance. |
+| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Step-by-step cloud deployment guide (Render Blueprint, Vercel, Docker Compose) and GitHub Actions CI/CD. |
+| [docs/FIREBASE_SETUP.md](docs/FIREBASE_SETUP.md) | Firebase Authentication, Cloud Firestore database seeding, and security rules setup. |
+| [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) | Tokenized Light & Dark mode color system, WCAG 2.2 AA contrast audit, typography, and component standards. |

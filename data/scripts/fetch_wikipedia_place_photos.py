@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 import httpx
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT_DIR = REPO_ROOT / "apps" / "web" / "public" / "places"
 
 WIKI_TITLES = {
