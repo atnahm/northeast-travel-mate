@@ -1,0 +1,1893 @@
+{
+  "_meta": {
+    "purpose": "NFR & North-East India station codes, names, and coordinates for zero-API local autocomplete.",
+    "coordsSource": "Curated NE railheads + DataMeet Indian Railways open dataset (github.com/datameet/railways).",
+    "updatedOn": "2026-11-21",
+    "stationCount": 269
+  },
+  "stations": [
+    {
+      "code": "GHY",
+      "name": "Guwahati",
+      "stateCode": "AS",
+      "lat": 26.182,
+      "lng": 91.751
+    },
+    {
+      "code": "KYQ",
+      "name": "Kamakhya Jn",
+      "stateCode": "AS",
+      "lat": 26.164,
+      "lng": 91.703
+    },
+    {
+      "code": "DBRG",
+      "name": "Dibrugarh",
+      "stateCode": "AS",
+      "lat": 27.4728,
+      "lng": 94.912
+    },
+    {
+      "code": "NTSK",
+      "name": "New Tinsukia Jn",
+      "stateCode": "AS",
+      "lat": 27.4905,
+      "lng": 95.3633
+    },
+    {
+      "code": "MXN",
+      "name": "Mariani Jn",
+      "stateCode": "AS",
+      "lat": 26.656,
+      "lng": 94.316
+    },
+    {
+      "code": "JTTN",
+      "name": "Jorhat Town",
+      "stateCode": "AS",
+      "lat": 26.757,
+      "lng": 94.213
+    },
+    {
+      "code": "FKG",
+      "name": "Furkating Jn",
+      "stateCode": "AS",
+      "lat": 26.48,
+      "lng": 93.95
+    },
+    {
+      "code": "LMG",
+      "name": "Lumding Jn",
+      "stateCode": "AS",
+      "lat": 25.752,
+      "lng": 93.175
+    },
+    {
+      "code": "SCL",
+      "name": "Silchar",
+      "stateCode": "AS",
+      "lat": 24.82,
+      "lng": 92.79
+    },
+    {
+      "code": "BPB",
+      "name": "Badarpur Jn",
+      "stateCode": "AS",
+      "lat": 24.865,
+      "lng": 92.596
+    },
+    {
+      "code": "RNY",
+      "name": "Rangapara North Jn",
+      "stateCode": "AS",
+      "lat": 26.82,
+      "lng": 92.62
+    },
+    {
+      "code": "DMV",
+      "name": "Dimapur",
+      "stateCode": "NL",
+      "lat": 25.912,
+      "lng": 93.728
+    },
+    {
+      "code": "NHLN",
+      "name": "Naharlagun",
+      "stateCode": "AR",
+      "lat": 27.1,
+      "lng": 93.69
+    },
+    {
+      "code": "SANG",
+      "name": "Sairang",
+      "stateCode": "MZ",
+      "lat": 23.81,
+      "lng": 92.67
+    },
+    {
+      "code": "AGTL",
+      "name": "Agartala",
+      "stateCode": "TR",
+      "lat": 23.797,
+      "lng": 91.285
+    },
+    {
+      "code": "DMR",
+      "name": "Dharmanagar",
+      "stateCode": "TR",
+      "lat": 24.374,
+      "lng": 92.167
+    },
+    {
+      "code": "NJP",
+      "name": "New Jalpaiguri Jn",
+      "stateCode": "WB",
+      "lat": 26.6836,
+      "lng": 88.4426
+    },
+    {
+      "code": "ABSA",
+      "name": "Ambassa",
+      "stateCode": "TR",
+      "lat": 23.9305,
+      "lng": 91.8608
+    },
+    {
+      "code": "ABW",
+      "name": "Abutara Halt",
+      "stateCode": "WB",
+      "lat": 26.0708,
+      "lng": 89.5869
+    },
+    {
+      "code": "AGI",
+      "name": "AMGURI",
+      "stateCode": "AS",
+      "lat": 26.8126,
+      "lng": 94.524
+    },
+    {
+      "code": "AJRE",
+      "name": "AUJARI",
+      "stateCode": "AS",
+      "lat": 26.1446,
+      "lng": 92.2668
+    },
+    {
+      "code": "ALGP",
+      "name": "Algapur",
+      "stateCode": "AS",
+      "lat": 24.7548,
+      "lng": 92.5959
+    },
+    {
+      "code": "AONI",
+      "name": "Amoni",
+      "stateCode": "AS",
+      "lat": 26.4481,
+      "lng": 92.9196
+    },
+    {
+      "code": "APD",
+      "name": "Alipur Duar",
+      "stateCode": "WB",
+      "lat": 26.4793,
+      "lng": 89.5207
+    },
+    {
+      "code": "APDC",
+      "name": "Alipur Duar Court",
+      "stateCode": "WB",
+      "lat": 26.4993,
+      "lng": 89.5268
+    },
+    {
+      "code": "APDJ",
+      "name": "ALIPUR DUAR JN",
+      "stateCode": "WB",
+      "lat": 26.5233,
+      "lng": 89.534
+    },
+    {
+      "code": "APU",
+      "name": "Anipur",
+      "stateCode": "AS",
+      "lat": 24.5457,
+      "lng": 92.4345
+    },
+    {
+      "code": "ARCL",
+      "name": "ARUNACHAL",
+      "stateCode": "AS",
+      "lat": 24.8556,
+      "lng": 92.743
+    },
+    {
+      "code": "AYU",
+      "name": "ABHAYAPURI ASSAM",
+      "stateCode": "AS",
+      "lat": 26.3566,
+      "lng": 90.6417
+    },
+    {
+      "code": "AZA",
+      "name": "AZARA",
+      "stateCode": "AS",
+      "lat": 26.0993,
+      "lng": 91.6139
+    },
+    {
+      "code": "BBGN",
+      "name": "Barua Bamungaon",
+      "stateCode": "AS",
+      "lat": 26.6622,
+      "lng": 93.9447
+    },
+    {
+      "code": "BDT",
+      "name": "BORDUBI ROAD",
+      "stateCode": "AS",
+      "lat": 27.3992,
+      "lng": 95.3146
+    },
+    {
+      "code": "BEE",
+      "name": "Bebejia",
+      "stateCode": "AS",
+      "lat": 26.3102,
+      "lng": 92.641
+    },
+    {
+      "code": "BFD",
+      "name": "BORHAT",
+      "stateCode": "AS",
+      "lat": 27.1643,
+      "lng": 95.2775
+    },
+    {
+      "code": "BGLI",
+      "name": "Bargolai",
+      "stateCode": "AS",
+      "lat": 27.2875,
+      "lng": 95.7035
+    },
+    {
+      "code": "BHGN",
+      "name": "BHILGAON",
+      "stateCode": "AS",
+      "lat": 26.3544,
+      "lng": 93.9261
+    },
+    {
+      "code": "BHRB",
+      "name": "Bhairabi",
+      "stateCode": "MZ",
+      "lat": 24.1955,
+      "lng": 92.5411
+    },
+    {
+      "code": "BHZ",
+      "name": "BIHARA",
+      "stateCode": "AS",
+      "lat": 24.9628,
+      "lng": 92.6891
+    },
+    {
+      "code": "BJY",
+      "name": "Bangalbaree",
+      "stateCode": "WB",
+      "lat": 25.6265,
+      "lng": 88.2294
+    },
+    {
+      "code": "BKS",
+      "name": "Balikotia",
+      "stateCode": "AS",
+      "lat": 26.4683,
+      "lng": 92.5704
+    },
+    {
+      "code": "BLMR",
+      "name": "Bhalukmara",
+      "stateCode": "AS",
+      "lat": 26.6855,
+      "lng": 94.1437
+    },
+    {
+      "code": "BLPR",
+      "name": "Badulipar",
+      "stateCode": "AS",
+      "lat": 26.6468,
+      "lng": 93.8791
+    },
+    {
+      "code": "BMGR",
+      "name": "Bamangram",
+      "stateCode": "WB",
+      "lat": 25.6221,
+      "lng": 88.1913
+    },
+    {
+      "code": "BNQ",
+      "name": "BANARHAT",
+      "stateCode": "WB",
+      "lat": 26.7979,
+      "lng": 89.0257
+    },
+    {
+      "code": "BNV",
+      "name": "BINNAGURI",
+      "stateCode": "WB",
+      "lat": 26.7471,
+      "lng": 89.0524
+    },
+    {
+      "code": "BOJ",
+      "name": "BHOJO",
+      "stateCode": "AS",
+      "lat": 27.0636,
+      "lng": 95.0324
+    },
+    {
+      "code": "BOKO",
+      "name": "BOKO",
+      "stateCode": "AS",
+      "lat": 25.9998,
+      "lng": 91.2197
+    },
+    {
+      "code": "BPG",
+      "name": "BADURPUR GHAT",
+      "stateCode": "AS",
+      "lat": 24.8729,
+      "lng": 92.5811
+    },
+    {
+      "code": "BRGM",
+      "name": "Baraigram Junction",
+      "stateCode": "AS",
+      "lat": 24.6841,
+      "lng": 92.3441
+    },
+    {
+      "code": "BRHU",
+      "name": "BARAHU",
+      "stateCode": "AS",
+      "lat": 26.1204,
+      "lng": 92.1395
+    },
+    {
+      "code": "BRLF",
+      "name": "BAR LANGFER S",
+      "stateCode": "AS",
+      "lat": 25.7556,
+      "lng": 93.2251
+    },
+    {
+      "code": "BRNR",
+      "name": "BARUANAGAR",
+      "stateCode": "AS",
+      "lat": 27.144,
+      "lng": 95.2336
+    },
+    {
+      "code": "BRQ",
+      "name": "BAGRAKOT",
+      "stateCode": "WB",
+      "lat": 26.8706,
+      "lng": 88.586
+    },
+    {
+      "code": "BSI",
+      "name": "BASBARI",
+      "stateCode": "AS",
+      "lat": 26.1844,
+      "lng": 89.9004
+    },
+    {
+      "code": "BSW",
+      "name": "Baneswar",
+      "stateCode": "WB",
+      "lat": 26.3882,
+      "lng": 89.4945
+    },
+    {
+      "code": "BTDR",
+      "name": "Batadrowa Road",
+      "stateCode": "AS",
+      "lat": 26.4669,
+      "lng": 92.5381
+    },
+    {
+      "code": "BTZ",
+      "name": "BALIMARA",
+      "stateCode": "AS",
+      "lat": 27.2369,
+      "lng": 95.3336
+    },
+    {
+      "code": "BXG",
+      "name": "Bhanga",
+      "stateCode": "AS",
+      "lat": 24.8573,
+      "lng": 92.4574
+    },
+    {
+      "code": "BXJ",
+      "name": "BOKAJAN",
+      "stateCode": "AS",
+      "lat": 26.0184,
+      "lng": 93.7795
+    },
+    {
+      "code": "BXK",
+      "name": "BANDARKHAL",
+      "stateCode": "AS",
+      "lat": 25.0698,
+      "lng": 92.8007
+    },
+    {
+      "code": "BXP",
+      "name": "BARPATHAR",
+      "stateCode": "AS",
+      "lat": 26.2746,
+      "lng": 93.8997
+    },
+    {
+      "code": "BXT",
+      "name": "Bamanhat",
+      "stateCode": "WB",
+      "lat": 26.0763,
+      "lng": 89.628
+    },
+    {
+      "code": "BZGT",
+      "name": "Bazurghat",
+      "stateCode": "AS",
+      "lat": 24.6076,
+      "lng": 92.3834
+    },
+    {
+      "code": "CBZ",
+      "name": "Churaibari",
+      "stateCode": "TR",
+      "lat": 24.4336,
+      "lng": 92.2412
+    },
+    {
+      "code": "CFG",
+      "name": "CHAKITING",
+      "stateCode": "AS",
+      "lat": 26.5617,
+      "lng": 94.0957
+    },
+    {
+      "code": "CGF",
+      "name": "CHARALI",
+      "stateCode": "AS",
+      "lat": 27.4497,
+      "lng": 95.351
+    },
+    {
+      "code": "CGON",
+      "name": "CHAYGAON",
+      "stateCode": "AS",
+      "lat": 26.0641,
+      "lng": 91.3953
+    },
+    {
+      "code": "CGX",
+      "name": "Chargola",
+      "stateCode": "AS",
+      "lat": 24.8459,
+      "lng": 92.4168
+    },
+    {
+      "code": "CHB",
+      "name": "CHABUA",
+      "stateCode": "AS",
+      "lat": 27.4814,
+      "lng": 95.1721
+    },
+    {
+      "code": "CHBN",
+      "name": "Chandkhira Bagn",
+      "stateCode": "AS",
+      "lat": 24.5159,
+      "lng": 92.2874
+    },
+    {
+      "code": "CJA",
+      "name": "CHONGAJAN",
+      "stateCode": "AS",
+      "lat": 26.0623,
+      "lng": 93.8181
+    },
+    {
+      "code": "CKW",
+      "name": "CHALKHOA",
+      "stateCode": "AS",
+      "lat": 27.4657,
+      "lng": 94.9592
+    },
+    {
+      "code": "CLD",
+      "name": "CHALSA JN",
+      "stateCode": "WB",
+      "lat": 26.8822,
+      "lng": 88.7982
+    },
+    {
+      "code": "CMA",
+      "name": "Cinnamara",
+      "stateCode": "AS",
+      "lat": 26.7155,
+      "lng": 94.1694
+    },
+    {
+      "code": "CNE",
+      "name": "CHANDRANATHPUR",
+      "stateCode": "AS",
+      "lat": 24.985,
+      "lng": 92.7167
+    },
+    {
+      "code": "COB",
+      "name": "Cooch Behar",
+      "stateCode": "WB",
+      "lat": 26.303,
+      "lng": 89.6653
+    },
+    {
+      "code": "CPK",
+      "name": "CHAPARMUKH JN",
+      "stateCode": "AS",
+      "lat": 26.2023,
+      "lng": 92.5117
+    },
+    {
+      "code": "CRX",
+      "name": "CARRON",
+      "stateCode": "WB",
+      "lat": 26.8803,
+      "lng": 88.9704
+    },
+    {
+      "code": "DBB",
+      "name": "DHUBRI",
+      "stateCode": "AS",
+      "lat": 26.0231,
+      "lng": 89.978
+    },
+    {
+      "code": "DBRT",
+      "name": "DIBRUGARH TOWN",
+      "stateCode": "AS",
+      "lat": 27.4781,
+      "lng": 94.902
+    },
+    {
+      "code": "DBY",
+      "name": "Digboi",
+      "stateCode": "AS",
+      "lat": 27.3835,
+      "lng": 95.617
+    },
+    {
+      "code": "DBZ",
+      "name": "Dhing Bazar",
+      "stateCode": "AS",
+      "lat": 26.4559,
+      "lng": 92.481
+    },
+    {
+      "code": "DCA",
+      "name": "DAMCHARA",
+      "stateCode": "AS",
+      "lat": 25.0127,
+      "lng": 92.7497
+    },
+    {
+      "code": "DDM",
+      "name": "DAM DIM",
+      "stateCode": "WB",
+      "lat": 26.8592,
+      "lng": 88.6713
+    },
+    {
+      "code": "DDNI",
+      "name": "DUDHNOI",
+      "stateCode": "AS",
+      "lat": 26.0015,
+      "lng": 90.7619
+    },
+    {
+      "code": "DGU",
+      "name": "DIGARU",
+      "stateCode": "AS",
+      "lat": 26.1733,
+      "lng": 91.9779
+    },
+    {
+      "code": "DGX",
+      "name": "Dagaon",
+      "stateCode": "AS",
+      "lat": 26.4444,
+      "lng": 92.6137
+    },
+    {
+      "code": "DHH",
+      "name": "Dinhata",
+      "stateCode": "WB",
+      "lat": 26.0708,
+      "lng": 89.5869
+    },
+    {
+      "code": "DHNA",
+      "name": "Dhachna",
+      "stateCode": "BR",
+      "lat": 25.6465,
+      "lng": 87.9869
+    },
+    {
+      "code": "DHRY",
+      "name": "DHALPUKHURI",
+      "stateCode": "AS",
+      "lat": 25.9811,
+      "lng": 92.8806
+    },
+    {
+      "code": "DIU",
+      "name": "Dhing",
+      "stateCode": "AS",
+      "lat": 26.4531,
+      "lng": 92.4509
+    },
+    {
+      "code": "DJ",
+      "name": "Darjeeling",
+      "stateCode": "WB",
+      "lat": 27.0382,
+      "lng": 88.2633
+    },
+    {
+      "code": "DJA",
+      "name": "DAOTUHAJA",
+      "stateCode": "AS",
+      "lat": 25.2275,
+      "lng": 93.1622
+    },
+    {
+      "code": "DJG",
+      "name": "DULIAJAN",
+      "stateCode": "AS",
+      "lat": 27.3677,
+      "lng": 95.307
+    },
+    {
+      "code": "DJRZ",
+      "name": "To Darjeeling",
+      "stateCode": "WB",
+      "lat": 26.8521,
+      "lng": 88.3332
+    },
+    {
+      "code": "DKE",
+      "name": "DIHAKHO",
+      "stateCode": "AS",
+      "lat": 25.4279,
+      "lng": 93.1266
+    },
+    {
+      "code": "DKM",
+      "name": "DIKOM",
+      "stateCode": "AS",
+      "lat": 27.4642,
+      "lng": 95.0807
+    },
+    {
+      "code": "DLCR",
+      "name": "Dullabcherra",
+      "stateCode": "AS",
+      "lat": 24.5053,
+      "lng": 92.4777
+    },
+    {
+      "code": "DLDE",
+      "name": "DALDALI",
+      "stateCode": "AS",
+      "lat": 25.8202,
+      "lng": 93.5172
+    },
+    {
+      "code": "DLO",
+      "name": "DALGAON",
+      "stateCode": "WB",
+      "lat": 26.7154,
+      "lng": 89.1362
+    },
+    {
+      "code": "DLX",
+      "name": "Dalimgaon",
+      "stateCode": "WB",
+      "lat": 25.6405,
+      "lng": 88.3863
+    },
+    {
+      "code": "DMGN",
+      "name": "DHAMALGAON",
+      "stateCode": "AS",
+      "lat": 27.3256,
+      "lng": 94.8566
+    },
+    {
+      "code": "DML",
+      "name": "DHARAMTUL",
+      "stateCode": "AS",
+      "lat": 26.1891,
+      "lng": 92.3672
+    },
+    {
+      "code": "DPRA",
+      "name": "DHUP DHARA",
+      "stateCode": "AS",
+      "lat": 25.9798,
+      "lng": 91.066
+    },
+    {
+      "code": "DPU",
+      "name": "DIPHU",
+      "stateCode": "AS",
+      "lat": 25.8373,
+      "lng": 93.4384
+    },
+    {
+      "code": "DSR",
+      "name": "DHANSIRI",
+      "stateCode": "NL",
+      "lat": 25.8108,
+      "lng": 93.6136
+    },
+    {
+      "code": "DTC",
+      "name": "DITOKCHERRA",
+      "stateCode": "AS",
+      "lat": 25.0905,
+      "lng": 92.7987
+    },
+    {
+      "code": "DWT",
+      "name": "Dewan Hat",
+      "stateCode": "WB",
+      "lat": 26.303,
+      "lng": 89.6653
+    },
+    {
+      "code": "ELL",
+      "name": "Eraligu",
+      "stateCode": "AS",
+      "lat": 24.6654,
+      "lng": 92.3326
+    },
+    {
+      "code": "FLM",
+      "name": "Falimari",
+      "stateCode": "WB",
+      "lat": 26.0708,
+      "lng": 89.5869
+    },
+    {
+      "code": "GHUM",
+      "name": "Ghoom",
+      "stateCode": "WB",
+      "lat": 27.0086,
+      "lng": 88.2542
+    },
+    {
+      "code": "GKJ",
+      "name": "GOLAKGANJ",
+      "stateCode": "AS",
+      "lat": 26.1084,
+      "lng": 89.8306
+    },
+    {
+      "code": "GLGT",
+      "name": "Golaghat",
+      "stateCode": "AS",
+      "lat": 26.5086,
+      "lng": 93.9612
+    },
+    {
+      "code": "GLMA",
+      "name": "GULMA",
+      "stateCode": "WB",
+      "lat": 26.8028,
+      "lng": 88.4038
+    },
+    {
+      "code": "GLPT",
+      "name": "GOALPARA TOWN",
+      "stateCode": "AS",
+      "lat": 26.1265,
+      "lng": 90.6207
+    },
+    {
+      "code": "GRU",
+      "name": "GAROPARA",
+      "stateCode": "WB",
+      "lat": 26.6574,
+      "lng": 89.4853
+    },
+    {
+      "code": "GUP",
+      "name": "GAURIPUR",
+      "stateCode": "AS",
+      "lat": 26.0783,
+      "lng": 89.9521
+    },
+    {
+      "code": "HBN",
+      "name": "Haibargaon",
+      "stateCode": "AS",
+      "lat": 26.3556,
+      "lng": 92.6725
+    },
+    {
+      "code": "HJI",
+      "name": "HOJAI",
+      "stateCode": "AS",
+      "lat": 26.0018,
+      "lng": 92.8518
+    },
+    {
+      "code": "HKD",
+      "name": "Hailakandi",
+      "stateCode": "AS",
+      "lat": 24.6803,
+      "lng": 92.5679
+    },
+    {
+      "code": "HLX",
+      "name": "HILARA",
+      "stateCode": "AS",
+      "lat": 24.9518,
+      "lng": 92.6205
+    },
+    {
+      "code": "HOJ",
+      "name": "HAMITONGANJ",
+      "stateCode": "WB",
+      "lat": 26.6889,
+      "lng": 89.4168
+    },
+    {
+      "code": "HSA",
+      "name": "HASIMARA",
+      "stateCode": "WB",
+      "lat": 26.7269,
+      "lng": 89.3477
+    },
+    {
+      "code": "HTL",
+      "name": "HATIKHALI",
+      "stateCode": "AS",
+      "lat": 25.6111,
+      "lng": 93.0908
+    },
+    {
+      "code": "HWX",
+      "name": "HABAIPUR",
+      "stateCode": "AS",
+      "lat": 25.8719,
+      "lng": 92.9859
+    },
+    {
+      "code": "JGJN",
+      "name": "JUGIJAN",
+      "stateCode": "AS",
+      "lat": 26.028,
+      "lng": 92.8177
+    },
+    {
+      "code": "JGNR",
+      "name": "Jogendranagar",
+      "stateCode": "TR",
+      "lat": 23.8122,
+      "lng": 91.3105
+    },
+    {
+      "code": "JID",
+      "name": "JAGI ROAD",
+      "stateCode": "AS",
+      "lat": 26.1261,
+      "lng": 92.1975
+    },
+    {
+      "code": "JKB",
+      "name": "Jakhalabandha",
+      "stateCode": "AS",
+      "lat": 26.5638,
+      "lng": 92.9911
+    },
+    {
+      "code": "JMI",
+      "name": "JAMGURI",
+      "stateCode": "AS",
+      "lat": 26.3877,
+      "lng": 93.9604
+    },
+    {
+      "code": "JMK",
+      "name": "JAMUNAMUKH",
+      "stateCode": "AS",
+      "lat": 26.1082,
+      "lng": 92.7413
+    },
+    {
+      "code": "JMRA",
+      "name": "Jamira",
+      "stateCode": "AS",
+      "lat": 24.3072,
+      "lng": 92.5274
+    },
+    {
+      "code": "JPZ",
+      "name": "JOGIGHOPA",
+      "stateCode": "AS",
+      "lat": 26.2415,
+      "lng": 90.5764
+    },
+    {
+      "code": "JRBM",
+      "name": "JIRIBAM",
+      "stateCode": "AS",
+      "lat": 24.7988,
+      "lng": 93.1244
+    },
+    {
+      "code": "JRNA",
+      "name": "Jirania",
+      "stateCode": "TR",
+      "lat": 23.8274,
+      "lng": 91.432
+    },
+    {
+      "code": "JRX",
+      "name": "Juriagaon",
+      "stateCode": "AS",
+      "lat": 26.4411,
+      "lng": 92.6445
+    },
+    {
+      "code": "JTG",
+      "name": "Jatinga",
+      "stateCode": "AS",
+      "lat": 25.1326,
+      "lng": 93.008
+    },
+    {
+      "code": "JTK",
+      "name": "Jhitkia",
+      "stateCode": "WB",
+      "lat": 25.6261,
+      "lng": 88.053
+    },
+    {
+      "code": "JWNR",
+      "name": "Jawaharnagar",
+      "stateCode": "TR",
+      "lat": 23.9249,
+      "lng": 91.8956
+    },
+    {
+      "code": "KAJ",
+      "name": "Kaliyaganj",
+      "stateCode": "WB",
+      "lat": 25.6393,
+      "lng": 88.3304
+    },
+    {
+      "code": "KAU",
+      "name": "Kachna",
+      "stateCode": "WB",
+      "lat": 25.6337,
+      "lng": 88.0246
+    },
+    {
+      "code": "KCF",
+      "name": "KALCHINI",
+      "stateCode": "WB",
+      "lat": 26.6875,
+      "lng": 89.4475
+    },
+    {
+      "code": "KGN",
+      "name": "Kurseong",
+      "stateCode": "WB",
+      "lat": 26.8774,
+      "lng": 88.277
+    },
+    {
+      "code": "KHKT",
+      "name": "KHOTKHOTI",
+      "stateCode": "AS",
+      "lat": 25.9525,
+      "lng": 93.7548
+    },
+    {
+      "code": "KKET",
+      "name": "KAMRUP KHETRI",
+      "stateCode": "AS",
+      "lat": 26.1272,
+      "lng": 92.0819
+    },
+    {
+      "code": "KKGT",
+      "name": "Kalkalighat",
+      "stateCode": "AS",
+      "lat": 24.5804,
+      "lng": 92.2953
+    },
+    {
+      "code": "KLCR",
+      "name": "Katlicherra",
+      "stateCode": "AS",
+      "lat": 24.453,
+      "lng": 92.547
+    },
+    {
+      "code": "KNBR",
+      "name": "Kanaibazar",
+      "stateCode": "AS",
+      "lat": 24.6387,
+      "lng": 92.3267
+    },
+    {
+      "code": "KQI",
+      "name": "KALACHAND",
+      "stateCode": "AS",
+      "lat": 25.3391,
+      "lng": 93.1331
+    },
+    {
+      "code": "KQY",
+      "name": "KHARIKATIA",
+      "stateCode": "AS",
+      "lat": 26.6159,
+      "lng": 94.2481
+    },
+    {
+      "code": "KRNI",
+      "name": "KRISHNAI",
+      "stateCode": "AS",
+      "lat": 26.0709,
+      "lng": 90.6826
+    },
+    {
+      "code": "KTGM",
+      "name": "Kayasthagram",
+      "stateCode": "AS",
+      "lat": 24.7212,
+      "lng": 92.3532
+    },
+    {
+      "code": "KTX",
+      "name": "KATAKHAL JN",
+      "stateCode": "AS",
+      "lat": 24.8344,
+      "lng": 92.6271
+    },
+    {
+      "code": "KUGT",
+      "name": "Kumarghat",
+      "stateCode": "TR",
+      "lat": 24.1506,
+      "lng": 92.0348
+    },
+    {
+      "code": "KUTI",
+      "name": "Khumtai",
+      "stateCode": "AS",
+      "lat": 26.6264,
+      "lng": 93.8643
+    },
+    {
+      "code": "KWM",
+      "name": "KAMPUR",
+      "stateCode": "AS",
+      "lat": 26.1606,
+      "lng": 92.6578
+    },
+    {
+      "code": "KXJ",
+      "name": "Karimganj Junction",
+      "stateCode": "AS",
+      "lat": 24.8607,
+      "lng": 92.3738
+    },
+    {
+      "code": "KXL",
+      "name": "KAMARBANDHA ALI",
+      "stateCode": "AS",
+      "lat": 26.5296,
+      "lng": 94.0564
+    },
+    {
+      "code": "LCT",
+      "name": "LANGCHOLIET",
+      "stateCode": "AS",
+      "lat": 25.7593,
+      "lng": 93.3046
+    },
+    {
+      "code": "LEDO",
+      "name": "Ledo",
+      "stateCode": "AS",
+      "lat": 27.2884,
+      "lng": 95.7254
+    },
+    {
+      "code": "LGT",
+      "name": "LANGTING",
+      "stateCode": "AS",
+      "lat": 25.4976,
+      "lng": 93.1103
+    },
+    {
+      "code": "LH",
+      "name": "LAHING",
+      "stateCode": "AS",
+      "lat": 26.7412,
+      "lng": 94.4371
+    },
+    {
+      "code": "LHL",
+      "name": "LAHOAL",
+      "stateCode": "AS",
+      "lat": 27.4525,
+      "lng": 94.9995
+    },
+    {
+      "code": "LKA",
+      "name": "LANKA",
+      "stateCode": "AS",
+      "lat": 25.9144,
+      "lng": 92.958
+    },
+    {
+      "code": "LKG",
+      "name": "LAMSAKHANG",
+      "stateCode": "AS",
+      "lat": 25.7965,
+      "lng": 93.0468
+    },
+    {
+      "code": "LLBR",
+      "name": "Lalabazar",
+      "stateCode": "AS",
+      "lat": 24.5619,
+      "lng": 92.6102
+    },
+    {
+      "code": "LPN",
+      "name": "LAOPANI",
+      "stateCode": "AS",
+      "lat": 26.2003,
+      "lng": 92.596
+    },
+    {
+      "code": "LPTA",
+      "name": "LONGPATIA",
+      "stateCode": "AS",
+      "lat": 27.0797,
+      "lng": 95.0953
+    },
+    {
+      "code": "LXA",
+      "name": "LAKSWA",
+      "stateCode": "AS",
+      "lat": 27.0046,
+      "lng": 94.844
+    },
+    {
+      "code": "MANU",
+      "name": "Manu",
+      "stateCode": "TR",
+      "lat": 23.9882,
+      "lng": 91.9989
+    },
+    {
+      "code": "MBG",
+      "name": "MAIBANG",
+      "stateCode": "AS",
+      "lat": 25.305,
+      "lng": 93.1354
+    },
+    {
+      "code": "MBO",
+      "name": "Mairabari",
+      "stateCode": "AS",
+      "lat": 26.4508,
+      "lng": 92.4211
+    },
+    {
+      "code": "MDT",
+      "name": "MADARIHAT",
+      "stateCode": "WB",
+      "lat": 26.6946,
+      "lng": 89.2746
+    },
+    {
+      "code": "MGE",
+      "name": "MIGRENDISA",
+      "stateCode": "AS",
+      "lat": 25.1712,
+      "lng": 93.0616
+    },
+    {
+      "code": "MGKM",
+      "name": "Mungiakami",
+      "stateCode": "TR",
+      "lat": 23.8838,
+      "lng": 91.7101
+    },
+    {
+      "code": "MHI",
+      "name": "Manihari",
+      "stateCode": "BR",
+      "lat": 25.3432,
+      "lng": 87.6197
+    },
+    {
+      "code": "MHN",
+      "name": "Mahanadi",
+      "stateCode": "WB",
+      "lat": 26.8823,
+      "lng": 88.3186
+    },
+    {
+      "code": "MJE",
+      "name": "MUJNAL",
+      "stateCode": "WB",
+      "lat": 26.6933,
+      "lng": 89.192
+    },
+    {
+      "code": "MJN",
+      "name": "Makum Junction",
+      "stateCode": "AS",
+      "lat": 27.4857,
+      "lng": 95.441
+    },
+    {
+      "code": "MNS",
+      "name": "Manshahi",
+      "stateCode": "BR",
+      "lat": 25.4757,
+      "lng": 87.5881
+    },
+    {
+      "code": "MOAR",
+      "name": "Manipur Bagan",
+      "stateCode": "AS",
+      "lat": 24.4008,
+      "lng": 92.5407
+    },
+    {
+      "code": "MOBD",
+      "name": "Moabund",
+      "stateCode": "AS",
+      "lat": 26.6686,
+      "lng": 94.0717
+    },
+    {
+      "code": "MONJ",
+      "name": "MONGLAJHORA",
+      "stateCode": "AS",
+      "lat": 26.2592,
+      "lng": 89.9633
+    },
+    {
+      "code": "MRG",
+      "name": "Margherita",
+      "stateCode": "AS",
+      "lat": 27.2893,
+      "lng": 95.6726
+    },
+    {
+      "code": "MRHT",
+      "name": "MORANHAT",
+      "stateCode": "AS",
+      "lat": 27.183,
+      "lng": 94.9193
+    },
+    {
+      "code": "MRZA",
+      "name": "MIRZA",
+      "stateCode": "AS",
+      "lat": 26.0728,
+      "lng": 91.5174
+    },
+    {
+      "code": "MTJR",
+      "name": "MOTERJHAR",
+      "stateCode": "AS",
+      "lat": 26.134,
+      "lng": 89.8645
+    },
+    {
+      "code": "MUGN",
+      "name": "MAHUTGAON",
+      "stateCode": "AS",
+      "lat": 26.9628,
+      "lng": 94.7929
+    },
+    {
+      "code": "MUPA",
+      "name": "MUPA",
+      "stateCode": "AS",
+      "lat": 25.3687,
+      "lng": 93.1227
+    },
+    {
+      "code": "MXR",
+      "name": "MAHUR",
+      "stateCode": "AS",
+      "lat": 25.188,
+      "lng": 93.1263
+    },
+    {
+      "code": "MYD",
+      "name": "MANDERDISA",
+      "stateCode": "AS",
+      "lat": 25.7073,
+      "lng": 93.1231
+    },
+    {
+      "code": "MZA",
+      "name": "MEZENGA S",
+      "stateCode": "AS",
+      "lat": 26.8845,
+      "lng": 94.6793
+    },
+    {
+      "code": "MZQ",
+      "name": "MAJGAON ASSAM",
+      "stateCode": "AS",
+      "lat": 26.4307,
+      "lng": 90.5741
+    },
+    {
+      "code": "NAM",
+      "name": "NAMRUP",
+      "stateCode": "AS",
+      "lat": 27.1963,
+      "lng": 95.3136
+    },
+    {
+      "code": "NCH",
+      "name": "NAKACHARI",
+      "stateCode": "AS",
+      "lat": 26.7081,
+      "lng": 94.3939
+    },
+    {
+      "code": "NGAN",
+      "name": "Nagaon",
+      "stateCode": "AS",
+      "lat": 26.3562,
+      "lng": 92.6725
+    },
+    {
+      "code": "NGTG",
+      "name": "New Gitaldaha",
+      "stateCode": "WB",
+      "lat": 26.0708,
+      "lng": 89.5869
+    },
+    {
+      "code": "NHK",
+      "name": "NAHARKATIYA",
+      "stateCode": "AS",
+      "lat": 27.2894,
+      "lng": 95.3298
+    },
+    {
+      "code": "NJN",
+      "name": "NAOJAN",
+      "stateCode": "AS",
+      "lat": 26.1313,
+      "lng": 93.8465
+    },
+    {
+      "code": "NKB",
+      "name": "NAGRAKOTA",
+      "stateCode": "WB",
+      "lat": 26.8855,
+      "lng": 88.9176
+    },
+    {
+      "code": "NLBR",
+      "name": "Nilambazar",
+      "stateCode": "AS",
+      "lat": 24.7433,
+      "lng": 92.3651
+    },
+    {
+      "code": "NLN",
+      "name": "NAILALUNG",
+      "stateCode": "AS",
+      "lat": 25.7744,
+      "lng": 93.3888
+    },
+    {
+      "code": "NMGY",
+      "name": "Numaligarh",
+      "stateCode": "AS",
+      "lat": 26.6012,
+      "lng": 93.8657
+    },
+    {
+      "code": "NMT",
+      "name": "NAMTIALI",
+      "stateCode": "AS",
+      "lat": 26.8516,
+      "lng": 94.6193
+    },
+    {
+      "code": "NMZ",
+      "name": "NEW MAL JN",
+      "stateCode": "WB",
+      "lat": 26.8737,
+      "lng": 88.7248
+    },
+    {
+      "code": "NNGE",
+      "name": "NARANGI",
+      "stateCode": "AS",
+      "lat": 26.183,
+      "lng": 91.8358
+    },
+    {
+      "code": "NPU",
+      "name": "Nadiapur",
+      "stateCode": "TR",
+      "lat": 24.3856,
+      "lng": 92.2041
+    },
+    {
+      "code": "NZR",
+      "name": "NAZIRA",
+      "stateCode": "AS",
+      "lat": 26.906,
+      "lng": 94.7285
+    },
+    {
+      "code": "ODB",
+      "name": "OODLABARI",
+      "stateCode": "WB",
+      "lat": 26.8668,
+      "lng": 88.6246
+    },
+    {
+      "code": "OTN",
+      "name": "OATING",
+      "stateCode": "AS",
+      "lat": 26.4298,
+      "lng": 93.9873
+    },
+    {
+      "code": "PASG",
+      "name": "Panisagar",
+      "stateCode": "TR",
+      "lat": 24.2728,
+      "lng": 92.149
+    },
+    {
+      "code": "PEC",
+      "name": "Pencharthal",
+      "stateCode": "TR",
+      "lat": 24.1962,
+      "lng": 92.1082
+    },
+    {
+      "code": "PHI",
+      "name": "PANIKHAITI",
+      "stateCode": "AS",
+      "lat": 26.212,
+      "lng": 91.8757
+    },
+    {
+      "code": "PKB",
+      "name": "PATHARKHOLA S",
+      "stateCode": "AS",
+      "lat": 25.7789,
+      "lng": 93.103
+    },
+    {
+      "code": "PKGM",
+      "name": "Phakhoagram",
+      "stateCode": "AS",
+      "lat": 24.6415,
+      "lng": 92.3424
+    },
+    {
+      "code": "PNB",
+      "name": "PANBARI",
+      "stateCode": "AS",
+      "lat": 26.2267,
+      "lng": 91.9514
+    },
+    {
+      "code": "PNGM",
+      "name": "PANCHGRAM",
+      "stateCode": "AS",
+      "lat": 24.8644,
+      "lng": 92.5983
+    },
+    {
+      "code": "PNT",
+      "name": "PANITOLA",
+      "stateCode": "AS",
+      "lat": 27.4968,
+      "lng": 95.2499
+    },
+    {
+      "code": "PNVT",
+      "name": "PANCHARATNA",
+      "stateCode": "AS",
+      "lat": 26.1589,
+      "lng": 90.556
+    },
+    {
+      "code": "PTKD",
+      "name": "Patharkandi",
+      "stateCode": "AS",
+      "lat": 24.6045,
+      "lng": 92.3191
+    },
+    {
+      "code": "PUQ",
+      "name": "Puranigudam",
+      "stateCode": "AS",
+      "lat": 26.3632,
+      "lng": 92.7868
+    },
+    {
+      "code": "PUY",
+      "name": "Phulaguri",
+      "stateCode": "AS",
+      "lat": 26.2705,
+      "lng": 92.5928
+    },
+    {
+      "code": "RAHA",
+      "name": "Raha",
+      "stateCode": "AS",
+      "lat": 26.2254,
+      "lng": 92.5222
+    },
+    {
+      "code": "RDP",
+      "name": "Radhikapur",
+      "stateCode": "WB",
+      "lat": 25.6436,
+      "lng": 88.4482
+    },
+    {
+      "code": "RGJ",
+      "name": "RaiGanj",
+      "stateCode": "WB",
+      "lat": 25.6191,
+      "lng": 88.1277
+    },
+    {
+      "code": "RGJI",
+      "name": "RANGJULI",
+      "stateCode": "AS",
+      "lat": 25.9884,
+      "lng": 90.956
+    },
+    {
+      "code": "RNGG",
+      "name": "Rangaliting",
+      "stateCode": "AS",
+      "lat": 26.6564,
+      "lng": 93.9183
+    },
+    {
+      "code": "RPB",
+      "name": "Rupasibari",
+      "stateCode": "AS",
+      "lat": 24.8553,
+      "lng": 92.5295
+    },
+    {
+      "code": "RTBR",
+      "name": "Ratabari",
+      "stateCode": "AS",
+      "lat": 24.5721,
+      "lng": 92.4169
+    },
+    {
+      "code": "RTG",
+      "name": "Rangtong",
+      "stateCode": "WB",
+      "lat": 26.8361,
+      "lng": 88.3424
+    },
+    {
+      "code": "RUP",
+      "name": "Rupahigaon",
+      "stateCode": "AS",
+      "lat": 26.4126,
+      "lng": 92.7423
+    },
+    {
+      "code": "RVK",
+      "name": "RAJA BHAT KHAWA",
+      "stateCode": "WB",
+      "lat": 26.6201,
+      "lng": 89.5286
+    },
+    {
+      "code": "RWH",
+      "name": "Rowriah Sdg",
+      "stateCode": "AS",
+      "lat": 26.7219,
+      "lng": 94.1724
+    },
+    {
+      "code": "RXR",
+      "name": "RANGAPAHAR",
+      "stateCode": "NL",
+      "lat": 25.855,
+      "lng": 93.7078
+    },
+    {
+      "code": "RXRX",
+      "name": "RANGAPAHAR CRS",
+      "stateCode": "NL",
+      "lat": 25.8682,
+      "lng": 93.7152
+    },
+    {
+      "code": "SAD",
+      "name": "Sonada",
+      "stateCode": "WB",
+      "lat": 26.9603,
+      "lng": 88.2733
+    },
+    {
+      "code": "SCA",
+      "name": "SALCHAPRA",
+      "stateCode": "AS",
+      "lat": 24.8273,
+      "lng": 92.6719
+    },
+    {
+      "code": "SCE",
+      "name": "Senchoa Junction",
+      "stateCode": "AS",
+      "lat": 26.3116,
+      "lng": 92.6425
+    },
+    {
+      "code": "SFR",
+      "name": "SAFRAI",
+      "stateCode": "AS",
+      "lat": 27.029,
+      "lng": 94.9429
+    },
+    {
+      "code": "SGUJ",
+      "name": "SILIGURI JN",
+      "stateCode": "WB",
+      "lat": 26.7232,
+      "lng": 88.4137
+    },
+    {
+      "code": "SGUT",
+      "name": "SILIGURU TOWN",
+      "stateCode": "WB",
+      "lat": 26.7073,
+      "lng": 88.4296
+    },
+    {
+      "code": "SHTT",
+      "name": "Silghat Town",
+      "stateCode": "AS",
+      "lat": 26.6089,
+      "lng": 92.9299
+    },
+    {
+      "code": "SKAP",
+      "name": "SK Para",
+      "stateCode": "TR",
+      "lat": 23.972,
+      "lng": 91.9471
+    },
+    {
+      "code": "SLGR",
+      "name": "SIMALUGURI JN",
+      "stateCode": "AS",
+      "lat": 26.9173,
+      "lng": 94.7568
+    },
+    {
+      "code": "SLON",
+      "name": "Salona",
+      "stateCode": "AS",
+      "lat": 26.5039,
+      "lng": 92.99
+    },
+    {
+      "code": "SLX",
+      "name": "SELENG HAT",
+      "stateCode": "AS",
+      "lat": 26.7834,
+      "lng": 94.4828
+    },
+    {
+      "code": "SMGR",
+      "name": "Samaguri",
+      "stateCode": "AS",
+      "lat": 26.4163,
+      "lng": 92.8498
+    },
+    {
+      "code": "SN",
+      "name": "Sukna",
+      "stateCode": "WB",
+      "lat": 26.7909,
+      "lng": 88.3635
+    },
+    {
+      "code": "SPK",
+      "name": "SAPEKHATI",
+      "stateCode": "AS",
+      "lat": 27.1104,
+      "lng": 95.1609
+    },
+    {
+      "code": "SPX",
+      "name": "SAPATGRAM",
+      "stateCode": "AS",
+      "lat": 26.3347,
+      "lng": 90.1096
+    },
+    {
+      "code": "SQF",
+      "name": "SUKRITIPUR",
+      "stateCode": "AS",
+      "lat": 24.9131,
+      "lng": 92.5828
+    },
+    {
+      "code": "SRTN",
+      "name": "SIBSAGAR TOWN",
+      "stateCode": "AS",
+      "lat": 26.99,
+      "lng": 94.6435
+    },
+    {
+      "code": "SVQ",
+      "name": "SIVOK",
+      "stateCode": "WB",
+      "lat": 26.8801,
+      "lng": 88.4687
+    },
+    {
+      "code": "SZR",
+      "name": "SARUPATHAR",
+      "stateCode": "AS",
+      "lat": 26.1956,
+      "lng": 93.862
+    },
+    {
+      "code": "TBX",
+      "name": "Tilbhum",
+      "stateCode": "TR",
+      "lat": 24.4658,
+      "lng": 92.2455
+    },
+    {
+      "code": "TDH",
+      "name": "Tindharia",
+      "stateCode": "WB",
+      "lat": 26.8516,
+      "lng": 88.3328
+    },
+    {
+      "code": "TGE",
+      "name": "THEKERAGURI",
+      "stateCode": "AS",
+      "lat": 26.1992,
+      "lng": 92.4039
+    },
+    {
+      "code": "TII",
+      "name": "Tingrai",
+      "stateCode": "AS",
+      "lat": 27.4645,
+      "lng": 95.5351
+    },
+    {
+      "code": "TKC",
+      "name": "THAKURKUCHI",
+      "stateCode": "AS",
+      "lat": 26.234,
+      "lng": 91.9223
+    },
+    {
+      "code": "TLMR",
+      "name": "Teliamura",
+      "stateCode": "TR",
+      "lat": 23.8612,
+      "lng": 91.6177
+    },
+    {
+      "code": "TPK",
+      "name": "TIPKAI",
+      "stateCode": "AS",
+      "lat": 26.2954,
+      "lng": 90.0473
+    },
+    {
+      "code": "TRBE",
+      "name": "Tarabari",
+      "stateCode": "AS",
+      "lat": 26.4363,
+      "lng": 92.6834
+    },
+    {
+      "code": "TSK",
+      "name": "Tinsukia Junction",
+      "stateCode": "AS",
+      "lat": 27.4864,
+      "lng": 95.3564
+    },
+    {
+      "code": "TTB",
+      "name": "TITABAR",
+      "stateCode": "AS",
+      "lat": 26.602,
+      "lng": 94.1998
+    },
+    {
+      "code": "TTLA",
+      "name": "TETELIA",
+      "stateCode": "AS",
+      "lat": 26.1359,
+      "lng": 92.0054
+    },
+    {
+      "code": "TUNG",
+      "name": "Tung",
+      "stateCode": "WB",
+      "lat": 26.9218,
+      "lng": 88.2948
+    },
+    {
+      "code": "TZTB",
+      "name": "Tezpore",
+      "stateCode": "AS",
+      "lat": 26.6178,
+      "lng": 92.7877
+    },
+    {
+      "code": "VTG",
+      "name": "Bhetaguri",
+      "stateCode": "WB",
+      "lat": 26.303,
+      "lng": 89.6653
+    },
+    {
+      "code": "WDA",
+      "name": "WADRENGDISA",
+      "stateCode": "AS",
+      "lat": 25.264,
+      "lng": 93.1775
+    }
+  ]
+}

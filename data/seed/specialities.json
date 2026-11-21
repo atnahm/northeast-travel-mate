@@ -1,0 +1,226 @@
+[
+  {
+    "id": "spec_as_tea",
+    "state_code": "AS",
+    "type": "product",
+    "name_i18n": { "en": "Assam Orthodox & CTC Tea", "hi": "असम चाय", "as": "অসম চাহ", "bn": "আসাম চা" },
+    "description_i18n": {
+      "en": "Full-bodied, malty single-estate teas grown along the Brahmaputra valley in Upper Assam.",
+      "hi": "ऊपरी असम की ब्रह्मपुत्र घाटी में उगने वाली सुगंधित व कड़क चाय।",
+      "as": "উজনি অসমৰ ব্ৰহ্মপুত্ৰ উপত্যকাত উৎপাদিত সুগন্ধি আৰু সোৱাদযুক্ত চাহ।",
+      "bn": "উজানি আসামের ব্রহ্মপুত্র উপত্যকায় উৎপাদিত সুগন্ধি ও কড়া চা।"
+    },
+    "where_to_find_i18n": { "en": "Jorhat, Dibrugarh tea estates & Guwahati Fancy Bazar", "hi": "जोरहाट, डिब्रूगढ़ के बागान और गुवाहाटी", "as": "যোৰহাট, ডিব্ৰুগড় আৰু গুৱাহাটী", "bn": "যোরহাট, ডিব্রুগড় ও গুয়াহাটি" },
+    "season_months": [4, 5, 6, 7, 10, 11]
+  },
+  {
+    "id": "spec_as_muga",
+    "state_code": "AS",
+    "type": "craft",
+    "name_i18n": { "en": "Muga Golden Silk (Sualkuchi)", "hi": "मुगा सुनहरा रेशम", "as": "মুগা সোণালী ৰেচম (শুৱালকুছি)", "bn": "মুগা সোনালি রেশম" },
+    "description_i18n": {
+      "en": "GI-tagged natural golden silk handwoven in Sualkuchi into mekhela chadors and stoles.",
+      "hi": "सुआलकुची में हाथ से बुना जाने वाला जीआई-टैग प्राकृतिक सुनहरा रेशम।",
+      "as": "শুৱালকুছিত হাতেৰে বোৱা জি.আই.-প্ৰাপ্ত প্ৰাকৃতিক সোণালী মুগা পাট।",
+      "bn": "শুয়ালকুছিতে হাতে বোনা জিআই-ট্যাগপ্রাপ্ত প্রাকৃতিক সোনালি মুগা রেশম।"
+    },
+    "where_to_find_i18n": { "en": "Sualkuchi weaving village (1 hr from Guwahati)", "hi": "सुआलकुची (गुवाहाटी से 1 घंटा)", "as": "শুৱালকুছি (গুৱাহাটীৰ পৰা ১ ঘণ্টা)", "bn": "শুয়ালকুছি" },
+    "season_months": [1, 2, 3, 4, 10, 11, 12]
+  },
+  {
+    "id": "spec_as_masor_tenga",
+    "state_code": "AS",
+    "type": "dish",
+    "name_i18n": { "en": "Masor Tenga & Khar Thali", "hi": "मासोर टेंगा (खट्टी मछली करी)", "as": "মাছৰ টেঙা আৰু খাৰ থালি", "bn": "মাছের টেঙ্গা ও খার থালি" },
+    "description_i18n": {
+      "en": "Light, tangy Assamese fish curry soured with outenga (elephant apple) or tomatoes, served with Joha rice.",
+      "hi": "आउटेंगा या टमाटर से बनी हल्की खट्टी असमी मछली करी और जोहा चावल।",
+      "as": "ঔটেঙা বা বিলাহীৰে ৰন্ধা পাতল অসমীয়া মাছৰ টেঙা আৰু জহা চাউলৰ ভাত।",
+      "bn": "চালতা বা টমেটো দিয়ে রান্না হালকা টক অসমীয়া মাছের ঝোল।"
+    },
+    "where_to_find_i18n": { "en": "Traditional Assamese kitchens in Guwahati, Jorhat & Majuli", "hi": "गुवाहाटी, जोरहाट और माजुली के पारंपरिक भोजनालय", "as": "গুৱাহাটী, যোৰহাট আৰু মাজুলী", "bn": "গুয়াহাটি, যোরহাট ও মাজুলী" },
+    "season_months": [1, 2, 3, 10, 11, 12]
+  },
+  {
+    "id": "spec_ml_jadoh",
+    "state_code": "ML",
+    "type": "dish",
+    "name_i18n": { "en": "Jadoh & Dohneiiong", "hi": "जदोह (खासी मसालेदार चावल)", "as": "জাদোহ (খাচী খাদ্য)", "bn": "জাদোহ (খাসি খাবার)" },
+    "description_i18n": {
+      "en": "Aromatic Khasi red-rice delicacy tinted with Lakadong turmeric and black sesame pork or chicken.",
+      "hi": "लाकाडोंग हल्दी और काले तिल से बना प्रसिद्ध खासी व्यंजन।",
+      "as": "লাকাডং হালধি আৰু ক'লা তিলেৰে ৰন্ধা সুস্বাদু খাচী ব্যঞ্জন।",
+      "bn": "লাকাডং হলুদ ও কালো তিল দিয়ে রান্না খাসি পদ।"
+    },
+    "where_to_find_i18n": { "en": "Iewduh / Laitumkhrah eateries, Shillong", "hi": "शिलांग के स्थानीय भोजनालय", "as": "শ্বিলঙৰ স্থানীয় ভोजनाলয়", "bn": "শিলং-এর স্থানীয় রেস্তোরাঁ" },
+    "season_months": [1, 2, 3, 4, 10, 11, 12]
+  },
+  {
+    "id": "spec_ml_lakadong",
+    "state_code": "ML",
+    "type": "product",
+    "name_i18n": { "en": "Lakadong Turmeric & Sohra Honey", "hi": "लाकाडोंग हल्दी और सोहरा शहद", "as": "লাকাডং হালধি আৰু চহৰা মৌ", "bn": "লাকাডং হলুদ ও সোহরা মধু" },
+    "description_i18n": {
+      "en": "Jaintia Hills heirloom turmeric celebrated for exceptionally high curcumin content, paired with wild forest honey.",
+      "hi": "उच्च करक्यूमिन वाली जयंतिया पहाड़ियों की हल्दी और जंगली शहद।",
+      "as": "জয়ন্তীয়া পাহাৰৰ উৎকৃষ্ট কাৰ্কিউমিনযুক্ত হালধি আৰু বনৌষধি মৌ।",
+      "bn": "জয়ন্তিয়া পাহাড়ের উচ্চ কারকিউমিনযুক্ত হলুদ ও বুনো মধু।"
+    },
+    "where_to_find_i18n": { "en": "Shillong markets, Jowai & Sohra stalls", "hi": "शिलांग और जोवाई बाजार", "as": "শ্বিলং আৰু জোৱাই বজাৰ", "bn": "শিলং ও জোয়াই বাজার" },
+    "season_months": [11, 12, 1, 2, 3]
+  },
+  {
+    "id": "spec_ar_thukpa",
+    "state_code": "AR",
+    "type": "dish",
+    "name_i18n": { "en": "Monpa Zan, Khura & Thukpa", "hi": "मोनपा थुकपा और खुरा", "as": "মনপা থুকপা আৰু খুৰা", "bn": "মনপা থুকপা ও খুরা" },
+    "description_i18n": {
+      "en": "Warm hand-pulled noodle broths, buckwheat pancakes, and yak-cheese chutneys ideal for crisp Tawang evenings.",
+      "hi": "तवांग की ठंडी शामों के लिए गरमागरम थुकपा, कुट्टू के पैनकेक और याक-चीज़ चटनी।",
+      "as": "টাৱাঙৰ শীতল সন্ধিয়াৰ বাবে গৰম থুকপা আৰু য়াক পনীৰৰ চাটনি।",
+      "bn": "তাওয়াং-এর শীতল সন্ধ্যায় গরম থুকপা ও ইয়াক চিজ চাটনি।"
+    },
+    "where_to_find_i18n": { "en": "Tawang Old Market & Dirang kitchens", "hi": "तवांग पुराना बाजार और दिरांग", "as": "টাৱাং বজাৰ আৰু দিৰাং", "bn": "তাওয়াং বাজার ও দিরাং" },
+    "season_months": [3, 4, 5, 10, 11, 12]
+  },
+  {
+    "id": "spec_ar_kiwi",
+    "state_code": "AR",
+    "type": "product",
+    "name_i18n": { "en": "Ziro Organic Kiwi & Apatani Bamboo Craft", "hi": "ज़ीरो कीवी और बाँस शिल्प", "as": "জিৰ' কিউই ফল আৰু বাঁহ শিল্প", "bn": "জিরো কিউই ও বাঁশের শিল্প" },
+    "description_i18n": {
+      "en": "Sun-ripened highland kiwis and intricate hand-split bamboo baskets from Lower Subansiri.",
+      "hi": "ज़ीरो घाटी की जैविक कीवी और हस्तनिर्मित बाँस की टोकरियाँ।",
+      "as": "জিৰ' উপত্যকাৰ জৈৱিক কিউই আৰু হাতেৰে সজা বাঁহৰ সঁজুলি।",
+      "bn": "জিরো উপত্যকার জৈব কিউই ও হাতে তৈরি বাঁশের ঝুড়ি।"
+    },
+    "where_to_find_i18n": { "en": "Hapoli Market, Ziro", "hi": "हापोली बाजार, ज़ीरो", "as": "হাপলি বজাৰ, জিৰ'", "bn": "হাপলি বাজার, জিরো" },
+    "season_months": [9, 10, 11, 12]
+  },
+  {
+    "id": "spec_nl_smoked_pork",
+    "state_code": "NL",
+    "type": "dish",
+    "name_i18n": { "en": "Smoked Pork with Bamboo Shoot & Axone", "hi": "बांस के अंकुर के साथ स्मोक्ड पोर्क", "as": "বাঁহগাজ আৰু আখুনিৰে স্মোকড গাহৰি", "bn": "বাঁশের কোঁড়ল দিয়ে স্মোকড পর্ক" },
+    "description_i18n": {
+      "en": "Signature Naga comfort dish slow-simmered with fermented bamboo shoot or axone (fermented soybean) and Raja Mircha.",
+      "hi": "किण्वित बांस के अंकुर या अखोने और राजा मिर्च के साथ पका पारंपरिक नागा व्यंजन।",
+      "as": "খৰিচা বা আখুনি আৰু ৰজা জলকীয়াৰে ৰন্ধা পৰম্পৰাগত নাগা ব্যঞ্জন।",
+      "bn": "বাঁশের কোঁড়ল ও রাজা মরিচ দিয়ে রান্না নাগা পদ।"
+    },
+    "where_to_find_i18n": { "en": "Kohima local kitchens & Kisama food stalls", "hi": "कोहिमा और किसामा के भोजनालय", "as": "কহিমা আৰু কিছামা", "bn": "কোহিমা ও কিসামা" },
+    "season_months": [1, 2, 3, 10, 11, 12]
+  },
+  {
+    "id": "spec_nl_king_chilli",
+    "state_code": "NL",
+    "type": "product",
+    "name_i18n": { "en": "Naga King Chilli (Raja Mircha) & Shawls", "hi": "नागा राजा मिर्च और पारंपरिक शॉल", "as": "নাগা ৰজা জলকীয়া আৰু শ্বল", "bn": "নাগা রাজা মরিচ ও শাল" },
+    "description_i18n": {
+      "en": "GI-tagged fiery Raja Mircha pickles and authentic handloom weaves (buy directly from registered village cooperatives).",
+      "hi": "जीआई-टैग राजा मिर्च अचार और प्रमाणित ग्राम सहकारी समितियों से बुने शॉल।",
+      "as": "জি.আই.-প্ৰাপ্ত ৰজা জলকীয়া আৰু সমবায় তাঁতশালৰ শ্বল।",
+      "bn": "জিআই-ট্যাগপ্রাপ্ত রাজা মরিচ ও সমবায়ের বোনা শাল।"
+    },
+    "where_to_find_i18n": { "en": "Kohima Mao Market & Khonoma craft shops", "hi": "कोहिमा माओ मार्केट", "as": "কহিমা মাও বজাৰ", "bn": "কোহিমা মাও বাজার" },
+    "season_months": [10, 11, 12, 1, 2]
+  },
+  {
+    "id": "spec_mn_eromba",
+    "state_code": "MN",
+    "type": "dish",
+    "name_i18n": { "en": "Eromba, Kangsoi & Chak-Hao Kheer", "hi": "इरोम्बा और काले चावल की खीर", "as": "ইৰম্বা আৰু চক-হাও পায়স", "bn": "ইরোম্বা ও কালো চালের পায়েস" },
+    "description_i18n": {
+      "en": "Classic Manipuri mashed vegetable-chilli relish, oil-free seasonal stew (Kangsoi), and aromatic black rice pudding.",
+      "hi": "मणिपुरी कांगसोई स्ट्यू और सुगंधित चक-हाओ काले चावल की खीर।",
+      "as": "মণিপুৰী কাংছৈ আৰু সুগন্ধি ক'লা চাউলৰ পায়স।",
+      "bn": "মণিপুরী কাংসোই ও সুগন্ধি কালো চালের পায়েস।"
+    },
+    "where_to_find_i18n": { "en": "Imphal traditional thali kitchens", "hi": "इम्फाल के पारंपरिक भोजनालय", "as": "ইম্ফলৰ ভोजनाলয়", "bn": "ইম্ফলের স্থানীয় রেস্তোরাঁ" },
+    "season_months": [1, 2, 3, 10, 11, 12]
+  },
+  {
+    "id": "spec_mn_moirang_phee",
+    "state_code": "MN",
+    "type": "craft",
+    "name_i18n": { "en": "Moirang Phee & Kouna Grass Crafts", "hi": "मोइरांग फी और कौना घास शिल्प", "as": "মৈৰাং ফি আৰু কৌনা ঘাঁহৰ শিল্প", "bn": "মৈরাং ফি ও কৌনা ঘাসের শিল্প" },
+    "description_i18n": {
+      "en": "Finely woven cotton textiles with temple-border motifs and eco-friendly Loktak water-reed mats.",
+      "hi": "हथकरघा वस्त्र मोइरांग फी और लोकतक की कौना घास से बनी टोकरियाँ।",
+      "as": "তাঁতত বোৱা মৈৰাং ফি আৰু ল'কটকৰ কৌনা ঘাঁহৰ সঁজুলি।",
+      "bn": "তাঁতে বোনা মৈরাং ফি ও লোকটাকের কৌনা ঘাসের মাদুর।"
+    },
+    "where_to_find_i18n": { "en": "Ima Keithel & Moirang", "hi": "इमा कीथेल और मोइरांग", "as": "ইমা কেইথেল আৰু মৈৰাং", "bn": "ইমা কেইথেল ও মৈরাং" },
+    "season_months": [10, 11, 12, 1, 2, 3]
+  },
+  {
+    "id": "spec_mz_bai",
+    "state_code": "MZ",
+    "type": "dish",
+    "name_i18n": { "en": "Mizo Bai & Sawhchiar", "hi": "मिज़ो बाई और सॉहचियार", "as": "মিজো বাই আৰু ছ'ছিয়াৰ", "bn": "মিজো বাই ও সচিয়ার" },
+    "description_i18n": {
+      "en": "Wholesome steamed green-vegetable & bamboo-shoot broth seasoned with local herbs and Mizo rice-meat porridge.",
+      "hi": "ताजी हरी सब्जियों और बांस के अंकुरों का पौष्टिक सूप।",
+      "as": "সেউজীয়া শাক-পাচলি আৰু বাঁহগাজৰ পুষ্টিকৰ মিজো ব্যঞ্জন।",
+      "bn": "সবুজ শাকসবজি ও বাঁশের কোঁড়লের পুষ্টিকর মিজো ঝোল।"
+    },
+    "where_to_find_i18n": { "en": "Aizawl Millenium Centre & Bara Bazar cafes", "hi": "आइजोल के स्थानीय भोजनालय", "as": "আইজল বজাৰ", "bn": "আইজল বাজার" },
+    "season_months": [1, 2, 10, 11, 12]
+  },
+  {
+    "id": "spec_mz_puan",
+    "state_code": "MZ",
+    "type": "craft",
+    "name_i18n": { "en": "Mizo Puanchei & Thenzawl Weaves", "hi": "मिज़ो पुआनचेई वस्त्र", "as": "মিজো পুৱানছেই বস্ত্ৰ", "bn": "মিজো পুয়ানচেই বস্ত্র" },
+    "description_i18n": {
+      "en": "Vibrant geometric handloom textiles woven on backstrap looms in Thenzawl.",
+      "hi": "थेंजोल में पारंपरिक करघे पर बुने रंगीन मिज़ो वस्त्र।",
+      "as": "থেনজলত বোৱা উজ্জ্বল মিজো হস্ততাঁত বস্ত্ৰ।",
+      "bn": "থেনজলে বোনা উজ্জ্বল মিজো হস্ততাঁত বস্ত্র।"
+    },
+    "where_to_find_i18n": { "en": "Thenzawl Handloom Emporium & Aizawl", "hi": "थेंजोल और आइजोल", "as": "থেনজল আৰু আইজল", "bn": "থেনজল ও আইজল" },
+    "season_months": [10, 11, 12, 1, 2, 3]
+  },
+  {
+    "id": "spec_sk_momos",
+    "state_code": "SK",
+    "type": "dish",
+    "name_i18n": { "en": "Sikkimese Momos, Gundruk & Churpi", "hi": "सिक्किमी मोमोज और गुंद्रुक", "as": "ছিকিমী মম' আৰু গুন্দ্ৰুক", "bn": "সিকিমি মোমো ও গুন্দ্রুক" },
+    "description_i18n": {
+      "en": "Steamed dumplings with fiery dalle khursani chilli paste alongside fermented leafy-green gundruk soup.",
+      "hi": "डल्ले खुर्सानी मिर्च चटनी के साथ गरम मोमोज और गुंद्रुक सूप।",
+      "as": "ডল্লে খুৰ্ছানি চাটনিৰ সৈতে গৰম মম' আৰু গুন্দ্ৰুক ছুপ।",
+      "bn": "ডাল্লে খুরসানি চাটনির সাথে গরম মোমো ও গুন্দ্রুক স্যুপ।"
+    },
+    "where_to_find_i18n": { "en": "MG Marg & Lal Bazar, Gangtok; Pelling cafes", "hi": "एमजी मार्ग व लाल बाजार, गंगटोक", "as": "এম জি মাৰ্গ, গেংটক", "bn": "এমজি মার্গ, গ্যাংটক" },
+    "season_months": [3, 4, 5, 10, 11, 12]
+  },
+  {
+    "id": "spec_sk_temi_tea",
+    "state_code": "SK",
+    "type": "product",
+    "name_i18n": { "en": "Temi Organic Tea & Dalle Khursani", "hi": "तेमी ऑर्गेनिक चाय", "as": "টেমি জৈৱিক চাহ", "bn": "তেমি জৈব চা" },
+    "description_i18n": {
+      "en": "Delicate organic spring-flush black & oolong teas grown on Namchi slopes at Temi Tea Garden.",
+      "hi": "दक्षिण सिक्किम के तेमी बागान की प्रसिद्ध जैविक चाय।",
+      "as": "দক্ষিণ ছিকিমৰ টেমি বাগিচাৰ জৈৱিক চাহ।",
+      "bn": "দক্ষিণ সিকিমের তেমি বাগানের জৈব চা।"
+    },
+    "where_to_find_i18n": { "en": "Temi Tea Estate (Namchi) & Gangtok state emporia", "hi": "तेमी चाय बागान और गंगटोक", "as": "টেমি চাহ বাগিচা", "bn": "তেমি চা বাগান" },
+    "season_months": [3, 4, 5, 10, 11]
+  },
+  {
+    "id": "spec_tr_muiborok",
+    "state_code": "TR",
+    "type": "dish",
+    "name_i18n": { "en": "Mui Borok, Wahan Mosdeng & Queen Pineapple", "hi": "मुई बोरोक और त्रिपुरा क्वीन अनानास", "as": "মুই বৰক আৰু ত্ৰিপুৰা আনাৰস", "bn": "মুই বরক ও ত্রিপুরার কুইন আনারস" },
+    "description_i18n": {
+      "en": "Oil-light Tripuri herbs and bamboo shoot dishes (Berma/Mosdeng) paired with famously sweet GI-tagged Queen Pineapples.",
+      "hi": "त्रिपुरी पारंपरिक व्यंजन मुई बोरोक और मीठा क्वीन अनानास।",
+      "as": "ত্ৰিপুৰাৰ পৰম্পৰাগত মুই বৰক আৰু জি.আই.-প্ৰাপ্ত কুইন আনাৰস।",
+      "bn": "ত্রিপুরার ঐতিহ্যবাহী মুই বরক ও জিআই-ট্যাগপ্রাপ্ত কুইন আনারস।"
+    },
+    "where_to_find_i18n": { "en": "Agartala heritage eateries & Purbasha craft center", "hi": "अगरतला बाजार", "as": "আগৰতলা বজাৰ", "bn": "আগরতলা বাজার" },
+    "season_months": [5, 6, 7, 10, 11, 12]
+  }
+]

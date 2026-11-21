@@ -1,0 +1,197 @@
+{
+  "alerts": [
+    {
+      "id": "alert_sk_nh10_2026",
+      "kind": "landslide",
+      "severity": "medium",
+      "state_code": "SK",
+      "lat": 27.168,
+      "lng": 88.532,
+      "title_i18n": {
+        "en": "NH-10 Rangpo–Gangtok Single-Lane Advisory",
+        "hi": "NH-10 रंगपो–गंगटोक एकल-लेन यात्रा सलाह",
+        "as": "NH-10 ৰংপো–গেংটক পথ সতৰ্কতা",
+        "bn": "NH-10 রংপো–গ্যাংটক সড়ক সতর্কতা"
+      },
+      "body_i18n": {
+        "en": "Expect 20–40 min daytime slope-stabilization waits along Teesta stretches. Prefer morning departures from NJP/Siliguri.",
+        "hi": "तीस्ता मार्ग पर 20–40 मिनट का विलंब संभव है; सुबह जल्दी प्रस्थान करें।",
+        "as": "তিস্তা পাৰৰ পথত ২০–৪০ মিনিট বিলম্ব হ'ব পাৰে; পুৱা সোনকালে যাত্ৰা আৰম্ভ কৰক।",
+        "bn": "তিস্তা পাড়ের রাস্তায় ২০–৪০ মিনিট বিলম্ব হতে পারে; সকালে বের হন।"
+      },
+      "source_url": "https://sikkim.gov.in/",
+      "starts_at": "2026-11-18T06:00:00Z",
+      "ends_at": "2026-12-15T18:00:00Z",
+      "verified": true,
+      "last_verified_at": "2026-11-19T08:00:00Z"
+    },
+    {
+      "id": "alert_ar_sela_fog",
+      "kind": "fog",
+      "severity": "medium",
+      "state_code": "AR",
+      "lat": 27.5035,
+      "lng": 92.1045,
+      "title_i18n": {
+        "en": "Morning Frost & Fog near Sela Pass",
+        "hi": "सेला दर्रे के पास सुबह का कोहरा व पाला",
+        "as": "ছেলা পাছৰ ওচৰত পুৱাৰ কুঁৱলী",
+        "bn": "সেলা পাসের কাছে সকালের কুয়াশা ও তুষার"
+      },
+      "body_i18n": {
+        "en": "Sub-zero early mornings above 3,800 m; cross Sela between 09:00 and 14:30 or take the Sela Tunnel.",
+        "hi": "सुबह 9 बजे से दोपहर 2:30 के बीच पार करें या सेला सुरंग मार्ग का उपयोग करें।",
+        "as": "পুৱা ৯ বজাৰ পৰা দুপৰীয়া ২:৩০ বজাৰ ভিতৰত পাৰ হওক বা ছেলা সুৰংগ ব্যৱহাৰ কৰক।",
+        "bn": "সকাল ৯টা থেকে দুপুর ২:৩০-এর মধ্যে পার হন অথবা সেলা টানেল ব্যবহার করুন।"
+      },
+      "source_url": "https://mausam.imd.gov.in/",
+      "starts_at": "2026-11-15T00:00:00Z",
+      "ends_at": "2027-02-28T23:59:00Z",
+      "verified": true,
+      "last_verified_at": "2026-11-18T10:00:00Z"
+    },
+    {
+      "id": "alert_mn_travel_check",
+      "kind": "closure",
+      "severity": "high",
+      "state_code": "MN",
+      "lat": 24.8170,
+      "lng": 93.9368,
+      "title_i18n": {
+        "en": "Check District Highway Advisories in Manipur",
+        "hi": "मणिपुर में जिला राजमार्ग सलाह की पुष्टि करें",
+        "as": "মণিপুৰৰ জিলা পথ পৰামৰ্শ পৰীক্ষা কৰক",
+        "bn": "মণিপুরের জেলা সড়ক নির্দেশিকা যাচাই করুন"
+      },
+      "body_i18n": {
+        "en": "Before inter-district road travel outside Imphal Valley, verify current police/administration traffic movement timings.",
+        "hi": "इम्फाल घाटी से बाहर सड़क यात्रा से पहले स्थानीय प्रशासन के निर्देश अवश्य जांचें।",
+        "as": "ইম্ফল উপত্যকাৰ বাহিৰলৈ ভ্ৰমণ কৰাৰ আগতে স্থানীয় প্ৰশাসনৰ নিৰ্দেশনা চাওক।",
+        "bn": "ইম্ফল উপত্যকার বাইরে যাওয়ার আগে স্থানীয় প্রশাসনের নির্দেশিকা দেখে নিন।"
+      },
+      "source_url": "https://manipur.gov.in/",
+      "starts_at": "2026-11-01T00:00:00Z",
+      "ends_at": "2026-12-31T23:59:00Z",
+      "verified": true,
+      "last_verified_at": "2026-11-19T09:00:00Z"
+    }
+  ],
+  "festivals": [
+    {
+      "id": "fest_nl_hornbill",
+      "state_code": "NL",
+      "name_i18n": { "en": "Hornbill Festival (Kisama)", "hi": "हॉर्नबिल महोत्सव (किसामा)", "as": "হৰ্ণবিল মহোৎসৱ", "bn": "হর্নবিল উৎসব" },
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-10",
+      "is_approximate": false,
+      "description_i18n": { "en": "Annual 10-day cultural showcase of Naga tribes at Kisama Heritage Village near Kohima.", "hi": "कोहिमा के पास किसामा में 10 दिवसीय सांस्कृतिक उत्सव।" },
+      "source_url": "https://www.hornbillfestival.com/",
+      "last_verified_at": "2026-11-15T10:00:00Z"
+    },
+    {
+      "id": "fest_as_bihu",
+      "state_code": "AS",
+      "name_i18n": { "en": "Bohag (Rongali) Bihu", "hi": "बोहाग (रोंगाली) बिहू", "as": "বহাগ (ৰঙালী) বিহু", "bn": "বোহাগ (রঙালী) বিহু" },
+      "start_date": "2027-04-14",
+      "end_date": "2027-04-20",
+      "is_approximate": false,
+      "description_i18n": { "en": "Assamese spring & agricultural new year celebrated with Bihu dance, dhol, pepa, and pitha.", "hi": "असमिया नववर्ष व वसंत उत्सव।" },
+      "source_url": "https://tourism.assam.gov.in/",
+      "last_verified_at": "2026-11-15T10:00:00Z"
+    },
+    {
+      "id": "fest_ml_wangala",
+      "state_code": "ML",
+      "name_i18n": { "en": "Wangala (100 Drums Festival)", "hi": "वांगला (100 ढोल महोत्सव)", "as": "ৱাংগালা মহোৎসৱ", "bn": "ওয়াঙ্গালা উৎসব" },
+      "start_date": "2026-11-12",
+      "end_date": "2026-11-14",
+      "is_approximate": true,
+      "description_i18n": { "en": "Garo post-harvest festival in West Garo Hills with synchronized drums and folk dances.", "hi": "गारो समुदाय का फसल-कटाई महोत्सव।" },
+      "source_url": "https://www.meghalayatourism.in/",
+      "last_verified_at": "2026-11-01T10:00:00Z"
+    },
+    {
+      "id": "fest_ar_ziro",
+      "state_code": "AR",
+      "name_i18n": { "en": "Ziro Festival of Music", "hi": "ज़ीरो संगीत महोत्सव", "as": "জিৰ' সংগীত মহোৎসৱ", "bn": "জিরো সংগীত উৎসব" },
+      "start_date": "2026-09-24",
+      "end_date": "2026-09-27",
+      "is_approximate": true,
+      "description_i18n": { "en": "Eco-conscious outdoor indie music festival hosted amidst Ziro rice paddies.", "hi": "ज़ीरो घाटी में आयोजित इको-फ्रेंडली आउटडोर संगीत महोत्सव।" },
+      "source_url": "https://arunachaltourism.com/",
+      "last_verified_at": "2026-11-05T10:00:00Z"
+    },
+    {
+      "id": "fest_mn_sangai",
+      "state_code": "MN",
+      "name_i18n": { "en": "Manipur Sangai Festival", "hi": "मणिपुर संगाई महोत्सव", "as": "মণিপুৰ ছাংগাই মহোৎসৱ", "bn": "মণিপুর সাংগাই উৎসব" },
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-30",
+      "is_approximate": true,
+      "description_i18n": { "en": "State cultural & indigenous sports showcase celebrating Manipur's state animal, the Sangai deer.", "hi": "मणिपुर की कला, नृत्य और संगाई हिरण संरक्षण का उत्सव।" },
+      "source_url": "https://manipur.gov.in/",
+      "last_verified_at": "2026-11-10T10:00:00Z"
+    },
+    {
+      "id": "fest_mz_chapchar",
+      "state_code": "MZ",
+      "name_i18n": { "en": "Chapchar Kut", "hi": "चापचार कुट", "as": "চাপচাৰ কুট", "bn": "চাপচার কুট" },
+      "start_date": "2027-03-05",
+      "end_date": "2027-03-05",
+      "is_approximate": true,
+      "description_i18n": { "en": "Mizoram's joyous spring festival featuring the Cheraw bamboo dance across Aizawl.", "hi": "चेराव बांस नृत्य के साथ मनाया जाने वाला मिज़ोरम का प्रमुख वसंत उत्सव।" },
+      "source_url": "https://tourism.mizoram.gov.in/",
+      "last_verified_at": "2026-11-05T10:00:00Z"
+    },
+    {
+      "id": "fest_sk_losoong",
+      "state_code": "SK",
+      "name_i18n": { "en": "Losoong / Namsoong Festival", "hi": "लोसूंग महोत्सव", "as": "ল'চুং মহোৎসৱ", "bn": "লোসুং উৎসব" },
+      "start_date": "2026-12-11",
+      "end_date": "2026-12-16",
+      "is_approximate": true,
+      "description_i18n": { "en": "Sikkimese harvest & New Year marked by Cham monastic mask dances at Rumtek and Phodong.", "hi": "सिक्किम का फसल व नववर्ष उत्सव, मठों में छम मुखौटा नृत्य के साथ।" },
+      "source_url": "https://sikkimtourism.gov.in/",
+      "last_verified_at": "2026-11-15T10:00:00Z"
+    },
+    {
+      "id": "fest_tr_kharchi",
+      "state_code": "TR",
+      "name_i18n": { "en": "Kharchi Puja & Orange Festival", "hi": "खर्ची पूजा", "as": "খাৰ্চি পূজা", "bn": "খার্চি পূজা" },
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-16",
+      "is_approximate": true,
+      "description_i18n": { "en": "Traditional week-long Tripura festival at Old Agartala Chaturdasha Devata temple.", "hi": "पुराना अगरतला में सप्ताह भर चलने वाला पारंपरिक उत्सव।" },
+      "source_url": "https://tripuratourism.gov.in/",
+      "last_verified_at": "2026-11-05T10:00:00Z"
+    }
+  ],
+  "phrasebook": [
+    { "id": "phr_as_hello", "language_code": "as", "language_name": "Assamese (অসমীয়া)", "category": "greetings", "english_text": "Hello / Peace to you", "local_text": "নমস্কাৰ", "romanized": "Nomoskar", "tts_lang": "bn-IN" },
+    { "id": "phr_as_thanks", "language_code": "as", "language_name": "Assamese (অসমীয়া)", "category": "greetings", "english_text": "Thank you", "local_text": "ধন্যবাদ", "romanized": "Dhonyobad", "tts_lang": "bn-IN" },
+    { "id": "phr_as_howmuch", "language_code": "as", "language_name": "Assamese (অসমীয়া)", "category": "transport", "english_text": "How much is the fare?", "local_text": "ভাড়া কিমান?", "romanized": "Bhara kiman?", "tts_lang": "bn-IN" },
+    { "id": "phr_as_water", "language_code": "as", "language_name": "Assamese (অসমীয়া)", "category": "food", "english_text": "Please give me drinking water", "local_text": "খোৱা পানী অলপ দিব নেকি?", "romanized": "Khowa pani olop dibo neki?", "tts_lang": "bn-IN" },
+    { "id": "phr_bn_hello", "language_code": "bn", "language_name": "Bengali (বাংলা)", "category": "greetings", "english_text": "Hello / How are you?", "local_text": "নমস্কার, কেমন আছেন?", "romanized": "Nomoshkar, kemon achhen?", "tts_lang": "bn-IN" },
+    { "id": "phr_bn_station", "language_code": "bn", "language_name": "Bengali (বাংলা)", "category": "transport", "english_text": "Where is the bus stand?", "local_text": "বাস স্ট্যান্ড কোথায়?", "romanized": "Bus stand kothay?", "tts_lang": "bn-IN" },
+    { "id": "phr_bn_veg", "language_code": "bn", "language_name": "Bengali (বাংলা)", "category": "food", "english_text": "Is vegetarian food available?", "local_text": "নিরামিষ খাবার পাওয়া যাবে?", "romanized": "Niramish khabar paoa jabe?", "tts_lang": "bn-IN" },
+    { "id": "phr_hi_permit", "language_code": "hi", "language_name": "Hindi (हिन्दी)", "category": "permits", "english_text": "Where is the permit checkpost?", "local_text": "परमिट चेकपोस्ट कहाँ है?", "romanized": "Permit checkpost kahan hai?", "tts_lang": "hi-IN" },
+    { "id": "phr_hi_help", "language_code": "hi", "language_name": "Hindi (हिन्दी)", "category": "emergency", "english_text": "Please help, we need a doctor", "local_text": "कृपया मदद करें, हमें डॉक्टर की ज़रूरत है", "romanized": "Kripaya madad karein, humein doctor ki zaroorat hai", "tts_lang": "hi-IN" },
+    { "id": "phr_lus_hello", "language_code": "lus", "language_name": "Mizo", "category": "greetings", "english_text": "Good morning / Hello", "local_text": "Chibai", "romanized": "Chee-bai", "tts_lang": "en-IN" },
+    { "id": "phr_lus_thanks", "language_code": "lus", "language_name": "Mizo", "category": "greetings", "english_text": "Thank you very much", "local_text": "Ka lawm e", "romanized": "Ka lawm eh", "tts_lang": "en-IN" },
+    { "id": "phr_nag_how", "language_code": "nag", "language_name": "Nagamese", "category": "greetings", "english_text": "How are you?", "local_text": "Kineka ase?", "romanized": "Kee-neh-ka ah-say?", "tts_lang": "en-IN" },
+    { "id": "phr_nag_thanks", "language_code": "nag", "language_name": "Nagamese", "category": "greetings", "english_text": "Thank you", "local_text": "Dhanyabaad / Pelai ase", "romanized": "Dhanyabaad", "tts_lang": "en-IN" },
+    { "id": "phr_ne_hello", "language_code": "ne", "language_name": "Nepali (Sikkim)", "category": "greetings", "english_text": "Hello / Thank you", "local_text": "नमस्ते / धन्यवाद", "romanized": "Namaste / Dhanyabaad", "tts_lang": "hi-IN" },
+    { "id": "phr_ne_route", "language_code": "ne", "language_name": "Nepali (Sikkim)", "category": "transport", "english_text": "Is the road ahead open?", "local_text": "अगाडि बाटो खुलेको छ?", "romanized": "Agadi bato khuleko chha?", "tts_lang": "hi-IN" }
+  ],
+  "helplines": [
+    { "id": "help_in_national", "state_code": "ALL", "state_name": "Pan-India / All NE States", "emergency": "112", "police": "100 / 112", "ambulance": "108 / 102", "tourist_helpline": "1800-11-1363", "disaster_helpline": "1070 / 1077" },
+    { "id": "help_as", "state_code": "AS", "state_name": "Assam", "emergency": "112", "police": "100", "ambulance": "108", "tourist_helpline": "0361-2633654", "disaster_helpline": "1070 / 1079" },
+    { "id": "help_ml", "state_code": "ML", "state_name": "Meghalaya", "emergency": "112", "police": "100", "ambulance": "108", "tourist_helpline": "0364-2226220", "disaster_helpline": "1070 / 1077" },
+    { "id": "help_ar", "state_code": "AR", "state_name": "Arunachal Pradesh", "emergency": "112", "police": "100", "ambulance": "108", "tourist_helpline": "0360-2214745", "disaster_helpline": "1070 / 1077" },
+    { "id": "help_nl", "state_code": "NL", "state_name": "Nagaland", "emergency": "112", "police": "100", "ambulance": "108", "tourist_helpline": "0370-2243124", "disaster_helpline": "1070" },
+    { "id": "help_mn", "state_code": "MN", "state_name": "Manipur", "emergency": "112", "police": "100", "ambulance": "108", "tourist_helpline": "0385-2441783", "disaster_helpline": "1070" },
+    { "id": "help_mz", "state_code": "MZ", "state_name": "Mizoram", "emergency": "112", "police": "100", "ambulance": "102 / 108", "tourist_helpline": "0389-2333475", "disaster_helpline": "1070" },
+    { "id": "help_sk", "state_code": "SK", "state_name": "Sikkim", "emergency": "112", "police": "100", "ambulance": "108 / 102", "tourist_helpline": "03592-209090", "disaster_helpline": "1070 / 1077" },
+    { "id": "help_tr", "state_code": "TR", "state_name": "Tripura", "emergency": "112", "police": "100", "ambulance": "108 / 102", "tourist_helpline": "0381-2325930", "disaster_helpline": "1070" }
+  ]
+}

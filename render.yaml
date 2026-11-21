@@ -1,0 +1,56 @@
+# Render.com Blueprint — 1-click deployment for NE Mate API + Web PWA
+services:
+  - type: web
+    name: ne-mate-api
+    runtime: docker
+    dockerfilePath: ./infra/Dockerfile.api
+    dockerContext: .
+    plan: free
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: FIREBASE_MODE
+        value: firestore
+      - key: FIREBASE_PROJECT_ID
+        value: ne-travel-mate
+      - key: FIREBASE_DATABASE_ID
+        value: (default)
+      - key: DEV_AUTH_BYPASS
+        value: "false"
+      - key: RAPIDAPI_LIVE_ENABLED
+        value: "false"
+      - key: FIREBASE_SERVICE_ACCOUNT_JSON
+        sync: false
+      - key: GOOGLE_MAPS_SERVER_KEY
+        sync: false
+      - key: LLM_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+
+  - type: web
+    name: ne-mate-web
+    runtime: docker
+    dockerfilePath: ./infra/Dockerfile.web
+    dockerContext: .
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: API_BASE_URL
+        sync: false
+      - key: NEXT_PUBLIC_FIREBASE_API_KEY
+        sync: false
+      - key: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+        sync: false
+      - key: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+        value: ne-travel-mate
+      - key: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+        value: ne-travel-mate.firebasestorage.app
+      - key: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+        sync: false
+      - key: NEXT_PUBLIC_FIREBASE_APP_ID
+        sync: false
+      - key: NEXT_PUBLIC_GOOGLE_MAPS_BROWSER_KEY
+        sync: false

@@ -1,0 +1,205 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function userProfileExists() {
+      return isSignedIn() &&
+        exists(/databases/$(database)/documents/user_profiles/$(request.auth.uid));
+    }
+
+    function userRole() {
+      return userProfileExists()
+        ? get(/databases/$(database)/documents/user_profiles/$(request.auth.uid)).data.role
+        : 'traveler';
+    }
+
+    function isEditorOrAdmin() {
+      return isSignedIn() && (userRole() == 'editor' || userRole() == 'admin');
+    }
+
+    function isAdmin() {
+      return isSignedIn() && userRole() == 'admin';
+    }
+
+    function tripDoc(tripId) {
+      return get(/databases/$(database)/documents/trips/$(tripId)).data;
+    }
+
+    function isTripMember(tripId) {
+      return isSignedIn() && (
+        tripDoc(tripId).owner_id == request.auth.uid ||
+        (tripDoc(tripId).member_ids != null && request.auth.uid in tripDoc(tripId).member_ids)
+      );
+    }
+
+    function canEditTrip(tripId) {
+      return isSignedIn() && (
+        tripDoc(tripId).owner_id == request.auth.uid ||
+        (tripDoc(tripId).editor_ids != null && request.auth.uid in tripDoc(tripId).editor_ids)
+      );
+    }
+
+    // --- User Profiles & Private Subcollections ---
+    match /user_profiles/{uid} {
+      allow read: if isOwner(uid) || isAdmin();
+      // Users can create their profile with default 'traveler' role only (never self-elevate)
+      allow create: if isOwner(uid)
+        && (!('role' in request.resource.data) || request.resource.data.role == 'traveler');
+      // Users cannot mutate their own role field
+      allow update: if isOwner(uid)
+        && (!('role' in request.resource.data) || request.resource.data.role == resource.data.role);
+      allow delete: if isOwner(uid) || isAdmin();
+
+      match /consents/{docId} {
+        allow read, create: if isOwner(uid);
+        allow update, delete: if false; // Consent log is append-only
+      }
+      match /emergency_contacts/{contactId} {
+        allow read, write: if isOwner(uid);
+      }
+      match /saved_places/{placeId} {
+        allow read, write: if isOwner(uid);
+      }
+      match /documents/{docId} {
+        allow read, write: if isOwner(uid);
+      }
+      match /push_subscriptions/{subId} {
+        allow read, write: if isOwner(uid);
+      }
+      match /notifications/{notifId} {
+        allow read, update: if isOwner(uid);
+        allow create, delete: if false;
+      }
+    }
+
+    // --- Curated Reference Data (Public/Traveler Read-Only, Editor/Admin Write) ---
+    match /states/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /permit_areas/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /permits/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /permit_rules/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /permit_versions/{docId} {
+      allow read: if isEditorOrAdmin();
+      allow write: if false; // Immutable audit snapshot written by backend Admin SDK
+    }
+    match /places/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /specialities/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /festivals/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /transport_nodes/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /transport_options/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /alerts/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /phrasebook/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /helplines/{docId} {
+      allow read: if true;
+      allow write: if isEditorOrAdmin();
+    }
+    match /kb_chunks/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // Written by backend worker/admin SDK
+    }
+
+    // --- Trips & Subcollections ---
+    match /trips/{tripId} {
+      allow read: if isSignedIn() && (
+        resource.data.owner_id == request.auth.uid ||
+        (resource.data.member_ids != null && request.auth.uid in resource.data.member_ids)
+      );
+      allow create: if isSignedIn() && request.resource.data.owner_id == request.auth.uid;
+      allow update: if isSignedIn() && (
+        resource.data.owner_id == request.auth.uid ||
+        (resource.data.editor_ids != null && request.auth.uid in resource.data.editor_ids)
+      );
+      allow delete: if isSignedIn() && resource.data.owner_id == request.auth.uid;
+
+      match /days/{dayId} {
+        allow read: if isTripMember(tripId);
+        allow write: if canEditTrip(tripId);
+      }
+      match /items/{itemId} {
+        allow read: if isTripMember(tripId);
+        allow write: if canEditTrip(tripId);
+      }
+      match /permit_tasks/{taskId} {
+        allow read: if isTripMember(tripId);
+        allow write: if canEditTrip(tripId);
+      }
+      match /expenses/{expenseId} {
+        allow read: if isTripMember(tripId);
+        allow write: if canEditTrip(tripId);
+      }
+      match /packing/{packId} {
+        allow read: if isTripMember(tripId);
+        allow write: if canEditTrip(tripId);
+      }
+    }
+
+    // --- AI Chat Threads & Messages ---
+    match /chat_threads/{threadId} {
+      allow read, update, delete: if isSignedIn() && resource.data.user_id == request.auth.uid;
+      allow create: if isSignedIn() && request.resource.data.user_id == request.auth.uid;
+
+      match /messages/{msgId} {
+        allow read, write: if isSignedIn() &&
+          get(/databases/$(database)/documents/chat_threads/$(threadId)).data.user_id == request.auth.uid;
+      }
+    }
+
+    // --- Operations & Audit Logs (Backend Admin SDK Only) ---
+    match /audit_log/{docId} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+    match /external_api_log/{docId} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+    match /job_runs/{docId} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+    match /llm_usage/{docId} {
+      allow read: if isSignedIn() && resource.data.user_id == request.auth.uid;
+      allow write: if false;
+    }
+  }
+}

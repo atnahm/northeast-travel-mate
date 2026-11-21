@@ -1,0 +1,573 @@
+{
+  "_meta": {
+    "purpose": "Maps North-East destinations to the railhead(s) a rail traveller should use, plus the onward road/ferry leg.",
+    "rules": [
+      "No permit requirement is stored here. Only permitAreaId is stored, so the app can link to the verified permits database.",
+      "roadKm and driveMinutes are driving figures filled by data/trains/verify_railheads.py from the Google Routes API. A null value means 'not yet verified' and the UI must say so.",
+      "modes lists are curated and NOT yet verified; the UI labels them approximate.",
+      "Fares are never stored here."
+    ],
+    "schemaVersion": 1
+  },
+  "destinations": [
+    {
+      "id": "guwahati",
+      "name": "Guwahati",
+      "aliases": [
+        "Guwahati",
+        "Gauhati",
+        "Pan Bazar"
+      ],
+      "stateCode": "AS",
+      "lat": 26.1445,
+      "lng": 91.7362,
+      "permitAreaId": "area_as_state",
+      "hasDirectRail": true,
+      "railheads": [
+        {
+          "code": "GHY",
+          "isPrimary": true,
+          "modes": [],
+          "roadKm": 0,
+          "driveMinutes": 0,
+          "road": {
+            "status": "direct_rail",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Direct station in city"
+          }
+        }
+      ],
+      "rail": {
+        "status": "desk_checked",
+        "lastVerifiedAt": "2026-11-21",
+        "source": "Public station-code listings (web search desk check)"
+      }
+    },
+    {
+      "id": "dibrugarh",
+      "name": "Dibrugarh",
+      "aliases": [
+        "Dibrugarh"
+      ],
+      "stateCode": "AS",
+      "lat": 27.4728,
+      "lng": 94.912,
+      "permitAreaId": "area_as_state",
+      "hasDirectRail": true,
+      "railheads": [
+        {
+          "code": "DBRG",
+          "isPrimary": true,
+          "modes": [],
+          "roadKm": 0,
+          "driveMinutes": 0,
+          "road": {
+            "status": "direct_rail",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Direct station in city"
+          }
+        }
+      ],
+      "rail": {
+        "status": "desk_checked",
+        "lastVerifiedAt": "2026-11-21",
+        "source": "Public station-code listings (web search desk check)"
+      }
+    },
+    {
+      "id": "dimapur",
+      "name": "Dimapur",
+      "aliases": [
+        "Dimapur"
+      ],
+      "stateCode": "NL",
+      "lat": 25.912,
+      "lng": 93.728,
+      "permitAreaId": "area_nl_state",
+      "hasDirectRail": true,
+      "railheads": [
+        {
+          "code": "DMV",
+          "isPrimary": true,
+          "modes": [],
+          "roadKm": 0,
+          "driveMinutes": 0,
+          "road": {
+            "status": "direct_rail",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Direct station in city"
+          }
+        }
+      ],
+      "rail": {
+        "status": "needs_verification",
+        "lastVerifiedAt": null,
+        "source": null
+      }
+    },
+    {
+      "id": "agartala",
+      "name": "Agartala",
+      "aliases": [
+        "Agartala",
+        "Ujjayanta Palace"
+      ],
+      "stateCode": "TR",
+      "lat": 23.8359,
+      "lng": 91.283,
+      "permitAreaId": "area_tr_state",
+      "hasDirectRail": true,
+      "railheads": [
+        {
+          "code": "AGTL",
+          "isPrimary": true,
+          "modes": [],
+          "roadKm": 0,
+          "driveMinutes": 0,
+          "road": {
+            "status": "direct_rail",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Direct station in city"
+          }
+        }
+      ],
+      "rail": {
+        "status": "desk_checked",
+        "lastVerifiedAt": "2026-11-21",
+        "source": "Public station-code listings (web search desk check)"
+      }
+    },
+    {
+      "id": "aizawl",
+      "name": "Aizawl",
+      "aliases": [
+        "Aizawl",
+        "Mizoram capital"
+      ],
+      "stateCode": "MZ",
+      "lat": 23.7271,
+      "lng": 92.7176,
+      "permitAreaId": "area_mz_state",
+      "hasDirectRail": true,
+      "railheads": [
+        {
+          "code": "SANG",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "self_drive"
+          ],
+          "roadKm": 22,
+          "driveMinutes": 69,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        },
+        {
+          "code": "SCL",
+          "isPrimary": false,
+          "modes": [
+            "shared_sumo",
+            "bus"
+          ],
+          "roadKm": 171,
+          "driveMinutes": 436,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "rail": {
+        "status": "desk_checked",
+        "lastVerifiedAt": "2026-11-21",
+        "source": "Web search summary of Wikipedia and news reports: Bairabi-Sairang line opened 13 Sep 2025, station code SANG, roughly 15-20 km from Aizawl (reports differ).",
+        "note": "Road distance is filled by the Google Routes check. Sources disagree (about 12-20 km), so the UI must show it as approximate."
+      }
+    },
+    {
+      "id": "shillong",
+      "name": "Shillong",
+      "aliases": [
+        "Shillong",
+        "Police Bazar"
+      ],
+      "stateCode": "ML",
+      "lat": 25.5788,
+      "lng": 91.8933,
+      "permitAreaId": "area_ml_state",
+      "hasDirectRail": false,
+      "railheads": [
+        {
+          "code": "GHY",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "bus",
+            "self_drive"
+          ],
+          "roadKm": 98,
+          "driveMinutes": 163,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "rail": {
+        "status": "needs_verification",
+        "lastVerifiedAt": null,
+        "source": null
+      }
+    },
+    {
+      "id": "cherrapunji",
+      "name": "Cherrapunji (Sohra)",
+      "aliases": [
+        "Cherrapunji",
+        "Sohra",
+        "Cherrapunjee"
+      ],
+      "stateCode": "ML",
+      "lat": 25.2702,
+      "lng": 91.7323,
+      "permitAreaId": "area_ml_state",
+      "hasDirectRail": false,
+      "railheads": [
+        {
+          "code": "GHY",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "self_drive"
+          ],
+          "roadKm": 144,
+          "driveMinutes": 256,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "rail": {
+        "status": "needs_verification",
+        "lastVerifiedAt": null,
+        "source": null
+      }
+    },
+    {
+      "id": "kaziranga",
+      "name": "Kaziranga National Park",
+      "aliases": [
+        "Kaziranga",
+        "Kohora"
+      ],
+      "stateCode": "AS",
+      "lat": 26.588,
+      "lng": 93.409,
+      "permitAreaId": "area_as_kaziranga",
+      "hasDirectRail": false,
+      "railheads": [
+        {
+          "code": "FKG",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "self_drive"
+          ],
+          "roadKm": 67,
+          "driveMinutes": 104,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        },
+        {
+          "code": "JTTN",
+          "isPrimary": false,
+          "modes": [
+            "shared_sumo",
+            "self_drive"
+          ],
+          "roadKm": 90,
+          "driveMinutes": 120,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "rail": {
+        "status": "desk_checked",
+        "lastVerifiedAt": "2026-11-21",
+        "source": "Station codes FKG and JTTN confirmed by public listing; choice of railhead is editorial."
+      }
+    },
+    {
+      "id": "majuli",
+      "name": "Majuli",
+      "aliases": [
+        "Majuli",
+        "Majuli island"
+      ],
+      "stateCode": "AS",
+      "lat": 26.95,
+      "lng": 94.1667,
+      "permitAreaId": "area_as_state",
+      "roadDestination": {
+        "name": "Nimati Ghat (Jorhat ferry terminal)",
+        "lat": 26.8602,
+        "lng": 94.2345
+      },
+      "hasDirectRail": false,
+      "railheads": [
+        {
+          "code": "JTTN",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "self_drive",
+            "ferry"
+          ],
+          "roadKm": 15,
+          "driveMinutes": 38,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "mode": "ferry",
+          "label": "Nimati Ghat to Kamalabari Ghat",
+          "typicalMinutes": 75,
+          "status": "needs_verification",
+          "lastVerifiedAt": null
+        }
+      ],
+      "rail": {
+        "status": "needs_verification",
+        "lastVerifiedAt": null,
+        "source": null
+      }
+    },
+    {
+      "id": "tawang",
+      "name": "Tawang",
+      "aliases": [
+        "Tawang",
+        "Tawang Monastery"
+      ],
+      "stateCode": "AR",
+      "lat": 27.5861,
+      "lng": 91.8594,
+      "permitAreaId": "area_ar_tawang",
+      "hasDirectRail": false,
+      "railheads": [
+        {
+          "code": "GHY",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "self_drive"
+          ],
+          "roadKm": 420,
+          "driveMinutes": 715,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        },
+        {
+          "code": "RNY",
+          "isPrimary": false,
+          "modes": [
+            "shared_sumo",
+            "self_drive"
+          ],
+          "roadKm": 315,
+          "driveMinutes": 544,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "rail": {
+        "status": "needs_verification",
+        "lastVerifiedAt": null,
+        "source": null
+      }
+    },
+    {
+      "id": "ziro",
+      "name": "Ziro Valley",
+      "aliases": [
+        "Ziro",
+        "Hapoli"
+      ],
+      "stateCode": "AR",
+      "lat": 27.545,
+      "lng": 93.8196,
+      "permitAreaId": "area_ar_ziro",
+      "hasDirectRail": false,
+      "railheads": [
+        {
+          "code": "NHLN",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "self_drive"
+          ],
+          "roadKm": 95,
+          "driveMinutes": 157,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "rail": {
+        "status": "desk_checked",
+        "lastVerifiedAt": "2026-11-21",
+        "source": "Station code NHLN confirmed by public listing; choice of railhead is editorial."
+      }
+    },
+    {
+      "id": "kohima",
+      "name": "Kohima",
+      "aliases": [
+        "Kohima",
+        "Kisama"
+      ],
+      "stateCode": "NL",
+      "lat": 25.667,
+      "lng": 94.1066,
+      "permitAreaId": "area_nl_state",
+      "hasDirectRail": false,
+      "railheads": [
+        {
+          "code": "DMV",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "self_drive"
+          ],
+          "roadKm": 69,
+          "driveMinutes": 134,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "rail": {
+        "status": "needs_verification",
+        "lastVerifiedAt": null,
+        "source": null
+      }
+    },
+    {
+      "id": "imphal",
+      "name": "Imphal",
+      "aliases": [
+        "Imphal",
+        "Loktak Lake",
+        "Moirang"
+      ],
+      "stateCode": "MN",
+      "lat": 24.8074,
+      "lng": 93.9384,
+      "permitAreaId": "area_mn_state",
+      "hasDirectRail": false,
+      "railheads": [
+        {
+          "code": "DMV",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "bus",
+            "self_drive"
+          ],
+          "roadKm": 205,
+          "driveMinutes": 412,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        },
+        {
+          "code": "SCL",
+          "isPrimary": false,
+          "modes": [
+            "shared_sumo",
+            "bus"
+          ],
+          "roadKm": 264,
+          "driveMinutes": 586,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "rail": {
+        "status": "needs_verification",
+        "lastVerifiedAt": null,
+        "source": null
+      }
+    },
+    {
+      "id": "gangtok",
+      "name": "Gangtok",
+      "aliases": [
+        "Gangtok",
+        "Sikkim capital",
+        "Tsomgo",
+        "Pelling"
+      ],
+      "stateCode": "SK",
+      "lat": 27.3314,
+      "lng": 88.6138,
+      "permitAreaId": "area_sk_state",
+      "hasDirectRail": false,
+      "railheads": [
+        {
+          "code": "NJP",
+          "isPrimary": true,
+          "modes": [
+            "shared_sumo",
+            "self_drive"
+          ],
+          "roadKm": 118,
+          "driveMinutes": 268,
+          "road": {
+            "status": "verified",
+            "lastVerifiedAt": "2026-11-21",
+            "source": "Google Routes API"
+          }
+        }
+      ],
+      "rail": {
+        "status": "needs_verification",
+        "lastVerifiedAt": null,
+        "source": null
+      }
+    }
+  ]
+}

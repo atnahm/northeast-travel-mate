@@ -1,0 +1,17 @@
+{
+  "name": "ne-mate-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NE Mate — North-East India Travel Mate (Firebase NoSQL + FastAPI + Next.js PWA)",
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "typecheck": "npm --prefix apps/web run typecheck",
+    "dev:api": ".venv/Scripts/python.exe -m uvicorn services.api.app.main:app --reload --port 8000",
+    "dev:agent": ".venv/Scripts/python.exe -m uvicorn services.agent.app.main:app --reload --port 8001",
+    "test:api": ".venv/Scripts/pytest.exe services/api/tests -v",
+    "seed:local": ".venv/Scripts/python.exe data/seed/seed_firestore.py --target local",
+    "seed:firestore": ".venv/Scripts/python.exe data/seed/seed_firestore.py --target firestore",
+    "gen:openapi": "node packages/shared/scripts/generate-openapi.mjs"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "NE Mate — North-East India Travel Mate",
+  "short_name": "NE Mate",
+  "description": "Trustworthy offline-first travel companion for the eight states of North-East India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#1F5E4B",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

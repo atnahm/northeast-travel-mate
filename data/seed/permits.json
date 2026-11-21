@@ -1,0 +1,379 @@
+[
+  {
+    "id": "perm_ar_ilp",
+    "code": "AR-ILP",
+    "state_code": "AR",
+    "name_i18n": {
+      "en": "Arunachal Pradesh Inner Line Permit (ILP)",
+      "hi": "अरुणाचल प्रदेश इनर लाइन परमिट (ILP)",
+      "as": "অৰুণাচল প্ৰদেশ ইনাৰ লাইন পাৰ্মিট (ILP)",
+      "bn": "অরুণাচল প্রদেশ ইনার লাইন পারমিট (ILP)"
+    },
+    "description_i18n": {
+      "en": "Mandatory entry permit for non-resident Indian citizens visiting any part of Arunachal Pradesh.",
+      "hi": "अरुणाचल प्रदेश जाने वाले गैर-निवासी भारतीय नागरिकों के लिए अनिवार्य प्रवेश परमिट।",
+      "as": "অৰুণাচল প্ৰদেশ ভ্ৰমণ কৰা অ-বাসিন্দা ভাৰতীয় নাগৰিকৰ বাবে বাধ্যতামূলক প্ৰৱেশ পাৰ্মিট।",
+      "bn": "অরুণাচল প্রদেশ ভ্রমণকারী অ-বাসিন্দা ভারতীয় নাগরিকদের জন্য বাধ্যতামূলক প্রবেশ পারমিট।"
+    },
+    "issuing_authority": "Government of Arunachal Pradesh (Department of Home)",
+    "portal_url": "https://eilp.arunachal.gov.in/",
+    "source_url": "https://eilp.arunachal.gov.in/",
+    "fee_text": "₹ --- (confirm current e-ILP fee on official portal)",
+    "processing_time_text": "Typically 24–72 hours online (instant e-ILP options available)",
+    "validity_text": "Short-term tourist validity per selected itinerary dates",
+    "documents_required": [
+      "Government photo ID (Passport / Aadhaar / Voter ID / Driving Licence)",
+      "Passport-size photograph",
+      "Confirmed hotel booking or local sponsor/reference contact"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-12T10:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_ar_pap",
+    "code": "AR-PAP",
+    "state_code": "AR",
+    "name_i18n": {
+      "en": "Arunachal Pradesh Protected Area Permit (PAP)",
+      "hi": "अरुणाचल प्रदेश संरक्षित क्षेत्र परमिट (PAP)",
+      "as": "অৰুণাচল প্ৰদেশ সংৰক্ষিত এলেকা পাৰ্মিট (PAP)",
+      "bn": "অরুণাচল প্রদেশ সংরক্ষিত এলাকা পারমিট (PAP)"
+    },
+    "description_i18n": {
+      "en": "Mandatory permit for foreign nationals (and check current OCI/PIO advisories) to enter Arunachal Pradesh.",
+      "hi": "अरुणाचल प्रदेश में प्रवेश के लिए विदेशी नागरिकों हेतु अनिवार्य संरक्षित क्षेत्र परमिट।",
+      "as": "অৰুণাচল প্ৰদেশত প্ৰৱেশৰ বাবে বিদেশী নাগৰিকৰ বাবে বাধ্যতামূলক সংৰক্ষিত এলেকা পাৰ্মিট।",
+      "bn": "অরুণাচল প্রদেশে প্রবেশের জন্য বিদেশী নাগরিকদের বাধ্যতামূলক সংরক্ষিত এলাকা পারমিট।"
+    },
+    "issuing_authority": "Ministry of Home Affairs / Govt. of Arunachal Pradesh (via registered tour operator or e-FRRO)",
+    "portal_url": "https://indianfrro.gov.in/eservices/",
+    "source_url": "https://arunachaltourism.com/",
+    "fee_text": "USD / ₹ --- (verify official fee on e-FRRO / portal)",
+    "processing_time_text": "3–10 working days; apply well before travel",
+    "validity_text": "Up to approved circuit duration (check current circuit rules)",
+    "documents_required": [
+      "Valid passport and Indian visa",
+      "Approved travel circuit details (often requires 2+ travelers or registered operator)",
+      "Passport-size photographs"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-12T10:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_nl_ilp",
+    "code": "NL-ILP",
+    "state_code": "NL",
+    "name_i18n": {
+      "en": "Nagaland Inner Line Permit (ILP)",
+      "hi": "नागालैंड इनर लाइन परमिट (ILP)",
+      "as": "নাগালেণ্ড ইনাৰ লাইন পাৰ্মিট (ILP)",
+      "bn": "নাগাল্যান্ড ইনার লাইন পারমিট (ILP)"
+    },
+    "description_i18n": {
+      "en": "Required for domestic visitors from outside Nagaland entering Kohima, Dimapur-interior, Mon, and other districts.",
+      "hi": "कोहिमा, मोन और नागालैंड के अन्य जिलों में प्रवेश के लिए बाहरी भारतीय यात्रियों हेतु आवश्यक परमिट।",
+      "as": "কহিমা, মন আৰু নাগালেণ্ডৰ অন্য জিলাত প্ৰৱেশৰ বাবে বাহিৰৰ ভাৰতীয় ভ্ৰমণকাৰীৰ বাবে প্ৰয়োজনীয় পাৰ্মিট।",
+      "bn": "কোহিমা, মন ও নাগাল্যান্ডের অন্যান্য জেলায় প্রবেশের জন্য ভারতীয় ভ্রমণকারীদের প্রয়োজনীয় পারমিট।"
+    },
+    "issuing_authority": "Government of Nagaland (Home Department)",
+    "portal_url": "https://ilp.nagaland.gov.in/",
+    "source_url": "https://ilp.nagaland.gov.in/",
+    "fee_text": "₹ --- (confirm fee on official e-ILP portal)",
+    "processing_time_text": "Usually 24–48 hours via online portal",
+    "validity_text": "Tourist ILP duration per application",
+    "documents_required": [
+      "Government photo ID",
+      "Recent photograph",
+      "Travel itinerary & stay address"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-10T09:30:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_nl_foreign_reg",
+    "code": "NL-FOREIGN",
+    "state_code": "NL",
+    "name_i18n": {
+      "en": "Nagaland Foreign Visitor Advisory & Police Registration",
+      "hi": "नागालैंड विदेशी यात्री पंजीकरण एवं परामर्श",
+      "as": "নাগালেণ্ড বিদেশী ভ্ৰমণকাৰী পঞ্জীয়ন আৰু পৰামৰ্শ",
+      "bn": "নাগাল্যান্ড বিদেশী ভ্রমণকারী নিবন্ধন ও পরামর্শ"
+    },
+    "description_i18n": {
+      "en": "Confirm current PAP exemption/requirements and mandatory 24-hour local police/FRO registration upon arrival.",
+      "hi": "नागालैंड में प्रवेश पर स्थानीय पुलिस/FRO पंजीकरण एवं वर्तमान PAP नियमों की पुष्टि अनिवार्य है।",
+      "as": "নাগালেণ্ডত প্ৰৱেশৰ পিছত স্থানীয় আৰক্ষী/FRO পঞ্জীয়ন আৰু বৰ্তমানৰ PAP নিয়ম নিশ্চিত কৰক।",
+      "bn": "নাগাল্যান্ডে প্রবেশের পর স্থানীয় পুলিশ/FRO নিবন্ধন ও বর্তমান PAP নিয়ম যাচাই করুন।"
+    },
+    "issuing_authority": "Nagaland Police / Foreigners Registration Office (FRO)",
+    "portal_url": "https://ilp.nagaland.gov.in/",
+    "source_url": "https://tourism.nagaland.gov.in/",
+    "fee_text": "₹ --- (confirm on official portal)",
+    "processing_time_text": "Register within 24 hours of arrival; confirm PAP rules pre-departure",
+    "validity_text": "Per visa & local registration",
+    "documents_required": [
+      "Passport & valid Indian visa",
+      "Hotel Form-C / host details",
+      "Itinerary"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-10T09:30:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_mz_ilp",
+    "code": "MZ-ILP",
+    "state_code": "MZ",
+    "name_i18n": {
+      "en": "Mizoram Inner Line Permit (ILP)",
+      "hi": "मिज़ोरम इनर लाइन परमिट (ILP)",
+      "as": "মিজোৰাম ইনাৰ লাইন পাৰ্মিট (ILP)",
+      "bn": "মিজোরাম ইনার লাইন পারমিট (ILP)"
+    },
+    "description_i18n": {
+      "en": "Mandatory for Indian citizens from outside Mizoram; temporary ILP can also be checked at Lengpui Airport or online.",
+      "hi": "मिज़ोरम के बाहर से आने वाले भारतीय नागरिकों के लिए अनिवार्य प्रवेश परमिट।",
+      "as": "মিজোৰামৰ বাহিৰৰ পৰা অহা ভাৰতীয় নাগৰিকৰ বাবে বাধ্যতামূলক প্ৰৱেশ পাৰ্মিট।",
+      "bn": "মিজোরামের বাইরে থেকে আসা ভারতীয় নাগরিকদের জন্য বাধ্যতামূলক প্রবেশ পারমিট।"
+    },
+    "issuing_authority": "Government of Mizoram (Home Department)",
+    "portal_url": "https://ilp.mizoram.gov.in/",
+    "source_url": "https://ilp.mizoram.gov.in/",
+    "fee_text": "₹ --- (confirm exact fee on official ILP portal)",
+    "processing_time_text": "Online portal or on-arrival check at Lengpui Airport / Vairengte gate",
+    "validity_text": "Temporary tourist ILP per approved dates",
+    "documents_required": [
+      "Aadhaar / Voter ID / Passport",
+      "2 passport photos",
+      "Local stay / sponsor details"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-08T11:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_mn_ilp",
+    "code": "MN-ILP",
+    "state_code": "MN",
+    "name_i18n": {
+      "en": "Manipur Inner Line Permit (ILP)",
+      "hi": "मणिपुर इनर लाइन परमिट (ILP)",
+      "as": "মণিপুৰ ইনাৰ লাইন পাৰ্মিট (ILP)",
+      "bn": "মণিপুর ইনার লাইন পারমিট (ILP)"
+    },
+    "description_i18n": {
+      "en": "Required for domestic visitors entering Manipur. Check current travel advisories for hill districts before traveling.",
+      "hi": "मणिपुर में प्रवेश करने वाले घरेलू यात्रियों के लिए आवश्यक परमिट। यात्रा से पहले वर्तमान जिला सलाह अवश्य जांचें।",
+      "as": "মণিপুৰত প্ৰৱেশ কৰা ঘৰুৱা ভ্ৰমণকাৰীৰ বাবে প্ৰয়োজনীয়। যাত্ৰাৰ আগতে বৰ্তমানৰ ভ্ৰমণ পৰামৰ্শ চাওক।",
+      "bn": "মণিপুরে প্রবেশকারী ভারতীয় ভ্রমণকারীদের জন্য প্রয়োজনীয়। ভ্রমণের আগে বর্তমান ভ্রমণ নির্দেশিকা দেখুন।"
+    },
+    "issuing_authority": "Government of Manipur (Home Department)",
+    "portal_url": "https://manipurilponline.mn.gov.in/",
+    "source_url": "https://manipurilponline.mn.gov.in/",
+    "fee_text": "₹ --- (confirm current fee on official portal)",
+    "processing_time_text": "Online or at Imphal Airport / Mao / Jiribam entry counters",
+    "validity_text": "Temporary tourist pass",
+    "documents_required": [
+      "Government photo ID",
+      "Passport photo",
+      "Confirmed local address"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-08T11:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_mn_pap",
+    "code": "MN-PAP",
+    "state_code": "MN",
+    "name_i18n": {
+      "en": "Manipur Foreign National Entry & PAP Advisory",
+      "hi": "मणिपुर विदेशी यात्री एवं PAP सलाह",
+      "as": "মণিপুৰ বিদেশী ভ্ৰমণকাৰী আৰু PAP পৰামৰ্শ",
+      "bn": "মণিপুর বিদেশী ভ্রমণকারী ও PAP নির্দেশিকা"
+    },
+    "description_i18n": {
+      "en": "Foreign nationals and OCI/PIO holders must verify current MHA Protected Area Permit (PAP) status and district advisories prior to entry.",
+      "hi": "विदेशी नागरिकों और OCI/PIO धारकों को यात्रा से पहले वर्तमान PAP नियम और जिला सलाह की पुष्टि करनी होगी।",
+      "as": "বিদেশী নাগৰিক আৰু OCI/PIO ধাৰকে প্ৰৱেশৰ আগতে বৰ্তমানৰ PAP নিয়ম নিশ্চিত কৰিব লাগিব।",
+      "bn": "বিদেশী নাগরিক ও OCI/PIO ধারকদের প্রবেশের আগে বর্তমান PAP নিয়ম যাচাই করতে হবে।"
+    },
+    "issuing_authority": "Ministry of Home Affairs / Govt. of Manipur",
+    "portal_url": "https://indianfrro.gov.in/eservices/",
+    "source_url": "https://manipur.gov.in/",
+    "fee_text": "₹ --- / USD --- (verify on e-FRRO / MHA portal)",
+    "processing_time_text": "Apply ahead via e-FRRO / registered operator; verify current status",
+    "validity_text": "As approved on permit",
+    "documents_required": [
+      "Passport & valid Indian visa",
+      "Detailed itinerary",
+      "Local contact / hotel confirmation"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-07-15T10:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_sk_rap",
+    "code": "SK-RAP",
+    "state_code": "SK",
+    "name_i18n": {
+      "en": "Sikkim Restricted Area Permit (RAP / ILP for Foreign Nationals)",
+      "hi": "सिक्किम प्रतिबंधित क्षेत्र परमिट (विदेशी नागरिकों हेतु RAP)",
+      "as": "ছিকিম সংৰক্ষিত এলেকা পাৰ্মিট (বিদেশী নাগৰিকৰ বাবে RAP)",
+      "bn": "সিকিম সংরক্ষিত এলাকা পারমিট (বিদেশী নাগরিকদের জন্য RAP)"
+    },
+    "description_i18n": {
+      "en": "Foreign nationals require a free Restricted Area Permit (RAP) at Rangpo/Melli checkposts, Pakyong Airport, or via Sikkim Tourism offices.",
+      "hi": "विदेशी नागरिकों को रंगपो/मेली चेकपोस्ट या पाकयोंग हवाई अड्डे पर निःशुल्क RAP की आवश्यकता होती है।",
+      "as": "বিদেশী নাগৰিকৰ বাবে ৰংপো/মেলি চেকপোষ্ট বা পাকয়ং বিমানবন্দৰত RAP প্ৰয়োজন।",
+      "bn": "বিদেশী নাগরিকদের রংপো/মেলি চেকপোস্ট বা পাকয়ং বিমানবন্দরে RAP প্রয়োজন হয়।"
+    },
+    "issuing_authority": "Sikkim Tourism & Civil Aviation Department / Checkpost Authorities",
+    "portal_url": "https://sikkimtourism.gov.in/",
+    "source_url": "https://sikkimtourism.gov.in/",
+    "fee_text": "₹ --- (confirm official RAP issuance rules; generally issued at border/online)",
+    "processing_time_text": "Issued at Rangpo / Melli entry checkpost or advance online application",
+    "validity_text": "Typically 30 days (extendable per rules)",
+    "documents_required": [
+      "Valid passport & Indian visa",
+      "2 passport photos",
+      "RAP application form"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-15T08:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_sk_pap_north",
+    "code": "SK-PAP-HIGH",
+    "state_code": "SK",
+    "name_i18n": {
+      "en": "North Sikkim, Tsomgo & Nathula Protected Area Pass (PAP)",
+      "hi": "उत्तरी सिक्किम, त्सोमगो व नाथुला संरक्षित क्षेत्र पास (PAP)",
+      "as": "উত্তৰ ছিকিম, চোমগ' আৰু নাথুলা সংৰক্ষিত এলেকা পাছ (PAP)",
+      "bn": "উত্তর সিকিম, সোমগো ও নাথুলা সংরক্ষিত এলাকা পাস (PAP)"
+    },
+    "description_i18n": {
+      "en": "Even Indian citizens require a vehicle-linked Protected Area Permit (arranged via registered Sikkim tour operators) for Tsomgo Lake, Nathula Pass, and Lachen/Lachung. Foreign nationals have zone restrictions (e.g. Nathula closed to foreigners).",
+      "hi": "त्सोमगो, नाथुला और उत्तरी सिक्किम (लाचेन/लाचुंग) के लिए भारतीय नागरिकों को भी पंजीकृत टूर ऑपरेटर के माध्यम से PAP आवश्यक होता है।",
+      "as": "চোমগ', নাথুলা আৰু উত্তৰ ছিকিমলৈ যাবলৈ ভাৰতীয় নাগৰিকৰো পঞ্জীয়নভুক্ত অপাৰেটৰৰ জৰিয়তে PAP প্ৰয়োজন হয়।",
+      "bn": "সোমগো, নাথুলা ও উত্তর সিকিমে যেতে ভারতীয় নাগরিকদেরও নিবন্ধিত অপারেটরের মাধ্যমে PAP প্রয়োজন হয়।"
+    },
+    "issuing_authority": "Sikkim Police Checkpost & Tourism Department",
+    "portal_url": "https://sikkimtourism.gov.in/",
+    "source_url": "https://sikkimtourism.gov.in/",
+    "fee_text": "₹ --- (confirm permit & operator processing charges on official portal)",
+    "processing_time_text": "Submit documents 1 day prior via registered Sikkim travel agency",
+    "validity_text": "Dated entry pass for the approved route",
+    "documents_required": [
+      "Original Photo ID (Voter ID / Passport / Driving Licence; verify Aadhaar acceptance rules for Nathula)",
+      "2–4 passport photographs per traveler"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-15T08:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_as_kaziranga",
+    "code": "AS-KNP-ENTRY",
+    "state_code": "AS",
+    "name_i18n": {
+      "en": "Assam State Entry (No ILP) & Kaziranga Safari Permit",
+      "hi": "असम प्रवेश (ILP नहीं) एवं काजीरंगा सफारी परमिट",
+      "as": "অসম প্ৰৱেশ (ILP নালাগে) আৰু কাজিৰঙা ছাফাৰী পাৰ্মিট",
+      "bn": "আসাম প্রবেশ (ILP লাগে না) ও কাজিরাঙ্গা সাফারি পারমিট"
+    },
+    "description_i18n": {
+      "en": "Assam does not require an Inner Line Permit for entry. However, entering Kaziranga National Park zones requires an official Forest Department safari booking/entry pass.",
+      "hi": "असम राज्य में प्रवेश के लिए ILP की आवश्यकता नहीं है, किंतु काजीरंगा सफारी के लिए वन विभाग का प्रवेश पास जरूरी है।",
+      "as": "অসমত প্ৰৱেশৰ বাবে ILP নালাগে, কিন্তু কাজিৰঙা ছাফাৰীৰ বাবে বন বিভাগৰ পাৰ্মিট প্ৰয়োজন।",
+      "bn": "আসামে প্রবেশের জন্য ILP প্রয়োজন হয় না, তবে কাজিরাঙ্গা সাফারির জন্য বন দপ্তরের পাস প্রয়োজন।"
+    },
+    "issuing_authority": "Assam Forest Department / Kaziranga Tiger Reserve",
+    "portal_url": "https://kaziranga.assam.gov.in/",
+    "source_url": "https://kaziranga.assam.gov.in/",
+    "fee_text": "₹ --- (check official park entry & jeep/elephant safari tariff)",
+    "processing_time_text": "Book online or at Range Office 1 day in advance during season (Nov–Apr)",
+    "validity_text": "Single safari slot",
+    "documents_required": [
+      "Passport / Govt. Photo ID (Indian & Foreign tariffs differ — verify on portal)"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-14T10:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_ml_no_ilp",
+    "code": "ML-ENTRY",
+    "state_code": "ML",
+    "name_i18n": {
+      "en": "Meghalaya Visitor Entry (No ILP Currently Required)",
+      "hi": "मेघालय प्रवेश (वर्तमान में ILP की आवश्यकता नहीं)",
+      "as": "মেঘালয় প্ৰৱেশ (বৰ্তমান ILP নালাগে)",
+      "bn": "মেঘালয় প্রবেশ (বর্তমানে ILP লাগে না)"
+    },
+    "description_i18n": {
+      "en": "Meghalaya does not require an ILP for domestic tourists; foreign tourists only need a valid passport and Indian visa. Carry valid photo ID for hotel Form-C and checkpoints.",
+      "hi": "मेघालय में घरेलू यात्रियों को ILP की आवश्यकता नहीं है; विदेशी यात्रियों के लिए वैध पासपोर्ट व वीज़ा पर्याप्त है।",
+      "as": "মেঘালয়ত ঘৰুৱা ভ্ৰমণকাৰীৰ বাবে ILP নালাগে; বিদেশী যাত্ৰীৰ বাবে বৈধ পাছপোৰ্ট আৰু ভিছা যথেষ্ট।",
+      "bn": "মেঘালয়ে ভারতীয় ভ্রমণকারীদের ILP লাগে না; বিদেশীদের বৈধ পাসপোর্ট ও ভিসা প্রয়োজন।"
+    },
+    "issuing_authority": "Meghalaya Tourism",
+    "portal_url": "https://www.meghalayatourism.in/",
+    "source_url": "https://www.meghalayatourism.in/",
+    "fee_text": "No state entry permit fee (₹ 0)",
+    "processing_time_text": "No prior state entry permit needed; verify local village eco-entry fees at gates",
+    "validity_text": "Open entry",
+    "documents_required": [
+      "Valid Photo ID (Passport & Visa for foreign/OCI travelers)"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-14T10:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  },
+  {
+    "id": "perm_tr_no_ilp",
+    "code": "TR-ENTRY",
+    "state_code": "TR",
+    "name_i18n": {
+      "en": "Tripura Visitor Entry (No ILP Required)",
+      "hi": "त्रिपुरा प्रवेश (ILP की आवश्यकता नहीं)",
+      "as": "ত্ৰিপুৰা প্ৰৱেশ (ILP নালাগে)",
+      "bn": "ত্রিপুরা প্রবেশ (ILP লাগে না)"
+    },
+    "description_i18n": {
+      "en": "Tripura does not require an Inner Line Permit. Carry valid ID for border areas and Agartala-Bangladesh ICP checks.",
+      "hi": "त्रिपुरा में ILP की आवश्यकता नहीं है। सीमावर्ती क्षेत्रों में वैध पहचान पत्र साथ रखें।",
+      "as": "ত্ৰিপুৰাত ILP নালাগে। সীমান্ত অঞ্চলত বৈধ পৰিচয়পত্ৰ লগত ৰাখক।",
+      "bn": "ত্রিপুরায় ILP লাগে না। সীমান্ত এলাকায় বৈধ পরিচয়পত্র সাথে রাখুন।"
+    },
+    "issuing_authority": "Tripura Tourism Development Corporation",
+    "portal_url": "https://tripuratourism.gov.in/",
+    "source_url": "https://tripuratourism.gov.in/",
+    "fee_text": "No state entry permit fee (₹ 0)",
+    "processing_time_text": "No state permit required",
+    "validity_text": "Open entry",
+    "documents_required": [
+      "Valid Photo ID (Passport & Visa for foreign visitors)"
+    ],
+    "status": "active",
+    "last_verified_at": "2026-11-14T10:00:00Z",
+    "verified_by": "editorial_team_ne",
+    "version": 1
+  }
+]

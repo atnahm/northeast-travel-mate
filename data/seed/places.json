@@ -1,0 +1,562 @@
+[
+  {
+    "id": "place_as_kaziranga",
+    "google_place_id": "ChIJ____kaziranga_mock_id",
+    "state_code": "AS",
+    "name_i18n": { "en": "Kaziranga National Park", "hi": "काजीरंगा राष्ट्रीय उद्यान", "as": "কাজিৰঙা ৰাষ্ট্ৰীয় উদ্যান", "bn": "কাজিরাঙ্গা জাতীয় উদ্যান" },
+    "categories": ["wildlife", "nature"],
+    "lat": 26.6512,
+    "lng": 93.3611,
+    "best_months": [11, 12, 1, 2, 3, 4],
+    "permit_area_id": "area_as_kaziranga",
+    "is_featured": true,
+    "hours": "Morning Jeep Safari: 07:30–10:00 | Afternoon: 13:30–15:30 (Nov–Apr)",
+    "how_to_reach": "4.5 hrs drive east from Guwahati via NH-715 (Kohora Central Range).",
+    "curated_notes_i18n": {
+      "en": "Central (Kohora) and Western (Bagori) ranges open Nov–Apr. Reserve morning jeep entry a day ahead at the Kohora range office.",
+      "hi": "कोहोरा और बागोरी रेंज नवंबर से अप्रैल तक खुलती हैं। कोहोरा कार्यालय में एक दिन पहले सुबह की जीप सफारी बुक करें।",
+      "as": "কঁহৰা আৰু বাগৰি ৰেঞ্জ নৱেম্বৰৰ পৰা এপ্ৰিললৈ খোলা থাকে। এদিন আগতীয়াকৈ জীপ ছাফাৰী বুক কৰক।",
+      "bn": "কোহোরা ও বাগোরি রেঞ্জ নভেম্বর থেকে এপ্রিল খোলা থাকে। একদিন আগে জিপ সাফারি বুক করুন।"
+    }
+  },
+  {
+    "id": "place_as_majuli",
+    "google_place_id": "ChIJ____majuli_mock_id",
+    "state_code": "AS",
+    "name_i18n": { "en": "Majuli River Island", "hi": "माजुली नदी द्वीप", "as": "মাজুলী নদী দ্বীপ", "bn": "মাজুলী নদী দ্বীপ" },
+    "categories": ["culture", "nature", "stay"],
+    "lat": 26.9500,
+    "lng": 94.1667,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_as_state",
+    "is_featured": true,
+    "hours": "Ferries operate 07:30–15:30 depending on river levels",
+    "how_to_reach": "Drive or train to Jorhat, then take the Brahmaputra ferry from Nimati Ghat to Kamalabari Ghat.",
+    "curated_notes_i18n": {
+      "en": "Board the Ro-Pax or passenger ferry at Nimati Ghat before 14:30. Rent a bicycle in Kamalabari to visit Samaguri mask-making satra.",
+      "hi": "दोपहर 14:30 से पहले निमाती घाट से फेरी लें। सामागुरी सत्र देखने के लिए कमलाबारी में साइकिल किराए पर लें।",
+      "as": "দুপৰীয়া ২:৩০ বজাৰ আগতে নিমাতী ঘাটৰ পৰা ফেৰী লওক। চামগুৰি সত্ৰ চাবলৈ কমলাবাৰীত চাইকেল ভাড়াত লওক।",
+      "bn": "দুপুর ২:৩০-এর আগে নিমাতী ঘাট থেকে ফেরি নিন। সামাগুড়ি সত্র দেখতে কমলাবাড়িতে সাইকেল ভাড়া নিন।"
+    }
+  },
+  {
+    "id": "place_as_kamakhya",
+    "google_place_id": "ChIJ____kamakhya_mock_id",
+    "state_code": "AS",
+    "name_i18n": { "en": "Kamakhya Temple, Nilachal Hill", "hi": "कामाख्या मंदिर, नीलाचल पहाड़ी", "as": "কামাখ্যা মন্দিৰ, নীলাচল পাহাৰ", "bn": "কামাখ্যা মন্দির, নীলাচল পাহাড়" },
+    "categories": ["culture"],
+    "lat": 26.1664,
+    "lng": 91.7055,
+    "best_months": [10, 11, 12, 1, 2, 3, 4],
+    "permit_area_id": "area_as_state",
+    "is_featured": false,
+    "hours": "05:30–13:00, 14:30–17:30 (check darshan queues)",
+    "how_to_reach": "25 mins uphill taxi/cab from Guwahati Junction or Kamakhya Railway Station.",
+    "curated_notes_i18n": {
+      "en": "Historic hilltop temple overlooking the Brahmaputra River. Dress modestly and start early in the morning.",
+      "hi": "ब्रह्मपुत्र नदी को देखता हुआ ऐतिहासिक पहाड़ी मंदिर। सुबह जल्दी दर्शन के लिए जाएं।",
+      "as": "ব্ৰহ্মপুত্ৰৰ পাৰৰ নীলাচল পাহাৰত অৱস্থিত ঐতিহাসিক মন্দিৰ।",
+      "bn": "ব্রহ্মপুত্রের তীরে নীলাচল পাহাড়ে অবস্থিত ঐতিহাসিক মন্দির।"
+    }
+  },
+  {
+    "id": "place_as_manas",
+    "google_place_id": "ChIJ____manas_mock_id",
+    "state_code": "AS",
+    "name_i18n": { "en": "Manas National Park", "hi": "मानस राष्ट्रीय उद्यान", "as": "মানাহ ৰাষ্ট্ৰীয় উদ্যান", "bn": "মানস জাতীয় উদ্যান" },
+    "categories": ["wildlife", "nature"],
+    "lat": 26.6594,
+    "lng": 91.0011,
+    "best_months": [11, 12, 1, 2, 3],
+    "permit_area_id": "area_as_state",
+    "is_featured": false,
+    "hours": "06:30–16:00 (Bansbari Gate)",
+    "how_to_reach": "3.5 hrs drive west from Guwahati via Barpeta Road.",
+    "curated_notes_i18n": {
+      "en": "Biosphere Reserve along the Himalayan foothills famous for golden langurs, wild water buffalo, and river rafting.",
+      "hi": "गोल्डन लंगूर और जंगली भैंसों के लिए प्रसिद्ध हिमालय की तलहटी का जैवमंडल आरक्षित क्षेत्र।",
+      "as": "সোণালী বান্দৰ আৰু বনৰীয়া ম'হৰ বাবে বিখ্যাত জৈৱমণ্ডল সংৰক্ষিত বনাঞ্চল।",
+      "bn": "সোনালি হনুমান ও বন্য মহিষের জন্য বিখ্যাত বায়োস্ফিয়ার রিজার্ভ।"
+    }
+  },
+  {
+    "id": "place_ml_shillong",
+    "google_place_id": "ChIJ____shillong_mock_id",
+    "state_code": "ML",
+    "name_i18n": { "en": "Shillong & Police Bazar", "hi": "शिलांग और पुलिस बाजार", "as": "শ্বিলং আৰু পুলিচ বজাৰ", "bn": "শিলং ও পুলিশ বাজার" },
+    "categories": ["food", "culture", "stay"],
+    "lat": 25.5788,
+    "lng": 91.8933,
+    "best_months": [10, 11, 12, 1, 2, 3, 4, 5],
+    "permit_area_id": "area_ml_state",
+    "is_featured": true,
+    "hours": "Open daily (most shops close around 20:30)",
+    "how_to_reach": "2.5–3 hrs uphill shared Sumo or cab from Guwahati along NH-6.",
+    "curated_notes_i18n": {
+      "en": "Pine-fringed hill capital known for Ward's Lake, Laitlum Canyon viewpoints, live music cafes, and Khasi Jadoh eateries.",
+      "hi": "वार्ड्स झील, लैटलुम घाटी, लाइव म्यूज़िक कैफे और खासी जदोह के लिए प्रसिद्ध पहाड़ी राजधानी।",
+      "as": "ৱাৰ্ডছ হ্ৰদ, লাইটলাম গিৰিখাত আৰু খাচী জাদোহ খাদ্যৰ বাবে বিখ্যাত পাহাৰীয়া নগৰ।",
+      "bn": "ওয়ার্ডস লেক, লাইটলাম ক্যানিয়ন ও খাসি জাদোহ খাবারের জন্য বিখ্যাত শৈলশহর।"
+    }
+  },
+  {
+    "id": "place_ml_cherrapunji",
+    "google_place_id": "ChIJ____sohra_mock_id",
+    "state_code": "ML",
+    "name_i18n": { "en": "Cherrapunji (Sohra) & Nohkalikai Falls", "hi": "चेरापूंजी (सोहरा) और नोहकलिकाई जलप्रपात", "as": "চেৰাপুঞ্জী (চহৰা) আৰু নহকালিকাই জলপ্ৰপাত", "bn": "চেরাপুঞ্জি (সোহরা) ও নোহকালিকাই জলপ্রপাত" },
+    "categories": ["nature", "trek"],
+    "lat": 25.2702,
+    "lng": 91.7323,
+    "best_months": [9, 10, 11, 12, 1, 2],
+    "permit_area_id": "area_ml_state",
+    "is_featured": true,
+    "hours": "Viewpoints open 07:00–17:00",
+    "how_to_reach": "1.5–2 hrs scenic drive south from Shillong.",
+    "curated_notes_i18n": {
+      "en": "Leave Shillong before 08:00 to reach Nohkalikai and Wei Sawdong before afternoon cloud cover moves across the Sohra plateau.",
+      "hi": "दोपहर की धुंध से पहले नोहकलिकाई और वेई सॉडॉन्ग पहुँचने के लिए सुबह 08:00 बजे से पहले शिलांग से निकलें।",
+      "as": "আবেলিৰ কুঁৱলীৰ আগতে নহকালিকাই পাবলৈ পুৱা ৮ বজাৰ আগতে শ্বিলঙৰ পৰা যাত্ৰা কৰক।",
+      "bn": "বিকেলের কুয়াশার আগে নোহকালিকাই পৌঁছাতে সকাল ৮টার আগে শিলং থেকে রওনা দিন।"
+    }
+  },
+  {
+    "id": "place_ml_nongriat",
+    "google_place_id": "ChIJ____nongriat_mock_id",
+    "state_code": "ML",
+    "name_i18n": { "en": "Nongriat Double Decker Root Bridge", "hi": "नोंग्रियाट डबल डेकर रूट ब्रिज", "as": "নংৰিয়াট ডাবল ডেকাৰ শিপাৰ দলং", "bn": "নংরিয়াট ডাবল ডেকার রুট ব্রিজ" },
+    "categories": ["trek", "nature", "culture"],
+    "lat": 25.2512,
+    "lng": 91.6713,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_ml_state",
+    "is_featured": true,
+    "hours": "Trail entry 06:00–16:00 (3,500+ stone steps round trip from Tyrna)",
+    "how_to_reach": "Drive 45 mins from Sohra to Tyrna village, then descend on foot 1.5–2 hrs.",
+    "curated_notes_i18n": {
+      "en": "Living rubber-fig root bridges woven over generations by Khasi villagers. Carry cash for community entry fees and stay hydrated.",
+      "hi": "पीढ़ियों में बुने गए जीवित रबर-अंजीर की जड़ों के पुल। नकद रखें और अच्छी पकड़ वाले जूते पहनें।",
+      "as": "খাচী গাঁওবাসীয়ে প্ৰজন্ম ধৰি গঢ়ি তোলা জীৱন্ত শিপাৰ দলং।",
+      "bn": "খাসি গ্রামবাসীদের প্রজন্মের পর প্রজন্ম ধরে তৈরি জীবন্ত শিকড়ের সেতু।"
+    }
+  },
+  {
+    "id": "place_ml_dawki",
+    "google_place_id": "ChIJ____dawki_mock_id",
+    "state_code": "ML",
+    "name_i18n": { "en": "Dawki & Umngot River (Shnongpdeng)", "hi": "दावकी और उमंगोट नदी", "as": "দাউকি আৰু উমংগত নদী", "bn": "ডাউকি ও উমঙ্গট নদী" },
+    "categories": ["nature", "stay"],
+    "lat": 25.1846,
+    "lng": 92.0150,
+    "best_months": [11, 12, 1, 2, 3],
+    "permit_area_id": "area_ml_state",
+    "is_featured": true,
+    "hours": "Boating 07:30–16:30",
+    "how_to_reach": "2.5 hrs drive south from Shillong via Mawlynnong.",
+    "curated_notes_i18n": {
+      "en": "Water clarity is highest from November to February upstream at Shnongpdeng. Skip boating from June to September during monsoon runoff.",
+      "hi": "नवंबर से फरवरी के बीच श्नोंगपडेंग में पानी सबसे साफ रहता है। जून से सितंबर मानसून में बोटिंग से बचें।",
+      "as": "নৱেম্বৰৰ পৰা ফেব্ৰুৱাৰীলৈ শ্বনংপদেঙত পানী আটাইতকৈ স্বচ্ছ থাকে। বাৰিষা নাও যাত্ৰা এৰাই চলক।",
+      "bn": "নভেম্বর থেকে ফেব্রুয়ারি শ্নংপদেং-এ জল সবচেয়ে স্বচ্ছ থাকে। বর্ষাকালে নৌকাভ্রমণ এড়িয়ে চলুন।"
+    }
+  },
+  {
+    "id": "place_ar_tawang",
+    "google_place_id": "ChIJ____tawang_mock_id",
+    "state_code": "AR",
+    "name_i18n": { "en": "Tawang Monastery", "hi": "तवांग मठ", "as": "টাৱাং বৌদ্ধ মঠ", "bn": "তাওয়াং মঠ" },
+    "categories": ["culture", "nature"],
+    "lat": 27.5861,
+    "lng": 91.8594,
+    "best_months": [3, 4, 5, 10, 11],
+    "permit_area_id": "area_ar_tawang",
+    "is_featured": true,
+    "hours": "07:00–19:00",
+    "how_to_reach": "2-day drive from Guwahati via Tezpur/Bhalukpong, Bomdila, and Sela Tunnel/Pass.",
+    "curated_notes_i18n": {
+      "en": "Largest monastery in India at 3,048 m elevation. Acclimatize gradually at Dirang before crossing Sela Pass.",
+      "hi": "3,048 मीटर ऊँचाई पर भारत का सबसे बड़ा मठ। सेला दर्रा पार करने से पहले दिरांग में रुककर अनुकूलन करें।",
+      "as": "ভাৰতৰ সৰ্ববৃহৎ বৌদ্ধ মঠ। ছেলা পাছ পাৰ হোৱাৰ আগতে দিৰাঙত জিৰণি লৈ উচ্চতাৰ সৈতে খাপ খাওক।",
+      "bn": "ভারতের বৃহত্তম বৌদ্ধ মঠ। সেলা পাস পার হওয়ার আগে দিরাং-এ বিশ্রাম নিন।"
+    }
+  },
+  {
+    "id": "place_ar_ziro",
+    "google_place_id": "ChIJ____ziro_mock_id",
+    "state_code": "AR",
+    "name_i18n": { "en": "Ziro Valley & Hong Apatani Village", "hi": "ज़ीरो घाटी और हाँग गाँव", "as": "জিৰ' উপত্যকা আৰু হং গাঁও", "bn": "জিরো উপত্যকা ও হং গ্রাম" },
+    "categories": ["culture", "nature", "stay"],
+    "lat": 27.5450,
+    "lng": 93.8196,
+    "best_months": [3, 4, 5, 9, 10, 11],
+    "permit_area_id": "area_ar_ziro",
+    "is_featured": true,
+    "hours": "Village visits during daylight hours; respect home privacy",
+    "how_to_reach": "Overnight train from Guwahati to Naharlagun (Itanagar), then 3.5 hrs shared Sumo to Ziro.",
+    "curated_notes_i18n": {
+      "en": "UNESCO tentative heritage pine valley famous for Apatani wet-rice + fish cultivation and September music festival.",
+      "hi": "अपातानी धान-मछली खेती और देवदार के जंगलों से घिरी सुंदर घाटी।",
+      "as": "আপাতানি জনগোষ্ঠীৰ ধান-মাছ খেতি আৰু পাইনেৰে আবৃত মনোমোহা উপত্যকা।",
+      "bn": "আপাতানি ধান-মাছ চাষ ও পাইন ঘেরা শান্ত উপত্যকা।"
+    }
+  },
+  {
+    "id": "place_ar_sela",
+    "google_place_id": "ChIJ____sela_mock_id",
+    "state_code": "AR",
+    "name_i18n": { "en": "Sela Pass & Paradise Lake", "hi": "सेला दर्रा और पैराडाइज झील", "as": "ছেলা গিৰিপথ আৰু পেৰাডাইজ হ্ৰদ", "bn": "সেলা পাস ও প্যারাডাইজ লেক" },
+    "categories": ["nature"],
+    "lat": 27.5035,
+    "lng": 92.1045,
+    "best_months": [3, 4, 5, 10, 11],
+    "permit_area_id": "area_ar_tawang",
+    "is_featured": false,
+    "hours": "Daylight crossing recommended before 15:00",
+    "how_to_reach": "Along the Dirang–Tawang highway (approx. 4,170 m elevation; Sela Tunnel bypass option available).",
+    "curated_notes_i18n": {
+      "en": "High-altitude alpine pass; carry warm layers, check black-ice advisories in winter, and avoid strenuous exertion.",
+      "hi": "4,170 मीटर ऊँचाई का दर्रा; गर्म कपड़े रखें और सर्दियों में बर्फ़बारी की चेतावनी देखें।",
+      "as": "উচ্চ উচ্চতাৰ গিৰিপথ; গৰম কাপোৰ লগত ৰাখক আৰু বতৰৰ সতৰ্কবাণী চাওক।",
+      "bn": "উচ্চ গিরিপথ; গরম পোশাক রাখুন ও আবহাওয়ার সতর্কতা দেখে নিন।"
+    }
+  },
+  {
+    "id": "place_ar_mechuka",
+    "google_place_id": "ChIJ____mechuka_mock_id",
+    "state_code": "AR",
+    "name_i18n": { "en": "Mechuka Valley", "hi": "मेचुका घाटी", "as": "মেচুকা উপত্যকা", "bn": "মেচুকা উপত্যকা" },
+    "categories": ["nature", "culture", "stay"],
+    "lat": 28.5993,
+    "lng": 94.1322,
+    "best_months": [3, 4, 10, 11, 12],
+    "permit_area_id": "area_ar_state",
+    "is_featured": false,
+    "hours": "Remote mountain valley; arrange homestay ahead",
+    "how_to_reach": "7–8 hrs drive north from Aalo (Along), accessible via Dibrugarh / Bogibeel Bridge.",
+    "curated_notes_i18n": {
+      "en": "Remote Memba valley with hanging bamboo bridges, Siyom river meadows, and Samten Yongcha Gompa.",
+      "hi": "सियोम नदी के किनारे शांत मेम्बा घाटी और प्राचीन गोम्पा।",
+      "as": "ছিয়ম নদীৰ পাৰৰ শান্ত মেম্বা উপত্যকা আৰু বৌদ্ধ গোম্পা।",
+      "bn": "সিয়ম নদীর তীরে নিরিবিলি মেম্বা উপত্যকা ও প্রাচীন গোম্পা।"
+    }
+  },
+  {
+    "id": "place_nl_kohima",
+    "google_place_id": "ChIJ____kohima_mock_id",
+    "state_code": "NL",
+    "name_i18n": { "en": "Kohima War Cemetery & Kisama Heritage Village", "hi": "कोहिमा युद्ध स्मारक और किसामा गाँव", "as": "কহিমা যুদ্ধ সমাধিক্ষেত্ৰ আৰু কিছামা গাঁও", "bn": "কোহিমা ওয়ার সিমেট্রি ও কিসামা গ্রাম" },
+    "categories": ["culture"],
+    "lat": 25.6670,
+    "lng": 94.1066,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_nl_state",
+    "is_featured": true,
+    "hours": "War Cemetery 09:00–16:30 | Kisama open daily",
+    "how_to_reach": "2.5–3 hrs uphill drive from Dimapur Railway Station / Airport.",
+    "curated_notes_i18n": {
+      "en": "Poignant WWII memorial terraces in central Kohima and home to the annual Hornbill Festival each December.",
+      "hi": "द्वितीय विश्व युद्ध स्मारक और हर दिसंबर होने वाले हॉर्नबिल महोत्सव का केंद्र किसामा गाँव।",
+      "as": "দ্বিতীয় বিশ্বযুদ্ধৰ স্মাৰক আৰু প্ৰতি ডিচেম্বৰৰ হৰ্ণবিল মহোৎসৱৰ থলী।",
+      "bn": "দ্বিতীয় বিশ্বযুদ্ধের স্মৃতিস্তম্ভ ও প্রতি ডিসেম্বরের হর্নবিল উৎসবের কেন্দ্র।"
+    }
+  },
+  {
+    "id": "place_nl_dzukou",
+    "google_place_id": "ChIJ____dzukou_mock_id",
+    "state_code": "NL",
+    "name_i18n": { "en": "Dzukou Valley", "hi": "द्ज़ुकोऊ घाटी", "as": "জুকৌ উপত্যকা", "bn": "জুকৌ উপত্যকা" },
+    "categories": ["trek", "nature"],
+    "lat": 25.5570,
+    "lng": 94.0720,
+    "best_months": [6, 7, 10, 11, 12, 1],
+    "permit_area_id": "area_nl_dzukou",
+    "is_featured": true,
+    "hours": "Start trek before 09:00 from Viswema or Jakhama trailhead",
+    "how_to_reach": "Drive 1 hr south of Kohima to Viswema, then trek 3–4 hrs up.",
+    "curated_notes_i18n": {
+      "en": "Rolling emerald bamboo hills and seasonal Dzukou lilies. Plastic-free zone — carry reusable bottles and a local guide.",
+      "hi": "हरे-भरे बाँस के मैदान और मौसमी लिली। प्लास्टिक-मुक्त क्षेत्र; स्थानीय गाइड के साथ ट्रेक करें।",
+      "as": "সেউজীয়া বাঁহৰ উপত্যকা আৰু জুকৌ লিলি ফুলৰ বাবে বিখ্যাত ট্ৰেক।",
+      "bn": "সবুজ বাঁশের উপত্যকা ও জুকৌ লিলির জন্য বিখ্যাত ট্রেক।"
+    }
+  },
+  {
+    "id": "place_nl_khonoma",
+    "google_place_id": "ChIJ____khonoma_mock_id",
+    "state_code": "NL",
+    "name_i18n": { "en": "Khonoma Green Village", "hi": "खोनोमा ग्रीन विलेज", "as": "খোনোমা সেউজ গাঁও", "bn": "খোনোমা সবুজ গ্রাম" },
+    "categories": ["culture", "stay", "nature"],
+    "lat": 25.6524,
+    "lng": 94.0227,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_nl_state",
+    "is_featured": false,
+    "hours": "Community tours during daytime; homestays available",
+    "how_to_reach": "45 mins drive west from Kohima.",
+    "curated_notes_i18n": {
+      "en": "Asia's famed community-conserved Angami village with terraced alder farms and zero-hunting sanctuary.",
+      "hi": "सामुदायिक वन संरक्षण और सीढ़ीदार खेतों के लिए प्रसिद्ध अंगामी गाँव।",
+      "as": "সমুদায়-সংৰক্ষিত বনাঞ্চল আৰু আংগামী ঐতিহ্যবাহী গাঁও।",
+      "bn": "কমিউনিটি সংরক্ষিত বন ও আঙ্গামি ঐতিহ্যবাহী গ্রাম।"
+    }
+  },
+  {
+    "id": "place_nl_mon",
+    "google_place_id": "ChIJ____mon_mock_id",
+    "state_code": "NL",
+    "name_i18n": { "en": "Mon & Longwa Konyak Village", "hi": "मोन और लोंगवा कोन्याक गाँव", "as": "মন আৰু লংৱা কন্যাক গাঁও", "bn": "মন ও লংওয়া কন্যাক গ্রাম" },
+    "categories": ["culture"],
+    "lat": 26.7330,
+    "lng": 95.0330,
+    "best_months": [11, 12, 1, 2, 3, 4],
+    "permit_area_id": "area_nl_state",
+    "is_featured": false,
+    "hours": "Ask permission before photographing village elders",
+    "how_to_reach": "5–6 hrs drive from Jorhat/Sonari (Assam) via Tizit.",
+    "curated_notes_i18n": {
+      "en": "Border village where the Angh's house straddles the India–Myanmar border. Engage a local Konyak guide for respectful visits.",
+      "hi": "भारत-म्यांमार सीमा पर बसा कोन्याक गाँव। स्थानीय गाइड के साथ सम्मानपूर्वक भ्रमण करें।",
+      "as": "ভাৰত-ম্যানমাৰ সীমান্তত অৱস্থিত কন্যাক গাঁও।",
+      "bn": "ভারত-মিয়ানমার সীমান্তে অবস্থিত কন্যাক গ্রাম।"
+    }
+  },
+  {
+    "id": "place_mn_loktak",
+    "google_place_id": "ChIJ____loktak_mock_id",
+    "state_code": "MN",
+    "name_i18n": { "en": "Loktak Lake & Keibul Lamjao National Park", "hi": "लोकतक झील और केइबुल लामजाओ", "as": "ল'কটক হ্ৰদ আৰু কেইবুল লামজাও", "bn": "লোকটাক হ্রদ ও কেইবুল লামজাও" },
+    "categories": ["nature", "wildlife"],
+    "lat": 24.5130,
+    "lng": 93.8165,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_mn_state",
+    "is_featured": true,
+    "hours": "Sunrise–16:30 (Keibul Lamjao early morning for Sangai sightings)",
+    "how_to_reach": "1 hr 15 mins drive south from Imphal to Moirang / Sendra.",
+    "curated_notes_i18n": {
+      "en": "World's only floating national park and last natural home of the endangered Sangai brow-antlered deer.",
+      "hi": "दुनिया का एकमात्र तैरता राष्ट्रीय उद्यान और दुर्लभ संगाई हिरण का निवास।",
+      "as": "বিশ্বৰ একমাত্ৰ ভাসমান ৰাষ্ট্ৰীয় উদ্যান আৰু বিৰল ছাংগাই হৰিণৰ বাসস্থান।",
+      "bn": "বিশ্বের একমাত্র ভাসমান জাতীয় উদ্যান ও বিরল সাংগাই হরিণের আবাস।"
+    }
+  },
+  {
+    "id": "place_mn_ima_keithel",
+    "google_place_id": "ChIJ____imakeithel_mock_id",
+    "state_code": "MN",
+    "name_i18n": { "en": "Ima Keithel (Mothers' Market) & Kangla Fort", "hi": "इमा कीथेल (माताओं का बाजार) और कांगला किला", "as": "ইমা কেইথেল আৰু কাংলা দুৰ্গ", "bn": "ইমা কেইথেল ও কাংলা দুর্গ" },
+    "categories": ["culture", "food"],
+    "lat": 24.8074,
+    "lng": 93.9384,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_mn_state",
+    "is_featured": false,
+    "hours": "Market 07:00–18:00 | Kangla Fort 09:00–16:30",
+    "how_to_reach": "Central Imphal, 20 mins from Imphal Airport.",
+    "curated_notes_i18n": {
+      "en": "Historic all-women run market offering Manipuri handloom phanek, black Chak-hao rice, bamboo shoots, and nearby Kangla heritage complex.",
+      "hi": "महिलाओं द्वारा संचालित ऐतिहासिक बाजार, जहाँ मणिपुरी हथकरघा और काला चावल (चक-हाओ) मिलता है।",
+      "as": "মহিলাসকলে পৰিচালনা কৰা ঐতিহাসিক বজাৰ আৰু নিকটৱৰ্তী কাংলা দুৰ্গ।",
+      "bn": "নারীদের দ্বারা পরিচালিত ঐতিহাসিক বাজার ও নিকটস্থ কাংলা দুর্গ।"
+    }
+  },
+  {
+    "id": "place_mz_aizawl",
+    "google_place_id": "ChIJ____aizawl_mock_id",
+    "state_code": "MZ",
+    "name_i18n": { "en": "Aizawl & Solomon's Temple", "hi": "आइजोल और सोलोमन मंदिर", "as": "আইজল আৰু ছলমনৰ মন্দিৰ", "bn": "আইজল ও সলোমনের মন্দির" },
+    "categories": ["culture", "stay", "food"],
+    "lat": 23.7271,
+    "lng": 92.7176,
+    "best_months": [11, 12, 1, 2, 3],
+    "permit_area_id": "area_mz_state",
+    "is_featured": true,
+    "hours": "Note: Most markets & restaurants remain closed on Sundays",
+    "how_to_reach": "Flights to Lengpui Airport (AJL), then 1 hr hill drive to Aizawl.",
+    "curated_notes_i18n": {
+      "en": "Pedestrian-friendly ridge city known for quiet traffic etiquette, Durtlang Hills sunset views, and Mizo Museum.",
+      "hi": "शांत पहाड़ी शहर जहाँ यातायात अनुशासन देखने लायक है; रविवार को अधिकांश दुकानें बंद रहती हैं।",
+      "as": "সুশৃংখল পাহাৰীয়া নগৰ; দেওবাৰে অধিকাংশ বজাৰ বন্ধ থাকে।",
+      "bn": "সুশৃঙ্খল পাহাড়ি শহর; রবিবার বেশিরভাগ বাজার বন্ধ থাকে।"
+    }
+  },
+  {
+    "id": "place_mz_reiek",
+    "google_place_id": "ChIJ____reiek_mock_id",
+    "state_code": "MZ",
+    "name_i18n": { "en": "Reiek Tlang & Heritage Village", "hi": "रीएक त्लांग शिखर", "as": "ৰেইক ত্লাং পাহাৰ", "bn": "রেইক ত্লাং পাহাড়" },
+    "categories": ["trek", "nature", "culture"],
+    "lat": 23.6943,
+    "lng": 92.6054,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_mz_state",
+    "is_featured": true,
+    "hours": "Daytime trek (07:00–16:30)",
+    "how_to_reach": "1 hr 15 mins drive west from Aizawl.",
+    "curated_notes_i18n": {
+      "en": "Rewarding 45-minute summit hike over sweeping valleys plus reconstructed traditional Mizo chiefs' houses.",
+      "hi": "45 मिनट की पहाड़ी चढ़ाई से पूरी घाटी का विहंगम दृश्य और पारंपरिक मिज़ो गाँव।",
+      "as": "৪৫ মিনিটৰ খোজকাঢ়ি বগাব পৰা শিখৰ আৰু পৰম্পৰাগত মিজো গাঁও।",
+      "bn": "৪৫ মিনিটের চড়াই ট্রেক ও ঐতিহ্যবাহী মিজো গ্রাম।"
+    }
+  },
+  {
+    "id": "place_mz_vantawng",
+    "google_place_id": "ChIJ____vantawng_mock_id",
+    "state_code": "MZ",
+    "name_i18n": { "en": "Vantawng Falls, Thenzawl", "hi": "वंतवांग जलप्रपात, थेंजोल", "as": "ভানতাৱাং জলপ্ৰপাত", "bn": "ভানতাওয়াং জলপ্রপাত" },
+    "categories": ["nature", "culture"],
+    "lat": 23.2591,
+    "lng": 92.7556,
+    "best_months": [9, 10, 11, 12, 1, 2],
+    "permit_area_id": "area_mz_state",
+    "is_featured": false,
+    "hours": "Viewpoint open 08:00–16:30",
+    "how_to_reach": "3 hrs drive south of Aizawl via Thenzawl handloom weaving hub.",
+    "curated_notes_i18n": {
+      "en": "Mizoram's highest two-tiered cascade surrounded by bamboo forest; combine with Thenzawl handloom weavers.",
+      "hi": "मिज़ोरम का सबसे ऊँचा दो-स्तरीय झरना और थेंजोल हथकरघा केंद्र।",
+      "as": "মিজোৰামৰ সৰ্বোচ্চ জলপ্ৰপাত আৰু থেনজলৰ তাঁতশাল কেন্দ্ৰ।",
+      "bn": "মিজোরামের সর্বোচ্চ জলপ্রপাত ও থেনজল তাঁতশিল্প কেন্দ্র।"
+    }
+  },
+  {
+    "id": "place_sk_gangtok",
+    "google_place_id": "ChIJ____gangtok_mock_id",
+    "state_code": "SK",
+    "name_i18n": { "en": "Gangtok (MG Marg & Rumtek Monastery)", "hi": "गंगटोक और रुमटेक मठ", "as": "গেংটক আৰু ৰুমটেক মঠ", "bn": "গ্যাংটক ও রুমটেক মঠ" },
+    "categories": ["culture", "food", "stay"],
+    "lat": 27.3314,
+    "lng": 88.6138,
+    "best_months": [3, 4, 5, 10, 11, 12],
+    "permit_area_id": "area_sk_state",
+    "is_featured": true,
+    "hours": "MG Marg pedestrian promenade open daily | Rumtek 06:00–18:00",
+    "how_to_reach": "4.5 hrs uphill cab/Sumo from NJP Railway Station / Bagdogra Airport (IXB) or 1 hr from Pakyong.",
+    "curated_notes_i18n": {
+      "en": "Clean, plastic-free mountain capital; base for Rumtek Monastery, Namgyal Institute of Tibetology, and North Sikkim permits.",
+      "hi": "स्वच्छ और प्लास्टिक-मुक्त पहाड़ी राजधानी; रुमटेक मठ और उत्तरी सिक्किम परमिट का केंद्र।",
+      "as": "পৰিষ্কাৰ পাহাৰীয়া ৰাজধানী; ৰুমটেক মঠ আৰু উত্তৰ ছিকিম পাৰ্মিটৰ কেন্দ্ৰ।",
+      "bn": "পরিচ্ছন্ন পাহাড়ি রাজধানী; রুমটেক মঠ ও উত্তর সিকিম পারমিটের কেন্দ্র।"
+    }
+  },
+  {
+    "id": "place_sk_tsomgo",
+    "google_place_id": "ChIJ____tsomgo_mock_id",
+    "state_code": "SK",
+    "name_i18n": { "en": "Tsomgo (Changu) Lake", "hi": "त्सोमगो (चांगु) झील", "as": "চোমগ' (চাংগু) হ্ৰদ", "bn": "সোমগো (চাঙ্গু) লেক" },
+    "categories": ["nature"],
+    "lat": 27.3746,
+    "lng": 88.7618,
+    "best_months": [3, 4, 5, 10, 11, 12],
+    "permit_area_id": "area_sk_protected",
+    "is_featured": true,
+    "hours": "Day excursions 08:00–14:30",
+    "how_to_reach": "2 hrs steep climb east of Gangtok (requires Protected Area Permit arranged 1 day prior).",
+    "curated_notes_i18n": {
+      "en": "Glacial lake at 3,753 m reflecting snow peaks in winter and alpine rhododendrons in spring. Carry photo IDs for checkpost.",
+      "hi": "3,753 मीटर ऊँचाई पर स्थित हिमनद झील। चेकपोस्ट के लिए एक दिन पहले परमिट व फोटो आईडी तैयार रखें।",
+      "as": "৩,৭৫৩ মিটাৰ উচ্চতাৰ হিমবাহ হ্ৰদ। চেকপোষ্টৰ বাবে আগতীয়াকৈ PAP লওক।",
+      "bn": "৩,৭৫৩ মিটার উচ্চতার হিমবাহ হ্রদ। চেকপোস্টের জন্য আগে থেকে PAP নিন।"
+    }
+  },
+  {
+    "id": "place_sk_yumthang",
+    "google_place_id": "ChIJ____yumthang_mock_id",
+    "state_code": "SK",
+    "name_i18n": { "en": "Yumthang Valley of Flowers (Lachung)", "hi": "युमथांग घाटी (लाचुंग)", "as": "যুমথাং উপত্যকা (লাচুং)", "bn": "ইয়ুমথাং উপত্যকা (লাচুং)" },
+    "categories": ["nature", "trek"],
+    "lat": 27.8266,
+    "lng": 88.6959,
+    "best_months": [3, 4, 5, 10, 11],
+    "permit_area_id": "area_sk_protected",
+    "is_featured": false,
+    "hours": "Morning departure from Lachung 07:00",
+    "how_to_reach": "5 hrs from Gangtok to Lachung (overnight), then 1 hr up to Yumthang.",
+    "curated_notes_i18n": {
+      "en": "Alpine meadow at 3,564 m blooming with rhododendrons in April–May. Requires North Sikkim PAP via registered operator.",
+      "hi": "अप्रैल-मई में रोडोडेंड्रोन से सजी अल्पाइन घाटी। उत्तरी सिक्किम PAP आवश्यक है।",
+      "as": "বসন্তত ৰোডোডেন্দ্ৰন ফুলেৰে ভৰা আল্পাইন উপত্যকা। উত্তৰ ছিকিম PAP প্ৰয়োজন।",
+      "bn": "বসন্তে রডোডেনড্রন ফুলে ভরা আল্পাইন উপত্যকা। উত্তর সিকিম PAP প্রয়োজন।"
+    }
+  },
+  {
+    "id": "place_sk_pelling",
+    "google_place_id": "ChIJ____pelling_mock_id",
+    "state_code": "SK",
+    "name_i18n": { "en": "Pelling & Pemayangtse Monastery", "hi": "पेलिंग और पेमायांग्त्से मठ", "as": "পেলিং আৰু পেমায়াংটছে মঠ", "bn": "পেলিং ও পেমায়াংত্সে মঠ" },
+    "categories": ["culture", "nature", "stay"],
+    "lat": 27.3198,
+    "lng": 88.2400,
+    "best_months": [3, 4, 5, 10, 11, 12],
+    "permit_area_id": "area_sk_state",
+    "is_featured": false,
+    "hours": "Pemayangtse 09:00–17:00 | Skywalk 08:00–17:00",
+    "how_to_reach": "5 hrs drive west from Gangtok or 4.5 hrs north from NJP/Siliguri.",
+    "curated_notes_i18n": {
+      "en": "Uninterrupted sunrise views over Mt. Khangchendzonga, Khecheopalri Sacred Lake, and Rabdentse ruins.",
+      "hi": "कंचनजंगा पर सूर्योदय, खेचियोपालरी झील और रबदेंत्से खंडहर।",
+      "as": "কাঞ্চনজংঘাৰ সূৰ্যোদয় আৰু খেচেওপালৰি পবিত্ৰ হ্ৰদৰ বাবে বিখ্যাত।",
+      "bn": "কাঞ্চনজঙ্ঘার সূর্যোদয় ও খেচেওপালরি হ্রদের জন্য পরিচিত।"
+    }
+  },
+  {
+    "id": "place_tr_ujjayanta",
+    "google_place_id": "ChIJ____ujjayanta_mock_id",
+    "state_code": "TR",
+    "name_i18n": { "en": "Ujjayanta Palace & Tripura State Museum", "hi": "उज्जयंत महल, अगरतला", "as": "উজ্জয়ন্ত প্ৰাসাদ, আগৰতলা", "bn": "উজ্জয়ন্ত প্রাসাদ, আগরতলা" },
+    "categories": ["culture"],
+    "lat": 23.8359,
+    "lng": 91.2830,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_tr_state",
+    "is_featured": true,
+    "hours": "Museum 10:00–17:00 (Closed Mondays)",
+    "how_to_reach": "20 mins from Agartala Airport (IXA) or 15 mins from Agartala Railway Station.",
+    "curated_notes_i18n": {
+      "en": "Neoclassical former royal palace in central Agartala housing rich exhibits on North-East tribes, bamboo craft, and history.",
+      "hi": "अगरतला के मध्य स्थित शाही महल और पूर्वोत्तर की जनजातीय कला का समृद्ध संग्रहालय।",
+      "as": "আগৰতলাত অৱস্থিত ৰাজপ্ৰাসাদ আৰু সমৃদ্ধ ৰাজ্যিক সংগ্ৰহালয়।",
+      "bn": "আগরতলায় অবস্থিত রাজপ্রাসাদ ও সমৃদ্ধ ত্রিপুরা রাজ্য জাদুঘর।"
+    }
+  },
+  {
+    "id": "place_tr_unakoti",
+    "google_place_id": "ChIJ____unakoti_mock_id",
+    "state_code": "TR",
+    "name_i18n": { "en": "Unakoti Rock Carvings", "hi": "उनाकोटी शैल मूर्तियाँ", "as": "উনাকোটিৰ শৈল ভাস্কৰ্য", "bn": "উনাকোটি শিলা ভাস্কর্য" },
+    "categories": ["culture", "nature"],
+    "lat": 24.3168,
+    "lng": 92.0672,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_tr_state",
+    "is_featured": true,
+    "hours": "07:00–17:00",
+    "how_to_reach": "Train from Agartala to Kumarghat (2.5 hrs), then 30 mins auto/cab to Unakoti.",
+    "curated_notes_i18n": {
+      "en": "Colossal 7th–9th century bas-relief Shaivite rock sculptures carved into forested hillside waterfalls.",
+      "hi": "7वीं-9वीं शताब्दी की विशाल चट्टानों पर उकेरी गई शैल मूर्तियाँ और झरने।",
+      "as": "পাহাৰৰ শিলত কটা প্ৰাচীন বৃহৎ ভাস্কৰ্য আৰু জলপ্ৰপাত।",
+      "bn": "পাহাড়ের গায়ে খোদাই করা প্রাচীন শিলা ভাস্কর্য ও ঝরনা।"
+    }
+  },
+  {
+    "id": "place_tr_neermahal",
+    "google_place_id": "ChIJ____neermahal_mock_id",
+    "state_code": "TR",
+    "name_i18n": { "en": "Neermahal Water Palace, Rudrasagar", "hi": "नीरमहल जल महल, रुद्रसागर", "as": "নীৰমহল জল মহল, ৰুদ্ৰসাগৰ", "bn": "নীরমহল জল মহল, রুদ্রসাগর" },
+    "categories": ["culture", "nature"],
+    "lat": 23.4896,
+    "lng": 91.3108,
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "permit_area_id": "area_tr_state",
+    "is_featured": false,
+    "hours": "09:00–17:00 (boat crossing from Rajghat)",
+    "how_to_reach": "1.5 hrs drive south from Agartala to Melaghar.",
+    "curated_notes_i18n": {
+      "en": "Royal summer palace resting in the middle of Rudrasagar Ramsar wetland, reachable by a short wooden boat ride.",
+      "hi": "रुद्रसागर झील के बीच स्थित शाही ग्रीष्मकालीन महल; नाव से पहुँचा जा सकता है।",
+      "as": "ৰুদ্ৰসাগৰ বিলৰ মাজত অৱস্থিত ৰাজকীয় গ্ৰীষ্মকালীন জল মহল।",
+      "bn": "রুদ্রসাগর হ্রদের মাঝে অবস্থিত রাজকীয় জল মহল।"
+    }
+  }
+]

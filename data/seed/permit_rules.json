@@ -1,0 +1,223 @@
+[
+  {
+    "id": "rule_ar_ilp_indian",
+    "permit_id": "perm_ar_ilp",
+    "area_id": "area_ar_state",
+    "state_code": "AR",
+    "citizen_types": ["indian"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "online_portal": true, "applies_to_non_residents": true },
+    "notes_i18n": {
+      "en": "Required for all Indian citizens not domiciled in Arunachal Pradesh (children included; check age exemptions on portal).",
+      "hi": "अरुणाचल प्रदेश के बाहर के सभी भारतीय नागरिकों के लिए अनिवार्य।",
+      "as": "অৰুণাচল প্ৰদেশৰ বাহিৰৰ সকলো ভাৰতীয় নাগৰিকৰ বাবে বাধ্যতামূলক।",
+      "bn": "অরুণাচল প্রদেশের বাইরের সকল ভারতীয় নাগরিকের জন্য বাধ্যতামূলক।"
+    }
+  },
+  {
+    "id": "rule_ar_pap_foreign",
+    "permit_id": "perm_ar_pap",
+    "area_id": "area_ar_state",
+    "state_code": "AR",
+    "citizen_types": ["foreign", "oci_pio"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "group_or_operator_check": true },
+    "notes_i18n": {
+      "en": "Foreign nationals and OCI/PIO cardholders must obtain a PAP in advance; Tawang/Bum La border zones have additional Army checkpoint verification.",
+      "hi": "विदेशी नागरिकों और OCI/PIO धारकों के लिए अग्रिम PAP अनिवार्य है।",
+      "as": "বিদেশী নাগৰিক আৰু OCI/PIO ধাৰকৰ বাবে আগতীয়াকৈ PAP লোৱা বাধ্যতামূলক।",
+      "bn": "বিদেশী নাগরিক ও OCI/PIO ধারকদের অগ্রিম PAP নেওয়া বাধ্যতামূলক।"
+    }
+  },
+  {
+    "id": "rule_nl_ilp_indian",
+    "permit_id": "perm_nl_ilp",
+    "area_id": "area_nl_state",
+    "state_code": "NL",
+    "citizen_types": ["indian"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "online_portal": true },
+    "notes_i18n": {
+      "en": "Domestic tourists need an e-ILP to travel beyond Dimapur checkgates into Kohima, Khonoma, Dzukou, or Mon.",
+      "hi": "कोहिमा, खोनोमा, द्ज़ुकोऊ और मोन जाने वाले भारतीय पर्यटकों के लिए e-ILP आवश्यक है।",
+      "as": "কহিমা, খোনোমা বা জুকৌ ভ্ৰমণৰ বাবে ভাৰতীয় পৰ্যটকৰ e-ILP প্ৰয়োজন।",
+      "bn": "কোহিমা, খোনোমা বা জুকৌ ভ্রমণের জন্য ভারতীয় পর্যটকদের e-ILP প্রয়োজন।"
+    }
+  },
+  {
+    "id": "rule_nl_foreign",
+    "permit_id": "perm_nl_foreign_reg",
+    "area_id": "area_nl_state",
+    "state_code": "NL",
+    "citizen_types": ["foreign", "oci_pio"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "register_within_24h": true },
+    "notes_i18n": {
+      "en": "Confirm current MHA PAP policy for Nagaland before arrival and register at the nearest FRO/Police station within 24 hours.",
+      "hi": "आगमन के 24 घंटे के भीतर नजदीकी FRO/पुलिस स्टेशन में पंजीकरण अवश्य कराएँ।",
+      "as": "আগমনৰ ২৪ ঘণ্টাৰ ভিতৰত নিকটতম FRO/আৰক্ষী থানাত পঞ্জীয়ন কৰক।",
+      "bn": "আগমনের ২৪ ঘণ্টার মধ্যে নিকটস্থ FRO/পুলিশ স্টেশনে নিবন্ধন করুন।"
+    }
+  },
+  {
+    "id": "rule_mz_ilp_indian",
+    "permit_id": "perm_mz_ilp",
+    "area_id": "area_mz_state",
+    "state_code": "MZ",
+    "citizen_types": ["indian"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "online_or_airport": true },
+    "notes_i18n": {
+      "en": "Mandatory for non-resident Indian citizens entering Mizoram by road or air.",
+      "hi": "मिज़ोरम में सड़क या हवाई मार्ग से प्रवेश करने वाले गैर-निवासी भारतीय नागरिकों के लिए अनिवार्य।",
+      "as": "মিজোৰামত প্ৰৱেশ কৰা অ-বাসিন্দা ভাৰতীয় নাগৰিকৰ বাবে বাধ্যতামূলক।",
+      "bn": "মিজোরামে প্রবেশকারী অ-বাসিন্দা ভারতীয় নাগরিকদের জন্য বাধ্যতামূলক।"
+    }
+  },
+  {
+    "id": "rule_mn_ilp_indian",
+    "permit_id": "perm_mn_ilp",
+    "area_id": "area_mn_state",
+    "state_code": "MN",
+    "citizen_types": ["indian"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "online_portal": true },
+    "notes_i18n": {
+      "en": "Mandatory for domestic travelers visiting Imphal, Loktak, and surrounding circuits.",
+      "hi": "इम्फाल, लोकतक और अन्य क्षेत्रों में जाने वाले घरेलू यात्रियों के लिए अनिवार्य।",
+      "as": "ইম্ফল, ল'কটক আদি ভ্ৰমণ কৰা ঘৰুৱা যাত্ৰীৰ বাবে বাধ্যতামূলক।",
+      "bn": "ইম্ফল, লোকটাক ভ্রমণকারী ভারতীয় যাত্রীদের জন্য বাধ্যতামূলক।"
+    }
+  },
+  {
+    "id": "rule_mn_pap_foreign",
+    "permit_id": "perm_mn_pap",
+    "area_id": "area_mn_state",
+    "state_code": "MN",
+    "citizen_types": ["foreign", "oci_pio"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "verify_mha_status": true },
+    "notes_i18n": {
+      "en": "Foreign nationals and OCI/PIO travelers must verify current PAP and hill-district advisories before booking flights.",
+      "hi": "उड़ान बुक करने से पहले वर्तमान PAP और जिला यात्रा सलाह अवश्य जांचें।",
+      "as": "যাত্ৰাৰ আগতে বৰ্তমানৰ PAP আৰু জিলা পৰামৰ্শ নিশ্চিত কৰক।",
+      "bn": "ভ্রমণের আগে বর্তমান PAP এবং জেলা নির্দেশিকা যাচাই করুন।"
+    }
+  },
+  {
+    "id": "rule_sk_rap_foreign",
+    "permit_id": "perm_sk_rap",
+    "area_id": "area_sk_state",
+    "state_code": "SK",
+    "citizen_types": ["foreign", "oci_pio"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "issued_at_checkpost_or_online": true },
+    "notes_i18n": {
+      "en": "Foreign nationals (check current OCI exemptions if applicable) need a Restricted Area Permit to enter Sikkim.",
+      "hi": "सिक्किम में प्रवेश के लिए विदेशी नागरिकों को प्रतिबंधित क्षेत्र परमिट (RAP) आवश्यक है।",
+      "as": "ছিকিমত প্ৰৱেশৰ বাবে বিদেশী নাগৰিকৰ RAP প্ৰয়োজন।",
+      "bn": "সিকিমে প্রবেশের জন্য বিদেশী নাগরিকদের RAP প্রয়োজন।"
+    }
+  },
+  {
+    "id": "rule_sk_pap_high_all",
+    "permit_id": "perm_sk_pap_north",
+    "area_id": "area_sk_protected",
+    "state_code": "SK",
+    "citizen_types": ["indian", "oci_pio", "foreign"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "operator_required": true, "nathula_indian_only": true },
+    "notes_i18n": {
+      "en": "Protected Area Permit required for Tsomgo Lake, Yumthang, Gurudongmar, and Nathula. Note: Nathula & Gurudongmar are generally restricted for foreign nationals.",
+      "hi": "त्सोमगो, युमथांग, गुरुडोंगमार और नाथुला के लिए PAP अनिवार्य है। विदेशी नागरिकों के लिए नाथुला प्रतिबंधित है।",
+      "as": "চোমগ', যুমথাং আৰু নাথুলাৰ বাবে PAP বাধ্যতামূলক। বিদেশী যাত্ৰীৰ বাবে নাথুলা নিষিদ্ধ।",
+      "bn": "সোমগো, ইয়ুমথাং ও নাথুলার জন্য PAP বাধ্যতামূলক। বিদেশীদের জন্য নাথুলা নিষিদ্ধ।"
+    }
+  },
+  {
+    "id": "rule_as_kaziranga_all",
+    "permit_id": "perm_as_kaziranga",
+    "area_id": "area_as_kaziranga",
+    "state_code": "AS",
+    "citizen_types": ["indian", "oci_pio", "foreign"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": true,
+    "conditions": { "safari_entry_only": true },
+    "notes_i18n": {
+      "en": "No ILP needed for Assam; only park safari entry permit is required inside Kaziranga ranges.",
+      "hi": "असम के लिए कोई ILP नहीं; केवल काजीरंगा सफारी प्रवेश पास आवश्यक है।",
+      "as": "অসমত ILP নালাগে; কেৱল কাজিৰঙা ছাফাৰী প্ৰৱেশ পাৰ্মিট প্ৰয়োজন।",
+      "bn": "আসামে ILP লাগে না; শুধু কাজিরাঙ্গা সাফারি প্রবেশ পাস প্রয়োজন।"
+    }
+  },
+  {
+    "id": "rule_as_state_none",
+    "permit_id": "perm_as_kaziranga",
+    "area_id": "area_as_state",
+    "state_code": "AS",
+    "citizen_types": ["indian", "oci_pio", "foreign"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": false,
+    "conditions": { "no_ilp": true },
+    "notes_i18n": {
+      "en": "General entry into Assam does not require an ILP or PAP; wildlife parks require safari passes.",
+      "hi": "असम में सामान्य प्रवेश के लिए कोई ILP या PAP आवश्यक नहीं है।",
+      "as": "অসমত সাধাৰণ প্ৰৱেশৰ বাবে কোনো ILP বা PAP নালাগে।",
+      "bn": "আসামে সাধারণ প্রবেশের জন্য কোনো ILP বা PAP প্রয়োজন নেই।"
+    }
+  },
+  {
+    "id": "rule_ml_none",
+    "permit_id": "perm_ml_no_ilp",
+    "area_id": "area_ml_state",
+    "state_code": "ML",
+    "citizen_types": ["indian", "oci_pio", "foreign"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": false,
+    "conditions": { "no_ilp": true },
+    "notes_i18n": {
+      "en": "No Inner Line Permit required for Meghalaya; carry photo ID / passport for accommodation check-in.",
+      "hi": "मेघालय के लिए ILP आवश्यक नहीं है; होटल चेक-इन के लिए पहचान पत्र रखें।",
+      "as": "মেঘালয়ৰ বাবে ILP নালাগে; হোটেল চেক-ইনৰ বাবে পৰিচয়পত্ৰ ৰাখক।",
+      "bn": "মেঘালয়ের জন্য ILP প্রয়োজন নেই; হোটেল চেক-ইনের জন্য পরিচয়পত্র রাখুন।"
+    }
+  },
+  {
+    "id": "rule_tr_none",
+    "permit_id": "perm_tr_no_ilp",
+    "area_id": "area_tr_state",
+    "state_code": "TR",
+    "citizen_types": ["indian", "oci_pio", "foreign"],
+    "min_age": 0,
+    "max_age": 120,
+    "required": false,
+    "conditions": { "no_ilp": true },
+    "notes_i18n": {
+      "en": "No ILP required for Tripura; carry valid ID / passport & visa.",
+      "hi": "त्रिपुरा के लिए ILP आवश्यक नहीं है।",
+      "as": "ত্ৰিপুৰাৰ বাবে ILP নালাগে।",
+      "bn": "ত্রিপুরার জন্য ILP প্রয়োজন নেই।"
+    }
+  }
+]

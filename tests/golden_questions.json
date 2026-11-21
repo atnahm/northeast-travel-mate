@@ -1,0 +1,7 @@
+[
+  { "id": "q1", "query": "Do Indian citizens need a permit to visit Tawang in Arunachal Pradesh?", "expected_state": "AR", "must_require_permit": true },
+  { "id": "q2", "query": "Do foreign nationals need a Protected Area Permit for Arunachal Pradesh?", "expected_state": "AR", "must_require_permit": true },
+  { "id": "q3", "query": "Do Indian tourists need an ILP to visit Shillong and Cherrapunji in Meghalaya?", "expected_state": "ML", "must_require_permit": false },
+  { "id": "q4", "query": "What permit is needed for Tsomgo Lake and Nathula Pass in Sikkim?", "expected_state": "SK", "must_require_permit": true },
+  { "id": "q5", "query": "Plan 6 days in Meghalaya from Guwahati in December budget 25000", "expected_state": "ML", "must_create_trip": true }
+]

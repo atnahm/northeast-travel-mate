@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-canvas: #FAF7F2;
+  --bg-surface: #FFFFFF;
+  --bg-muted: #F0ECE3;
+  --text-primary: #22262A;
+  --text-secondary: #525B63;
+
+  --brand-primary: #1F5E4B;
+  --brand-primary-hover: #17493A;
+  --on-brand-primary: #FFFFFF;
+
+  --brand-river: #2A6F97;
+  --on-brand-river: #FFFFFF;
+
+  --brand-gold: #D9A441;
+  --on-brand-gold: #22262A;
+
+  --brand-alert: #C8401C;
+  --on-brand-alert: #FFFFFF;
+
+  --status-approved-bg: #DCFCE7;
+  --status-approved-fg: #14532D;
+  --status-verified-bg: #E0F2FE;
+  --status-verified-fg: #164663;
+  --status-applied-bg: #FEF3C7;
+  --status-applied-fg: #5C3D00;
+  --status-check-bg: #FFEDD5;
+  --status-check-fg: #7C2D12;
+  --status-rejected: #A31C24;
+  --status-rejected-bg: #FEE2E2;
+  --status-rejected-fg: #7F1D1D;
+
+  --border-subtle: #E2DDD3;
+  --focus-ring: #2A6F97;
+
+  /* RGB triplets for Tailwind opacity modifier support (e.g. bg-forest/10, bg-surface/90) */
+  --rgb-canvas: 250 247 242;
+  --rgb-surface: 255 255 255;
+  --rgb-muted: 240 236 227;
+  --rgb-ink: 34 38 42;
+  --rgb-ink-muted: 82 91 99;
+  --rgb-forest: 31 94 75;
+  --rgb-forest-hover: 23 73 58;
+  --rgb-on-primary: 255 255 255;
+  --rgb-river: 42 111 151;
+  --rgb-on-river: 255 255 255;
+  --rgb-tea-gold: 217 164 65;
+  --rgb-on-gold: 34 38 42;
+  --rgb-sunrise: 200 64 28;
+  --rgb-on-alert: 255 255 255;
+  --rgb-rejected: 163 28 36;
+  --rgb-border-subtle: 226 221 211;
+  --rgb-focus-ring: 42 111 151;
+
+  --z-map: 10;
+  --z-sticky: 20;
+  --z-sheet: 25;
+  --z-nav: 30;
+  --z-fab: 35;
+  --z-modal: 50;
+  --z-toast: 60;
+}
+
+.dark {
+  --bg-canvas: #111715;
+  --bg-surface: #1A2320;
+  --bg-muted: #24302C;
+  --text-primary: #F2EFE9;
+  --text-secondary: #B5C0BA;
+
+  --brand-primary: #35A17E;
+  --brand-primary-hover: #2A8668;
+  --on-brand-primary: #0B1F18;
+
+  --brand-river: #5BA8D6;
+  --on-brand-river: #0B1922;
+
+  --brand-gold: #E3B452;
+  --on-brand-gold: #1A160B;
+
+  --brand-alert: #F06A42;
+  --on-brand-alert: #1A0B06;
+
+  --status-approved-bg: #123524;
+  --status-approved-fg: #BBF7D0;
+  --status-verified-bg: #0E2E42;
+  --status-verified-fg: #BAE6FD;
+  --status-applied-bg: #3D2B05;
+  --status-applied-fg: #FDE68A;
+  --status-check-bg: #431908;
+  --status-check-fg: #FDBA74;
+  --status-rejected: #5C141A;
+  --status-rejected-bg: #5C141A;
+  --status-rejected-fg: #FECACA;
+
+  --border-subtle: #2D3B36;
+  --focus-ring: #5BA8D6;
+
+  --rgb-canvas: 17 23 21;
+  --rgb-surface: 26 35 32;
+  --rgb-muted: 36 48 44;
+  --rgb-ink: 242 239 233;
+  --rgb-ink-muted: 181 192 186;
+  --rgb-forest: 53 161 126;
+  --rgb-forest-hover: 42 134 104;
+  --rgb-on-primary: 11 31 24;
+  --rgb-river: 91 168 214;
+  --rgb-on-river: 11 25 34;
+  --rgb-tea-gold: 227 180 82;
+  --rgb-on-gold: 26 22 11;
+  --rgb-sunrise: 240 106 66;
+  --rgb-on-alert: 26 11 6;
+  --rgb-rejected: 92 20 26;
+  --rgb-border-subtle: 45 59 54;
+  --rgb-focus-ring: 91 168 214;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Indic scripts require 1.6-1.7 line-height to avoid clipping tall matras & conjuncts */
+:lang(hi),
+:lang(as),
+:lang(bn) {
+  line-height: 1.65;
+}
+
+:lang(hi) p,
+:lang(as) p,
+:lang(bn) p,
+:lang(hi) li,
+:lang(as) li,
+:lang(bn) li {
+  line-height: 1.7;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.woven-strip {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(31, 94, 75, 0.18) 0px,
+    rgba(31, 94, 75, 0.18) 10px,
+    rgba(217, 164, 65, 0.34) 10px,
+    rgba(217, 164, 65, 0.34) 18px,
+    rgba(42, 111, 151, 0.18) 18px,
+    rgba(42, 111, 151, 0.18) 24px
+  );
+}

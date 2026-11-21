@@ -1,0 +1,119 @@
+[
+  {
+    "id": "area_ar_state",
+    "state_code": "AR",
+    "kind": "state",
+    "parent_id": null,
+    "ancestor_ids": [],
+    "name_i18n": { "en": "Arunachal Pradesh (Statewide)", "hi": "अरुणाचल प्रदेश (पूर्ण राज्य)", "as": "অৰুণাচল প্ৰদেশ (সমগ্ৰ ৰাজ্য)", "bn": "অরুণাচল প্রদেশ (সমগ্র রাজ্য)" },
+    "bbox": { "min_lat": 26.64, "max_lat": 29.46, "min_lng": 91.55, "max_lng": 97.41 }
+  },
+  {
+    "id": "area_ar_tawang",
+    "state_code": "AR",
+    "kind": "border_zone",
+    "parent_id": "area_ar_state",
+    "ancestor_ids": ["area_ar_state"],
+    "name_i18n": { "en": "Tawang & Bum La Circuit", "hi": "तवांग और बुम ला क्षेत्र", "as": "টাৱাং আৰু বুম লা অঞ্চল", "bn": "তাওয়াং ও বুম লা অঞ্চল" },
+    "bbox": { "min_lat": 27.38, "max_lat": 27.85, "min_lng": 91.60, "max_lng": 92.35 }
+  },
+  {
+    "id": "area_ar_ziro",
+    "state_code": "AR",
+    "kind": "district",
+    "parent_id": "area_ar_state",
+    "ancestor_ids": ["area_ar_state"],
+    "name_i18n": { "en": "Ziro Valley (Lower Subansiri)", "hi": "ज़ीरो घाटी", "as": "জিৰ' উপত্যকা", "bn": "জিরো উপত্যকা" },
+    "bbox": { "min_lat": 27.45, "max_lat": 27.72, "min_lng": 93.72, "max_lng": 94.00 }
+  },
+  {
+    "id": "area_as_state",
+    "state_code": "AS",
+    "kind": "state",
+    "parent_id": null,
+    "ancestor_ids": [],
+    "name_i18n": { "en": "Assam (Statewide)", "hi": "असम (पूर्ण राज्य)", "as": "অসম (সমগ্ৰ ৰাজ্য)", "bn": "আসাম (সমগ্র রাজ্য)" },
+    "bbox": { "min_lat": 24.13, "max_lat": 27.98, "min_lng": 89.70, "max_lng": 96.02 }
+  },
+  {
+    "id": "area_as_kaziranga",
+    "state_code": "AS",
+    "kind": "protected_area",
+    "parent_id": "area_as_state",
+    "ancestor_ids": ["area_as_state"],
+    "name_i18n": { "en": "Kaziranga National Park", "hi": "काजीरंगा राष्ट्रीय उद्यान", "as": "কাজিৰঙা ৰাষ্ট্ৰীয় উদ্যান", "bn": "কাজিরাঙ্গা জাতীয় উদ্যান" },
+    "bbox": { "min_lat": 26.55, "max_lat": 26.76, "min_lng": 93.10, "max_lng": 93.62 }
+  },
+  {
+    "id": "area_ml_state",
+    "state_code": "ML",
+    "kind": "state",
+    "parent_id": null,
+    "ancestor_ids": [],
+    "name_i18n": { "en": "Meghalaya (Statewide)", "hi": "मेघालय (पूर्ण राज्य)", "as": "মেঘালয় (সমগ্ৰ ৰাজ্য)", "bn": "মেঘালয় (সমগ্র রাজ্য)" },
+    "bbox": { "min_lat": 25.03, "max_lat": 26.12, "min_lng": 89.82, "max_lng": 92.80 }
+  },
+  {
+    "id": "area_nl_state",
+    "state_code": "NL",
+    "kind": "state",
+    "parent_id": null,
+    "ancestor_ids": [],
+    "name_i18n": { "en": "Nagaland (Statewide)", "hi": "नागालैंड (पूर्ण राज्य)", "as": "নাগালেণ্ড (সমগ্ৰ ৰাজ্য)", "bn": "নাগাল্যান্ড (সমগ্র রাজ্য)" },
+    "bbox": { "min_lat": 25.20, "max_lat": 27.05, "min_lng": 93.32, "max_lng": 95.24 }
+  },
+  {
+    "id": "area_nl_dzukou",
+    "state_code": "NL",
+    "kind": "trek",
+    "parent_id": "area_nl_state",
+    "ancestor_ids": ["area_nl_state"],
+    "name_i18n": { "en": "Dzukou Valley Trek Zone", "hi": "द्ज़ुकोऊ घाटी ट्रेक", "as": "জুকৌ উপত্যকা ট্ৰেক", "bn": "জুকৌ উপত্যকা ট্রেক" },
+    "bbox": { "min_lat": 25.51, "max_lat": 25.60, "min_lng": 94.02, "max_lng": 94.12 }
+  },
+  {
+    "id": "area_mn_state",
+    "state_code": "MN",
+    "kind": "state",
+    "parent_id": null,
+    "ancestor_ids": [],
+    "name_i18n": { "en": "Manipur (Statewide)", "hi": "मणिपुर (पूर्ण राज्य)", "as": "মণিপুৰ (সমগ্ৰ ৰাজ্য)", "bn": "মণিপুর (সমগ্র রাজ্য)" },
+    "bbox": { "min_lat": 23.83, "max_lat": 25.69, "min_lng": 92.99, "max_lng": 94.79 }
+  },
+  {
+    "id": "area_mz_state",
+    "state_code": "MZ",
+    "kind": "state",
+    "parent_id": null,
+    "ancestor_ids": [],
+    "name_i18n": { "en": "Mizoram (Statewide)", "hi": "मिज़ोरम (पूर्ण राज्य)", "as": "মিজোৰাম (সমগ্ৰ ৰাজ্য)", "bn": "মিজোরাম (সমগ্র রাজ্য)" },
+    "bbox": { "min_lat": 21.94, "max_lat": 24.52, "min_lng": 92.26, "max_lng": 93.44 }
+  },
+  {
+    "id": "area_sk_state",
+    "state_code": "SK",
+    "kind": "state",
+    "parent_id": null,
+    "ancestor_ids": [],
+    "name_i18n": { "en": "Sikkim (Statewide)", "hi": "सिक्किम (पूर्ण राज्य)", "as": "ছিকিম (সমগ্ৰ ৰাজ্য)", "bn": "সিকিম (সমগ্র রাজ্য)" },
+    "bbox": { "min_lat": 27.07, "max_lat": 28.13, "min_lng": 88.01, "max_lng": 88.92 }
+  },
+  {
+    "id": "area_sk_protected",
+    "state_code": "SK",
+    "kind": "border_zone",
+    "parent_id": "area_sk_state",
+    "ancestor_ids": ["area_sk_state"],
+    "name_i18n": { "en": "Tsomgo, Nathula & North Sikkim Restricted Zone", "hi": "त्सोमगो, नाथुला और उत्तरी सिक्किम क्षेत्र", "as": "চোমগ', নাথুলা আৰু উত্তৰ ছিকিম", "bn": "সোমগো, নাথুলা ও উত্তর সিকিম" },
+    "bbox": { "min_lat": 27.32, "max_lat": 28.12, "min_lng": 88.35, "max_lng": 88.91 }
+  },
+  {
+    "id": "area_tr_state",
+    "state_code": "TR",
+    "kind": "state",
+    "parent_id": null,
+    "ancestor_ids": [],
+    "name_i18n": { "en": "Tripura (Statewide)", "hi": "त्रिपुरा (पूर्ण राज्य)", "as": "ত্ৰিপুৰা (সমগ্ৰ ৰাজ্য)", "bn": "ত্রিপুরা (সমগ্র রাজ্য)" },
+    "bbox": { "min_lat": 22.94, "max_lat": 24.53, "min_lng": 91.15, "max_lng": 92.34 }
+  }
+]

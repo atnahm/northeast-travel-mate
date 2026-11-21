@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="24" fill="#183D32" />
+  <rect x="10" y="10" width="108" height="108" rx="18" stroke="#D9A441" stroke-width="2.5" stroke-opacity="0.55" />
+  <!-- Traditional North-East Gamosa woven lozenge motif -->
+  <path d="M64 22L98 56L64 90L30 56L64 22Z" stroke="#FAF7F2" stroke-width="5" stroke-linejoin="round" />
+  <path d="M64 38L82 56L64 74L46 56L64 38Z" fill="#D9A441" />
+  <circle cx="64" cy="56" r="5" fill="#183D32" />
+  <!-- Brahmaputra river current at base -->
+  <path d="M26 101C42 95 54 105 64 100C74 95 86 105 102 99" stroke="#7CC2E8" stroke-width="4.5" stroke-linecap="round" />
+</svg>

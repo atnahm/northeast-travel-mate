@@ -1,0 +1,138 @@
+[
+  {
+    "id": "AS",
+    "code": "AS",
+    "name_i18n": { "en": "Assam", "hi": "असम", "as": "অসম", "bn": "আসাম" },
+    "capital": "Dispur (Guwahati)",
+    "tagline_i18n": {
+      "en": "Gateway of the North-East, Brahmaputra river islands & heritage tea gardens",
+      "hi": "पूर्वोत्तर का प्रवेश द्वार, ब्रह्मपुत्र के नदी द्वीप और चाय बागान",
+      "as": "উত্তৰ-পূৰ্বাঞ্চলৰ প্ৰৱেশদ্বাৰ, ব্ৰহ্মপুত্ৰৰ নদী দ্বীপ আৰু চাহ বাগিচা",
+      "bn": "উত্তর-পূর্বের প্রবেশদ্বার, ব্রহ্মপুত্রের নদী দ্বীপ ও চা বাগান"
+    },
+    "center": { "lat": 26.2006, "lng": 92.9376 },
+    "bbox": { "min_lat": 24.13, "max_lat": 27.98, "min_lng": 89.70, "max_lng": 96.02 },
+    "best_months": [10, 11, 12, 1, 2, 3, 4],
+    "pack_size_mb": 42.5,
+    "pack_version": "2026.11.1"
+  },
+  {
+    "id": "ML",
+    "code": "ML",
+    "name_i18n": { "en": "Meghalaya", "hi": "मेघालय", "as": "মেঘালয়", "bn": "মেঘালয়" },
+    "capital": "Shillong",
+    "tagline_i18n": {
+      "en": "Living root bridges, misty limestone canyons & crystal rivers",
+      "hi": "जीवित जड़ पुल, धुंध भरी घाटियाँ और काँच जैसी नदियाँ",
+      "as": "জীৱন্ত শিপাৰ দলং, কুঁৱলীময় উপত্যকা আৰু স্বচ্ছ নদী",
+      "bn": "জীবন্ত শিকড়ের সেতু, কুয়াশাচ্ছন্ন উপত্যকা ও স্বচ্ছ নদী"
+    },
+    "center": { "lat": 25.467, "lng": 91.3662 },
+    "bbox": { "min_lat": 25.03, "max_lat": 26.12, "min_lng": 89.82, "max_lng": 92.80 },
+    "best_months": [10, 11, 12, 1, 2, 3, 4, 5],
+    "pack_size_mb": 34.0,
+    "pack_version": "2026.11.1"
+  },
+  {
+    "id": "AR",
+    "code": "AR",
+    "name_i18n": { "en": "Arunachal Pradesh", "hi": "अरुणाचल प्रदेश", "as": "অৰুণাচল প্ৰদেশ", "bn": "অরুণাচল প্রদেশ" },
+    "capital": "Itanagar",
+    "tagline_i18n": {
+      "en": "High mountain passes, ancient monasteries & pine-clad valleys",
+      "hi": "ऊँचे पहाड़ी दर्रे, प्राचीन मठ और देवदार की घाटियाँ",
+      "as": "উচ্চ গিৰিপথ, প্ৰাচীন বৌদ্ধ মঠ আৰু সৰল গছৰ উপত্যকা",
+      "bn": "উচ্চ গিরিপথ, প্রাচীন বৌদ্ধ মঠ ও পাইন বনের উপত্যকা"
+    },
+    "center": { "lat": 28.218, "lng": 94.7278 },
+    "bbox": { "min_lat": 26.64, "max_lat": 29.46, "min_lng": 91.55, "max_lng": 97.41 },
+    "best_months": [3, 4, 5, 10, 11, 12],
+    "pack_size_mb": 58.2,
+    "pack_version": "2026.11.1"
+  },
+  {
+    "id": "NL",
+    "code": "NL",
+    "name_i18n": { "en": "Nagaland", "hi": "नागालैंड", "as": "নাগালেণ্ড", "bn": "নাগাল্যান্ড" },
+    "capital": "Kohima",
+    "tagline_i18n": {
+      "en": "Ridgeline villages, Hornbill heritage & Dzukou alpine meadows",
+      "hi": "पहाड़ी गाँव, हॉर्नबिल विरासत और द्ज़ुकोऊ की घाटियाँ",
+      "as": "পাহাৰীয়া গাঁও, হৰ্ণবিল ঐতিহ্য আৰু জু্কৌ উপত্যকা",
+      "bn": "পাহাড়ি গ্রাম, হর্নবিল ঐতিহ্য ও জুকৌ উপত্যকা"
+    },
+    "center": { "lat": 26.1584, "lng": 94.5624 },
+    "bbox": { "min_lat": 25.20, "max_lat": 27.05, "min_lng": 93.32, "max_lng": 95.24 },
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "pack_size_mb": 31.8,
+    "pack_version": "2026.11.1"
+  },
+  {
+    "id": "MN",
+    "code": "MN",
+    "name_i18n": { "en": "Manipur", "hi": "मणिपुर", "as": "মণিপুৰ", "bn": "মণিপুর" },
+    "capital": "Imphal",
+    "tagline_i18n": {
+      "en": "Floating phumdis of Loktak, Shirui hills & centuries-old classical dance",
+      "hi": "लोकतक की तैरती फुमडी, शिरुई पहाड़ियाँ और शास्त्रीय नृत्य",
+      "as": "ল'কটকৰ ভাসমান ফুমডি, ছিৰুই পাহাৰ আৰু শাস্ত্ৰীয় নৃত্য",
+      "bn": "লোকটাকের ভাসমান ফুমডি, শিরুই পাহাড় ও শাস্ত্রীয় নৃত্য"
+    },
+    "center": { "lat": 24.6637, "lng": 93.9063 },
+    "bbox": { "min_lat": 23.83, "max_lat": 25.69, "min_lng": 92.99, "max_lng": 94.79 },
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "pack_size_mb": 29.4,
+    "pack_version": "2026.11.1"
+  },
+  {
+    "id": "MZ",
+    "code": "MZ",
+    "name_i18n": { "en": "Mizoram", "hi": "मिज़ोरम", "as": "মিজোৰাম", "bn": "মিজোরাম" },
+    "capital": "Aizawl",
+    "tagline_i18n": {
+      "en": "Rolling bamboo hills, blue mountain peaks & hospitable highland towns",
+      "hi": "बाँस की पहाड़ियाँ, ब्लू माउंटेन शिखर और शांत पहाड़ी शहर",
+      "as": "বাঁহৰ পাহাৰ, ব্লু মাউণ্টেইন শিখৰ আৰু মনোৰম নগৰ",
+      "bn": "বাঁশের পাহাড়, ব্লু মাউন্টেন শিখর ও শান্ত পাহাড়ি শহর"
+    },
+    "center": { "lat": 23.1645, "lng": 92.9376 },
+    "bbox": { "min_lat": 21.94, "max_lat": 24.52, "min_lng": 92.26, "max_lng": 93.44 },
+    "best_months": [11, 12, 1, 2, 3],
+    "pack_size_mb": 27.6,
+    "pack_version": "2026.11.1"
+  },
+  {
+    "id": "SK",
+    "code": "SK",
+    "name_i18n": { "en": "Sikkim", "hi": "सिक्किम", "as": "ছিকিম", "bn": "সিকিম" },
+    "capital": "Gangtok",
+    "tagline_i18n": {
+      "en": "Khangchendzonga vistas, glacial alpine lakes & organic mountain farms",
+      "hi": "कंचनजंगा के दृश्य, हिमनद झीलें और जैविक पहाड़ी गाँव",
+      "as": "কাঞ্চনজংঘাৰ দৃশ্য, হিমবাহ হ্ৰদ আৰু জৈৱিক পাহাৰীয়া গাঁও",
+      "bn": "কাঞ্চনজঙ্ঘার দৃশ্য, হিমবাহ হ্রদ ও জৈব পাহাড়ি গ্রাম"
+    },
+    "center": { "lat": 27.533, "lng": 88.5122 },
+    "bbox": { "min_lat": 27.07, "max_lat": 28.13, "min_lng": 88.01, "max_lng": 88.92 },
+    "best_months": [3, 4, 5, 10, 11, 12],
+    "pack_size_mb": 39.2,
+    "pack_version": "2026.11.1"
+  },
+  {
+    "id": "TR",
+    "code": "TR",
+    "name_i18n": { "en": "Tripura", "hi": "त्रिपुरा", "as": "ত্ৰিপুৰা", "bn": "ত্রিপুরা" },
+    "capital": "Agartala",
+    "tagline_i18n": {
+      "en": "Rock-cut sculptures at Unakoti, royal palaces & lake pavilions",
+      "hi": "उनाकोटी की शैल मूर्तियाँ, शाही महल और जल महल",
+      "as": "উনাকোটিৰ শৈল ভাস্কৰ্য, ৰাজপ্ৰাসাদ আৰু জল মহল",
+      "bn": "উনাকোটির শিলা ভাস্কর্য, রাজপ্রাসাদ ও জল মহল"
+    },
+    "center": { "lat": 23.9408, "lng": 91.9882 },
+    "bbox": { "min_lat": 22.94, "max_lat": 24.53, "min_lng": 91.15, "max_lng": 92.34 },
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "pack_size_mb": 24.5,
+    "pack_version": "2026.11.1"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "places",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "state_code", "order": "ASCENDING" },
+        { "fieldPath": "is_featured", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "permit_rules",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "area_id", "order": "ASCENDING" },
+        { "fieldPath": "state_code", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "trips",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "member_ids", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "updated_at", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "alerts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "state_code", "order": "ASCENDING" },
+        { "fieldPath": "verified", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "transport_options",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "from_node_id", "order": "ASCENDING" },
+        { "fieldPath": "to_node_id", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "specialities",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "state_code", "order": "ASCENDING" },
+        { "fieldPath": "type", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "chat_threads",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "user_id", "order": "ASCENDING" },
+        { "fieldPath": "updated_at", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
